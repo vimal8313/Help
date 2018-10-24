@@ -1,0 +1,153 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for displaying a single view for a domain object
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			Show.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+
+		<v:page.header overwrite="true">
+			<title>{company.company} | Betriebssuche - kfz-opf.de</title>
+			<meta name="description" content="{company.company}">
+		</v:page.header>
+
+		<f:flashMessages />
+		<div class="panel company-panel">
+			<div class="panel-heading">
+				<div class="img img-count">
+					<picture>
+						<f:for each="{company.categories}" as="category">
+							<f:link.action action="searchlist" arguments="{category : category.uid}" pageUid="11">
+								<f:image image="{category.image}" width="42" alt="{category.name}" />
+							</f:link.action>
+						</f:for>
+					</picture>
+				</div>
+				<div class="label label-default county-label">
+					{company.county.name}
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="name">
+							<h3>{company.company}</h3>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<f:image image="{company.image.0}" width="200px" class="img-responsive pull-right" />
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div id="map">
+				<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q={mapAddress}&amp;key=AIzaSyAZpoPOywixeDGSHrcBrUrwtrMUzVWvdFg"></iframe>
+			</div>
+
+			<div class="company-panel-body">
+				<ul class="list-group list-group-flush">
+
+					<li class="list-group-item">
+						<div class="company-list-icon-wrapper text-center">
+							<i class="fal fa-map-marker fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="company-panel-content">
+							<h5 class="list-group-item-heading"><f:translate key="tx_companydir_company.anschrift" /></h5>
+							<p class="list-group-item-text">
+								<a target="_blank" href="http://maps.google.com/?q={company.address}+{company.zip}+{company.city}"> {company.address}<br> {company.zip} {company.city} </a>
+							</p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="company-list-icon-wrapper text-center">
+							<i class="fal fa-phone fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="company-panel-content">
+							<h5 class="list-group-item-heading"><f:translate key="tx_companydir_company.telefon" /></h5>
+							<p class="list-group-item-text">
+								<f:if condition="{company.telephone}">
+									<f:then>
+										<a href="tel:{company.telephone}">{company.telephone}</a>
+									</f:then>
+									<f:else>
+										Keine Angabe
+									</f:else>
+								</f:if>
+							</p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="company-list-icon-wrapper text-center">
+							<i class="fal fa-fax fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="company-panel-content">
+							<h5 class="list-group-item-heading"><f:translate key="tx_companydir_company.fax" /></h5>
+							<p class="list-group-item-text">
+								<f:if condition="{company.fax}">
+									<f:then>
+										{company.fax}
+									</f:then>
+									<f:else>
+										Keine Angabe
+									</f:else>
+								</f:if>
+							</p>
+						</div>
+					</li>
+
+
+
+					<li class="list-group-item">
+						<div class="company-list-icon-wrapper text-center">
+							<i class="fal fa-envelope fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="company-panel-content">
+							<h5 class="list-group-item-heading"><f:translate key="tx_companydir_company.email" /></h5>
+							<p class="list-group-item-text">
+								<f:if condition="{company.email}">
+									<f:then>
+										<a href="mailto:{company.email}">{company.email}</a>
+									</f:then>
+									<f:else>
+										Keine Angabe
+									</f:else>
+								</f:if>
+							</p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="company-list-icon-wrapper text-center">
+							<i class="fal fa-globe fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="company-panel-content">
+							<h5 class="list-group-item-heading"><f:translate key="tx_companydir_company.website" /></h5>
+							<p class="list-group-item-text">
+								<f:if condition="{company.www}">
+									<f:then>
+										<a target="_blank" href="http://{company.www}">{company.www}</a>
+									</f:then>
+									<f:else>
+										Keine Angabe
+									</f:else>
+								</f:if>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<f:render partial="Company/Opengraph" arguments="{company: company}" />
+	</f:section>
+</html>

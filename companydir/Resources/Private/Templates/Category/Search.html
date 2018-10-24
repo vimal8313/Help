@@ -1,0 +1,18 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<div class="search-area text-center">
+		<f:form action="searchlist" name="searchform" method="post" arguments="{category: selectedcategory,county:selectedcounty,zip:selectedzip}" pageUid="{detailpageid}" class="form-inline">
+			<div class="form-group" style="width:30%;">
+				<f:form.textfield class="form-control" name="zip" id="zip-search" placeholder="Postleitzahl" value="{selectedzip}" style="width:100%;" />
+			</div>
+			<div class="form-group" style="width:30%;">
+				<f:form.select class="form-control" name="category" id="category-search" options="{catarray}" value="{selectedcategory}" prependOptionLabel="Fabrikat" style="width:100%;" />
+			</div>
+			<div class="form-group" style="width:30%;">
+				<f:form.select class="form-control" name="county" id="county-search" options="{countyarray}" value="{selectedcounty}" prependOptionLabel="Landkreis" style="width:100%;" />
+			</div>
+			<button type="submit" name="search" value="Search" id="search" class="btn btn-primary"><f:translate key="tx_companydir_company.suchen" /></button>
+		</f:form>
+	</div>
+
+</html>

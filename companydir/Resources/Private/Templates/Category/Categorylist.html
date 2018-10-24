@@ -1,0 +1,61 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	 xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<h1><f:translate key="tx_companydir_company.fabrikate" /></h1>
+		<span class="label label-primary">
+			<f:count subject="{companies}" /> <f:translate key="tx_companydir_company.gesamt" />
+		</span>
+		<span class="label label-default">
+			{count} <f:translate key="tx_companydir_company.fabrikate" />
+		</span>
+
+		<f:flashMessages />
+
+		<div class="operation-list">
+			<div class="row">
+				<div class="category-wrapper equalHMVWrap eqWrap">
+					<f:for each="{items}" as="categories" key="itemkey">
+							<div class="col-sm-6 col-md-4 equalHMV">
+								<div class="panel category-panel">
+									<div class="panel-heading">
+										<div>{itemkey}</div>
+									</div>
+									<div class="panel-body">
+										<f:for each="{categories}" as="category">
+											<ul>
+												<li>
+													<f:image image="{category.image}" width="32px" class="category-image pull-left" alt="{category.image.alternative}" />
+													 <f:link.action action="searchlist" arguments="{category : category.uid}" pageUid="11">{category.name}</f:link.action>
+													<span class="label label-primary pull-right"> ({category.count})</span>
+												</li>
+											</ul>
+										</f:for>
+									</div>
+								</div>
+							</div>
+					</f:for>
+				</div>
+			</div>
+		</div>
+	</f:section>
+
+</div>
+</html>

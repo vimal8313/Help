@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-04-11T11:59:06Z" product-name="companydir">
+		<header/>
+		<body>
+			<trans-unit id="tx_companydir_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_domain_model_category.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_domain_model_category.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_companydir.name">
+				<source>Company Dir</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_companydir.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_domain_model_county">
+				<source>County</source>
+			</trans-unit>
+			<trans-unit id="tx_companydir_domain_model_county.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.tab_1">
+				<source>Company Directory</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.mode">
+				<source>Company Directory Plugin</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.cat_list">
+				<source>Category List</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.company_list">
+				<source>Company List</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.search_list">
+				<source>Search List</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.company_detail">
+				<source>Company Detail</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.company_select">
+				<source>Select Company</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.tab_2">
+				<source>Additional</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.detailpid">
+				<source>DetailPid</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.hide_pagination">
+				<source>Hide Pagination</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.itemperpage">
+				<source>Item Per Page</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.maxrecords">
+				<source>Max records displayed</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.tab_3">
+				<source>Template</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.templatelayout">
+				<source>Template Layout</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

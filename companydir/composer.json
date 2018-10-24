@@ -1,0 +1,23 @@
+{
+    "name": "grcr/companydir",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GRCR\\Companydir\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GRCR\\Companydir\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "companydir": "self.version",
+        "typo3-ter/companydir": "self.version"
+    }
+}

@@ -1,0 +1,16 @@
+{namespace femanager=In2code\Femanagerextended\ViewHelpers}
+<div class="femanager_fieldset control-group form-group">
+	<label for="category" class="col-sm-2 control-label">
+		<f:translate key="tx_femanagerextended_domain_model_user.category" extensionName="femanagerextended">Category</f:translate>
+	</label>
+	<div class="controls col-sm-10">
+		<femanager:form.select
+			id="category"
+			property="categories"
+			options="{femanager:Form.GetCategories()}"
+			defaultOption="{f:translate(key:'pleaseChoose')}"
+			class="form-control"
+			additionalAttributes="{femanager:Validation.FormValidationData(settings:settings,fieldName:'categories')}"
+			multiple="true" />
+	</div>
+</div>

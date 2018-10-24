@@ -1,0 +1,11 @@
+{namespace n = GRCR\Companydir\ViewHelpers}
+
+<n:metaTag property="twitter:title" content="{category.name}" />
+<n:metaTag property="og:description" content="{category.description}" />
+
+<f:if condition="{category.image}">
+<n:metaTag property="og:image" content="{f:uri.image(src:'{category.image.uid}', treatIdAsReference:1, maxWidth:'500')}" forceAbsoluteUrl="1" />
+<n:metaTag property="twitter:image" content="{f:uri.image(src:'{category.image.uid}', treatIdAsReference:1, maxWidth:'500')}" forceAbsoluteUrl="1" />
+</f:if>
+
+</html>

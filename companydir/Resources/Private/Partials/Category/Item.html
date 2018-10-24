@@ -1,0 +1,46 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	 xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:section name="CategoryItem">
+		<div class="col-sm-6 col-md-4">
+			<div class="panel categorie-panel">
+				<div class="panel-heading">
+					<div class="img img-count">
+						<picture>
+							<f:for each="{company.categories}" as="category">
+								<f:image image="{category.image}" width="25px" alt="{category.name}" />
+							</f:for>
+						</picture>
+					</div>
+					<div class="label label-default pull-right">
+						county
+					</div>
+					<div class="name">
+						<h3>{company.name}</h3>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-8">
+							<p>
+								{company.address}<br />
+								{company.zip} {company.city}
+							</p>
+						</div>
+						<div class="col-xs-4">
+							<f:image image="{company.image.0}" width="200px" class="img-responsive" />
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer">
+					icons
+					<f:link.action action="show" arguments="{company : company}" pageUid="12" class="btn btn-ghost-color btn-md btn-appear">
+						<span>Details <i class="ion-arrow-right-c"></i></span>
+					</f:link.action>
+				</div>
+			</div>
+		</div>
+	</f:section>
+</div>
