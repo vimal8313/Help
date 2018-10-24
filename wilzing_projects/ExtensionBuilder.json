@@ -1,0 +1,104 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    186,
+                    164
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Projects",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "784198549457"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "projecttitle",
+                            "propertyType": "String",
+                            "uid": "1021350844897"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "projectimages",
+                            "propertyType": "Image",
+                            "uid": "805838469592"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "wilzing_projects",
+        "name": "Wilzing_projects",
+        "originalExtensionKey": "wilzing_projects",
+        "originalVendorName": "Wilzingprojects",
+        "persons": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "project=>list",
+                    "noncacheableActions": "project=>list",
+                    "switchableActions": ""
+                },
+                "description": "",
+                "key": "projectlist",
+                "name": "Project List"
+            }
+        ],
+        "vendorName": "Wilzingprojects"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-01-25 11:46",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}

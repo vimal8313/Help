@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_wilzing/Configuration/TypoScript/">
+
+plugin.tx_site_wilzing {
+	view {
+		templateRootPaths.0 = EXT:site_wilzing/Resources/Private/Templates/Pages/
+		partialRootPaths.0 = EXT:site_wilzing/Resources/Private/Partials/
+		layoutRootPaths.0 = EXT:site_wilzing/Resources/Private/Layouts/
+	}
+}

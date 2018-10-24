@@ -1,0 +1,77 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
+    - { resource: "EXT:rte_ckeditor_fontawesome/Configuration/RTE/Plugin.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    # can be "default", but a custom stylesSet can be defined here, which fits TYPO3 best
+    stylesSet:
+      # block level styles
+      #- { name: "Quote / Citation", element: "blockquote" }
+      #- { name: "Code block", element: "code" }
+      # Inline styles
+      - { name: "span", element: "span" ,  attributes : {class: "spanclass" }}
+      - { name: "contact-block", element: "ul" ,  attributes : {class: "contact-block" }}
+
+      #- { name: "contact-row", element: "div" ,  attributes : {class: "contact-row" }}
+
+    format_tags: "p;h1;h2;h3;h4;h5;h6;pre"
+
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: editing,   groups: [find, selection, spellchecker] }
+      - { name: links }
+      - { name: insert }
+      - { name: tools }
+      - { name: table }
+      - { name: tabletools }
+      - { name: document,  groups: [ mode, document, doctools ] }
+      - { name: others }
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup] }
+      - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
+      - { name: colors }
+      - { name: styles }
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+      - font
+      - find
+      - bidi
+      - copyformatting
+      - specialchar
+      - liststyle
+      - colorbutton
+      - colordialog
+
+    removePlugins: null
+
+    #Available colors in colorbutton:
+    colorButton_colors: "00923E,F8C100,28166F"
+
+    removeButtons:
+
+  externalPlugins:
+      typo3image:
+        allowedExtensions: "jpg,jpeg,png"
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u

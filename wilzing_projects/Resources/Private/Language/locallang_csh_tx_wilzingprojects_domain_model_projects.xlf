@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-25T11:46:15Z" product-name="wilzing_projects">
+		<header/>
+		<body>
+			<trans-unit id="projecttitle.description">
+				<source>projecttitle</source>
+			</trans-unit>
+			<trans-unit id="projectimages.description">
+				<source>projectimages</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

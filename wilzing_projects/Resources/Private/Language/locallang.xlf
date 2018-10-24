@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-01-25T11:46:15Z" product-name="wilzing_projects">
+		<header/>
+		<body>
+			<trans-unit id="tx_wilzingprojects_domain_model_projects">
+				<source>Projects</source>
+			</trans-unit>
+			<trans-unit id="tx_wilzingprojects_domain_model_projects.projecttitle">
+				<source>Projecttitle</source>
+			</trans-unit>
+			<trans-unit id="tx_wilzingprojects_domain_model_projects.projectimages">
+				<source>Projectimages</source>
+			</trans-unit>
+			<trans-unit id="recentproject">
+				<source>enkele recente projecten</source>
+			</trans-unit>
+			<trans-unit id="portfolio">
+				<source>een greep uit onze portfolio</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

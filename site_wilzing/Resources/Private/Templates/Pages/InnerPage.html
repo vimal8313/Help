@@ -1,0 +1,36 @@
+<div class="">
+<div class="page">
+    <f:render partial="header" />
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="back-link">
+                        <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>
+                            <f:translate key="LLL:EXT:site_wilzing/Resources/Private/Language/locallang.xlf:Back" />
+                        </a>
+                    </div>
+                    <div class="noraml-content">
+                        <f:cObject typoscriptObjectPath="lib.content0" />
+                    </div>
+                    <f:cObject typoscriptObjectPath="lib.content4" />
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact-details moblie">
+                       <f:cObject typoscriptObjectPath="lib.content3" />
+                    </div>
+                    <div class="moblie-nav">
+                        <ul>
+                           <f:cObject typoscriptObjectPath="lib.Menu" />
+                        </ul>
+                    </div>
+                    <div class="right-nav">
+                        <ul>
+                            <f:cObject typoscriptObjectPath="lib.Sidemenu" />
+                        </ul>
+                        <f:cObject typoscriptObjectPath="lib.content1" />
+                    </div>
+                </div>
+            </div>
+            <f:render partial="footer" />
+        </div>

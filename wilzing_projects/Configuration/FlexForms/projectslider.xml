@@ -1,0 +1,35 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sCategorybox>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Projects</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.projectid>
+				        <TCEforms>
+				         <exclude>1</exclude>
+				         <label>Projects</label>
+				         <config>
+				          <type>select</type>
+					         <renderType>selectSingle</renderType>
+					            <items type="array">
+					            </items>
+					            <size>1</size>
+					            <minitems>1</minitems>
+					            <maxitems>1</maxitems>
+					            <foreign_table>tx_wilzingprojects_domain_model_projects</foreign_table>
+					            <foreign_table_where> AND tx_wilzingprojects_domain_model_projects.hidden = 0 AND tx_wilzingprojects_domain_model_projects.deleted = 0 ORDER BY uid DESC</foreign_table_where>
+				         </config>
+				        </TCEforms>
+			    	</settings.projectid>
+				</el>
+			</ROOT>
+		</sCategorybox>
+	</sheets>
+</T3DataStructure>
+

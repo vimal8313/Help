@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-12-15T15:16:39Z"
+          product-name="site_wilzing">
+        <header/>
+        <body>
+            <trans-unit id="backend_layout.default.banner">
+                <source>Banner</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default.content">
+                <source>Content</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.about.banner">
+                <source>Banner</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.model">
+                <source>Model</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.chart">
+                <source>Chart</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.sustainability">
+                <source>Sustainability</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.slider">
+                <source>Slider</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.commitment">
+                <source>Social Commitment</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.awards">
+                <source>Awards Content</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about.awardsAccordian">
+                <source>Awards Accordion</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.mieterService.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.mieterService.accordian">
+                <source>Accordion Content</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.settlements.map">
+                <source>Map</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.settlements.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.settlements.slider">
+                <source>Iamge Slider</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.settlements.text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.settlements.energyBlock">
+                <source>Energy Block</source>
+            </trans-unit>
+
+
+
+            <trans-unit id="backend_layout.footer.left">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.footer.middle">
+                <source>Middle</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.footer.right">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.footer.bottom">
+                <source>Bottom</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
