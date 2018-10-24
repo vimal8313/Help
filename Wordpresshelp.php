@@ -181,5 +181,3 @@ function save_date_post(){
 add_action ('save_post', 'save_date_post');
 
 
-
-info@anker-badelster.de
