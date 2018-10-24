@@ -1,0 +1,57 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Minimal configuration for the editor
+editor:
+  config:
+    stylesSet:
+      - { name: 'h2-class', element: 'h2', attributes: { 'class': 'block_sec' } }
+      - {name: "Green Btn", element: "a", attributes: {class: "trans green_btn"}}
+      - {name: "Green Link", element: "a", attributes: {class: "trans"}}
+      - {name: "Green Link Text", element: "a", attributes: {class: "green_link"}}
+      - { name: 'Span Style', element: 'span', attributes: { 'class': 'see_more' } }
+      - { name: 'Span', element: 'span', attributes: { 'class': '' } }
+      - { name: 'Address', element: 'address', attributes: { 'class': 'address' } }
+    extraPlugins:
+      - justify
+      - font
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+    contentsCss: [EXT:site_config5/Resources/Public/css/docs.css]
+    format_tags: "p;h1;h2;h3;h4;h5"
+    toolbarGroups:
+      - { name: document, groups: [ mode, document, doctools ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: editing, groups: [ find, selection, spellchecker, editing ] }
+      - { name: forms, groups: [ forms ] }
+      - /
+      - { name: styles, groups: [ styles ] }
+      - { name: basicstyles, groups: [ basicstyles, cleanup ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align, bidi, paragraph ] }
+      - { name: links, groups: [ links ] }
+      - { name: insert, groups: [ insert ] }
+      - /
+      - { name: colors, groups: [ colors ] }
+      - { name: tools, groups: [ tools ] }
+      - { name: others, groups: [ others ] }
+      - { name: about, groups: [ about ] }
+
+    removeButtons:
+      - Underline
+      - Subscript
+      - Superscript
+      - Anchor
+
+processing:
+  allowTags:
+    - s
+    - address

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="32px" viewBox="0 0 26 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>detox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PRO" transform="translate(-757.000000, -4692.000000)" stroke="#00FF00">
+            <g id="Group-6" transform="translate(92.000000, 936.000000)">
+                <g id="Features" transform="translate(174.000000, 3752.000000)">
+                    <g id="detox" transform="translate(491.000000, 5.000000)">
+                        <path d="M7,30 L3,30 C1.8954305,30 1,29.1045695 1,28 L1,8 L13,8 L13,16" id="Shape" stroke-linecap="square"></path>
+                        <polyline id="Shape" points="0 0 5 0 6 8"></polyline>
+                        <path d="M7,18 C11.418278,18 15,21.581722 15,26 L15,30 C10.581722,30 7,26.418278 7,22 L7,18 Z" id="Shape" stroke-linecap="square"></path>
+                        <path d="M25,14 L25,20 C25,22.6521649 23.9464316,25.195704 22.0710678,27.0710678 C20.195704,28.9464316 17.6521649,30 15,30 L15,24 C15,18.4771525 19.4771525,14 25,14 Z" id="Shape" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

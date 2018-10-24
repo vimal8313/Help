@@ -1,0 +1,1126 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: 'IntegralCF-Regular';
+	src: url('../fonts/integral-cf-regular.eot');
+	src: url('../fonts/integral-cf-regular.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-regular.woff2') format('woff2'),
+	     url('../fonts/integral-cf-regular.woff') format('woff'),
+	     url('../fonts/integral-cf-regular.ttf') format('truetype'),
+	     url('../fonts/integral-cf-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-RegularOblique';
+	src: url('../fonts/integral-cf-regular-oblique.eot');
+	src: url('../fonts/integral-cf-regular-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-regular-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-regular-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-regular-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-regular-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-MediumOblique';
+	src: url('../fonts/integral-cf-medium-oblique.eot');
+	src: url('../fonts/integral-cf-medium-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-medium-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-medium-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-medium-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-medium-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-Medium';
+	src: url('../fonts/integral-cf-medium.eot');
+	src: url('../fonts/integral-cf-medium.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-medium.woff2') format('woff2'),
+	     url('../fonts/integral-cf-medium.woff') format('woff'),
+	     url('../fonts/integral-cf-medium.ttf') format('truetype'),
+	     url('../fonts/integral-cf-medium.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-HeavyOblique';
+	src: url('../fonts/integral-cf-heavy-oblique.eot');
+	src: url('../fonts/integral-cf-heavy-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-heavy-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-heavy-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-heavy-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-heavy-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'IntegralCF-Heavy';
+	src: url('../fonts/integral-cf-heavy.eot');
+	src: url('../fonts/integral-cf-heavy.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-heavy.woff2') format('woff2'),
+	     url('../fonts/integral-cf-heavy.woff') format('woff'),
+	     url('../fonts/integral-cf-heavy.ttf') format('truetype'),
+	     url('../fonts/integral-cf-heavy.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-ExtraBoldOblique';
+	src: url('../fonts/integral-cf-extra-bold-oblique.eot');
+	src: url('../fonts/integral-cf-extra-bold-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-extra-bold-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-extra-bold-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-extra-bold-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-extra-bold-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IntegralCF-ExtraBold';
+	src: url('../fonts/integral-cf-extra-bold.eot');
+	src: url('../fonts/integral-cf-extra-bold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-extra-bold.woff2') format('woff2'),
+	     url('../fonts/integral-cf-extra-bold.woff') format('woff'),
+	     url('../fonts/integral-cf-extra-bold.ttf') format('truetype'),
+	     url('../fonts/integral-cf-extra-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-DemiBoldOblique';
+	src: url('../fonts/integral-cf-demi-bold-oblique.eot');
+	src: url('../fonts/integral-cf-demi-bold-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-demi-bold-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-demi-bold-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-demi-bold-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-demi-bold-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntegralCF-DemiBold';
+	src: url('../fonts/integral-cf-demi-bold.eot');
+	src: url('../fonts/integral-cf-demi-bold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-demi-bold.woff2') format('woff2'),
+	     url('../fonts/integral-cf-demi-bold.woff') format('woff'),
+	     url('../fonts/integral-cf-demi-bold.ttf') format('truetype'),
+	     url('../fonts/integral-cf-demi-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IntegralCF-BoldOblique';
+	src: url('../fonts/integral-cf-bold-oblique.eot');
+	src: url('../fonts/integral-cf-bold-oblique.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-bold-oblique.woff2') format('woff2'),
+	     url('../fonts/integral-cf-bold-oblique.woff') format('woff'),
+	     url('../fonts/integral-cf-bold-oblique.ttf') format('truetype'),
+	     url('../fonts/integral-cf-bold-oblique.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IntegralCF-Bold';
+	src: url('../fonts/integral-cf-bold.eot');
+	src: url('../fonts/integral-cf-bold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/integral-cf-bold.woff2') format('woff2'),
+	     url('../fonts/integral-cf-bold.woff') format('woff'),
+	     url('../fonts/integral-cf-bold.ttf') format('truetype'),
+	     url('../fonts/integral-cf-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/*===== custome css start =====*/
+
+html { -webkit-font-smoothing: antialiased; }
+* { outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset, p, hr, iframe { margin: 0; padding: 0; border: none; }
+a, input, select, textarea { outline: none; margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 {font-weight: normal; }
+a { text-decoration: none !important; color: #333333; }
+a:focus, :focus, input:focus { outline: none; }
+img { max-width: 100%; vertical-align: middle; border: none; outline: none; max-height: 100%; border-radius: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; margin: 0; padding: 0; }
+input, textarea, select, button { resize: none; border: 0; -webkit-border-radius: 0; -webkit-appearance: none; border-radius: 0; }
+select, input[type="submit"] { cursor: pointer }
+p { font-size: 14px; line-height: 20px; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { font-weight: normal; }
+.clear { clear: both; }
+label.error { position: absolute; right: 0px; top: -20px; width: auto; height: auto; margin: 0; line-height: normal; font: 11px/11px arial; background: #fb0101; padding: 5px 5px 4px; color: #ffffff; display: none; }
+label.error:after { border-color: #fb0101 transparent transparent; border-image: none; border-right: 6px solid transparent; border-style: solid; border-width: 6px; content: " "; height: 0; left: 20px; margin-left: -10px; position: absolute; top: 100%; width: 0; }
+.trans { transition: 500ms all; -webkit-transition: 500ms all; -moz-transition: 500ms all; -ms-transition: 500ms all; }
+select option { padding: 0 10px; }
+.star { position: relative; }
+.star:after { position: absolute; left: 8px; top: 9px; content: "*"; color: #ff0000; font: 300 14px/16px 'Titillium Web', sans-serif; }
+.imgbox{display:inline-block; width:auto; vertical-align:top; position:relative; overflow:hidden; text-align:center;}
+.absoImg { position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; }
+
+body {font-family: 'Space Mono', monospace; font-size: 14px; color: #fff; line-height: 16px; background:#111111;  }
+ul,li{list-style:none; padding:0; margin:0;}
+
+.custom_text{height: 72px;	width:100%;	border: 1px solid #292929; background:rgba(255,255,255,0.1); padding:0 24px;}
+
+
+.custom_text::-webkit-input-placeholder {opacity: 0.6;	color:#FFFFFF;	font-size: 16px;	letter-spacing: 0.34px;	line-height: 28px;}
+.custom_text:-moz-placeholder {opacity: 0.6; color:#FFFFFF;	font-size: 16px;letter-spacing: 0.34px;	line-height: 28px;}
+.custom_text::-moz-placeholder {opacity: 0.6;	color:#FFFFFF;	font-size: 16px; letter-spacing: 0.34px;	line-height: 28px;}
+.custom_text:-ms-input-placeholder {opacity: 0.6;	color:#FFFFFF;	font-size: 16px;	letter-spacing: 0.34px;	line-height: 28px;}
+
+/*===== custome css start =====*/
+
+
+/*===== Start Common css Here =====*/
+
+h2.sec_title{display:inline-block; width:100%; vertical-align:top; font-size: 48px;	font-family: 'IntegralCF-ExtraBold'; color:#fff; text-transform:uppercase; line-height: 37px;}
+.green_btn{display:inline-block; width:auto; vertical-align:top; height:72px; line-height:72px; color:#111111; background-color:#00FF00; font-size: 16px; font-weight: 700;letter-spacing: 0.34px;		text-align: center; text-transform:uppercase; text-decoration:none;}
+h2.icon_sectitle{font-size: 48px; font-family: 'IntegralCF-ExtraBold'; line-height: 49px; text-align: center; display:inline-block; width:100%; vertical-align:top; margin-bottom:13px;}
+.title_nav{display:block; max-width:800px; margin:0 auto; width:100%; vertical-align:top; text-align:center;}
+.title_nav li{display:inline-block; width:auto; padding-left:13px; padding-right:12px; position:relative;}
+.title_nav li:after{position:absolute; content:""; left:0; top:7px; width:1px;height:13px; background:#999999;}
+.title_nav li a{display:inline-block; width:auto; vertical-align:top; font-size: 13px;	letter-spacing: 0.28px;	line-height: 28px;	text-align: center; color: #999999; text-decoration:none;}
+.title_nav ul{margin:0 -12px 0 -13px;}
+.title_nav li:first-child:after{display:none;}
+h2.block_sec{display:inline-block; width:100%; vertical-align:top; 	font-size: 24px; font-family: 'IntegralCF-ExtraBold'; color:#fff; line-height: 29px;c}
+
+/*===== End Common css Here =====*/
+
+
+/*===== Start Header css Section Here =====*/
+
+#main_header{display:inline-block; width:100%; vertical-align:top; z-index:9999; position:relative;}
+#main_header .inner_header{float:left; width:100%; padding:0 66px; padding-top:34px; position:relative;}
+#main_header .inner_header .head_logo{float:left; width:auto;}
+#main_header .inner_header .head_logo a{display:inline-block; width:auto; vertical-align:top; float:left;}
+#main_header .inner_header .head_logo .logo_tag{float:left; width:auto; text-align:left; padding-left:20px; position:relative; margin-left:5px;margin-top: -17px;}
+#main_header .inner_header .head_logo .logo_tag:after{position:absolute; content:""; left:0; top:12px; width:1px; height:56px; background:rgba(255,255,255,0.3); transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); -webkit-transform: rotate(25deg);}
+#main_header .logo_tag span{display:block; width:auto; text-align:left;}
+#main_header .logo_tag span.l_year{font-family: 'IntegralCF-ExtraBold';color: #FFFFFF;line-height: 49px; font-size:28px;	letter-spacing: 0.34px; padding-left:13px;}
+#main_header .logo_tag span.l_date{color: #00FF00;font-size: 14px;font-weight: 700;	letter-spacing: 1.23px;	line-height: 21px;text-align: left; margin-top:-5px;}
+
+
+#main_header .inner_header .rightbar_head{float:right; width:auto; padding-top:13px;}
+#main_header .inner_header .rightbar_head .custom_nav{float:left; width:auto;}
+#main_header .inner_header .rightbar_head .custom_nav li{float:left; width:auto; padding:0 20px;}
+#main_header .inner_header .rightbar_head .custom_nav ul{margin:0 -20px;}
+#main_header .inner_header .rightbar_head .custom_nav li a{display:inline-block; width:auto; vertical-align:top; text-transform:uppercase;font-size: 14px;font-weight:700; color: #FFFFFF;letter-spacing: 0.88px;	line-height: 21px;	text-align: center; position:relative; padding-bottom:5px;}
+#main_header .inner_header .rightbar_head .custom_nav li a:after{position:absolute; content:""; left:0; width:0; bottom:0; height:2px; background-color: #00FF00; transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all; }
+#main_header .inner_header .rightbar_head .righthead_logo{float:left; width:auto; padding-left:52px;}
+
+.toggle_menu{display:none; width:auto; vertical-align:top;}
+.toggle_menu a{display:inline-block; width:100%; vertical-align:top; height:32px; border:1px solid #ffffff; text-align:center; line-height:26px; font-size: 22px;	font-family: 'IntegralCF-ExtraBold';text-align: center; text-transform:uppercase; color:#fff; text-decoration:none; padding:0 7px;}
+.custom_nav .getticket{display:none;}
+
+
+/*===== End Header css Section Here =====*/
+
+
+/*===== Start Banner CSS Section Here =====*/
+
+#banner{display:inline-block; width:100%; vertical-align:top; background-size:cover; background-repeat:no-repeat; background-position:50% 50%;}
+#banner .inner_banner{display:inline-block; width:100%; min-height:100%; vertical-align:top; /*position:relative;*/}
+#banner .inner_banner .main_pitch{position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); -o-transform:translateY(-50%); -webkit-transform:translateY(-50%); text-align:center;}
+#banner .inner_banner .main_pitch .pitch_date{display:inline-block; width:100%; vertical-align:top; color: #00FF00;	font-size: 16px; font-weight:700; letter-spacing: 2px;	line-height: 24px;	text-align: center;}
+#banner .inner_banner .main_pitch h1{ display:inline-block; width:100%; vertical-align:top;	color: #FFFFFF;	font-family: 'IntegralCF-ExtraBold';font-size: 72px;letter-spacing: -2.2px;	line-height: 86px;text-align: center;}
+#banner .inner_banner .main_pitch h1 span{display:block; margin-top:-15px;
+  -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+       -moz-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #fff;
+       -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+}
+#banner .inner_banner .main_pitch a{display:inline-block; width:auto; vertical-align:top;}
+#banner .inner_banner .main_pitch .pitch_button{display:inline-block; width:100%; vertical-align:top; margin-top:40px;}
+
+
+/*===== End Banner CSS Section Here =====*/
+
+
+/*===== Start Cards CSS Section Here =====*/
+
+#main_cards{display:inline-block; width:100%; vertical-align:top;}
+#main_cards .inner_maincard{float:left; width:100%; position:relative; margin-bottom:160px;}
+#main_cards .home_card{float:left; width:50%; text-align:center;}
+#main_cards .home_card .inner_cards{display:inline-block; width:auto; vertical-align:top; position:relative;}
+#main_cards .home_card .absoImg{min-height:100%; min-width:100%;}
+#main_cards .home_card .card_pitch{position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); -webkit-transform:translateY(-50%); padding:30px; text-align:center;}
+#main_cards .home_card .card_pitch p{display:inline-block; width:100%; vertical-align:top; color: #00FF00;	font-size: 13px; letter-spacing: 0.28px; line-height: 20px;	text-align: center;}
+#main_cards .home_card .card_pitch h2{display:inline-block; width:100%; text-align:center; vertical-align:top;font-size: 40px;	font-family: 'IntegralCF-ExtraBold'; line-height: 48px;	text-align: center;}
+/*===== End Cards CSS Section Here =====*/
+
+
+/*===== Start FESTIVAl HIGHLIGHTS CSS Section Here =====*/
+
+#festival{display:inline-block; width:100%; vertical-align:top;}
+#festival .inner_festival{float:left; width:100%; text-align:center; margin-bottom:223px;}
+#festival .inner_festival .sec_icon{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:24px;}
+#festival .inner_festival h2.sec_title{margin-bottom:37px;}
+#festival .inner_festival p{display:inline-block; width:100%; text-align:center;color: #999999;	font-size: 16px;line-height: 24px;	text-align: center; font-weight:400; max-width:685px; margin-bottom:102px;}
+#festival .inner_festival .artists{float:left; width:100%;}
+#festival .inner_festival .artists > ul > li{float:left; width:50%; padding:0 8px; margin-bottom:135px; text-align:right;}
+#festival .inner_festival .artists > ul{margin:0 -8px;}
+#festival .inner_festival .artists > ul > li .artist_block{display:inline-block; width:100%; max-width:448px; vertical-align:top; position:relative;}
+#festival .inner_festival .artists > ul > li .artist_dtls{display:inline-block; width:100%; vertical-align:top; margin-top:-22px; position:relative; text-align:center; padding:0 50px;}
+#festival .inner_festival .artists > ul > li .artist_dtls h3{display:inline-block; width:100%; vertical-align:top; text-align:center; color: #FFFFFF;	font-family: 'IntegralCF-ExtraBold';	font-size: 48px;line-height: 37px;	text-align: center; text-transform:uppercase;}
+#festival .inner_festival .artists > ul > li .artist_dtls h3 a{color:#FFFFFF; text-decoration:none;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more{display:inline-block; width:auto; vertical-align:top; margin-top:22px;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul > li{float:left; width:auto; font-size: 16px; color: #414141; text-transform:uppercase; letter-spacing: 0.34px;	line-height: 24px;	text-align: center; padding-left:15px; padding-right:13px;  position:relative;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul > li a{color:#414141; text-decoration:none;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul > li:after{content:"/"; position:absolute; left:0; top:0;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul > li:first-child:after{display:none;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul{margin-left:-15px; margin-right:-13px;}
+#festival .inner_festival .artists > ul > li.right_align{text-align:left;}
+#festival .inner_festival .artists > ul > li:nth-child(even){position:relative;top:221px;}
+#festival .inner_festival .artists > ul > li .smile_tag{display:inline-block; width:auto; vertical-align:top; position:absolute; right:-35px; top:92px;}
+#festival .link_more{float:left; width:100%; margin-top:178px;}
+#festival .link_more .green_btn{width:273px;}
+
+/*===== End FESTIVAl HIGHLIGHTS CSS Section Here =====*/
+
+
+/*===== Start FESTIVAl HIGHLIGHTS CSS Section Here =====*/
+
+#footer_card{display:inline-block; width:100%; vertical-align:top;}
+#footer_card .inner_footercard{display:inline-block; width:100%; vertical-align:top;}
+#footer_card .inner_footercard li{float:left; width:50%; padding:0 40px; margin-bottom:167px; text-align:center;}
+#footer_card .inner_footercard ul{margin:0 -40px;}
+#footer_card .inner_footercard li .f_card{display:inline-block; width:auto; vertical-align:top; position:relative;}
+#footer_card .inner_footercard li .f_card img.absoImg{min-height:100%; min-width:100%;}
+#footer_card .inner_footercard li .f_card .hover_text{position:absolute; left:0; top:0; bottom:0; right:0; margin:auto; padding:37.15px 36px 38.84px 37px;}
+#footer_card .f_card .hover_text .inner_hovertext{float:left; width:100%; text-align:center; min-height:100%; position:relative; background:rgba(0,0,0,0); transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all; z-index:99999;}
+#footer_card .f_card .hover_text .inner_hovertext h3{display:inline-block; width:100%; vertical-align:top; text-align:center; text-transform:uppercase;font-family: 'IntegralCF-ExtraBold'; color: #FFFFFF; font-size: 32px; line-height: 32px; text-align: center; margin-bottom:38.6px;}
+#footer_card .f_card .hover_text .inner_hovertext .green_link{display:inline-block; width:auto; vertical-align:top; height: 32px; line-height:32px; width: 95px; color: #00FF00; font-size: 13px; font-weight:700; letter-spacing: 1px;	text-align: center; background-color:transparent; position:relative;}
+#footer_card .f_card .hover_text .inner_hovertext .green_link span{display:inline-block; width:auto; vertical-align:top; position:relative; }
+#footer_card .f_card .hover_text .inner_hovertext .green_link span:after{position:absolute; left:0; bottom:3px; width:100%; height:2px; background:#00FF00; content:"";}
+#footer_card .f_card .hover_text .card_pitch{position:absolute; top:50%; transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); -webkit-transform:translateY(-50%); text-align:center; width:100%; padding:0 15px;}
+#footer_card .f_card .imgbox:after{position:absolute; content:""; left:0; top:0; bottom:0; right:0; background-color:rgba(0,255,0,0); transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all;}
+
+/*===== End FESTIVAl HIGHLIGHTS CSS Section Here =====*/
+
+/*===== Start Footer CSS Section Here =====*/
+#footer{display:inline-block; width:100%; vertical-align:top; background:#000;}
+#footer .inner_footer{display:inline-block; width:100%; vertical-align:top; padding-top:99px;}
+#footer .f_sponsor{float:left; width:100%; padding-bottom:54px; border-bottom:1px solid #1D1D1D; margin-bottom:97px;}
+#footer .f_sponsor h4{display:inline-block; width:100%; vertical-align:top; text-align:left; font-size: 13px; font-weight: 700; letter-spacing: 0.81px;	line-height: 32px; color:#fff; text-transform:uppercase; margin-bottom:21px;}
+#footer .f_sponsor li{float:left; width:auto; padding:0 16px;}
+#footer .f_sponsor ul{margin:0 -16px;}
+
+#footer .f_links{display:inline-block; width:100%; vertical-align:top; padding-bottom:74px; border-bottom:1px solid #1D1D1D; margin-bottom:46px;}
+#footer .f_links .leftbar_flink{float:left; width:auto;}
+#footer .f_links .inner_flink{display:inline-block; width:100%; vertical-align:top; max-width:352px;}
+#footer .f_links .subscr{display:inline-block; width:353px; position:relative; margin-bottom:40px;}
+#footer .f_links .subscr input{width:100%; height:38px; font-size: 13px;font-weight: 700;letter-spacing: 0.81px;line-height: 32px; background:none; border-bottom:1px solid #414141; padding-right:22px;}
+#footer .f_links .subscr input::-webkit-input-placeholder { font-size: 13px;font-weight: 700;letter-spacing: 0.81px;line-height: 32px; text-transform:uppercase; color:#fff;}
+#footer .f_links .subscr input:-moz-placeholder { font-size: 13px;font-weight: 700;letter-spacing: 0.81px;line-height: 32px; opacity:1; text-transform:uppercase; color:#fff;}
+#footer .f_links .subscr input::-moz-placeholder { font-size: 13px;font-weight: 700;letter-spacing: 0.81px;line-height: 32px; opacity:1; text-transform:uppercase; color:#fff;}
+#footer .f_links .subscr input:-ms-input-placeholder { font-size: 13px;font-weight: 700;letter-spacing: 0.81px;line-height: 32px; opacity:1; text-transform:uppercase; color:#fff;}
+#footer .f_links .rightbar_flink{float:right; width:auto;}
+#footer .f_links .subscr button{position:absolute; right:0; top:0; height:38px; background:url(../assets/icons/icon-arrow.svg); background-repeat:no-repeat; background-position:center right; display:inline-block; width:12px;}
+#footer .f_links .f_slink{display:inline-block; width:100%; vertical-align:top;}
+#footer .f_links .f_slink li{float:left; width:auto; padding:0 9.23px;}
+#footer .f_links .f_slink ul{margin:0 -9.23px;}
+
+#footer .rightbar_flink li{float:left; width:100%; max-width:158px; padding:0 17px;}
+#footer .rightbar_flink ul{margin:0 -17px;}
+#footer .rightbar_flink li a{display:inline-block; width:auto; vertical-align:top; 	color: #FFFFFF;	font-size: 13px;	font-weight:700; letter-spacing: 0.81px; line-height: 32px; text-transform:uppercase;}
+
+#footer .end_footer{display:inline-block; width:100%; vertical-align:top; margin-bottom:45.62px;}
+#footer .end_footer .end_fleft{float:left; width:auto; margin-top:8px;}
+#footer .end_fleft li{float:left; width:auto; padding:0 23px; position:relative;}
+#footer .end_fleft li:after{position:absolute; content:""; height:13px; width:1px; background:#303030; position:absolute; left:0; top:10px;}
+#footer .end_fleft li:first-child:after{display:none;}
+#footer .end_fleft ul{margin:0 -23px;}
+#footer .end_fleft li a{display:inline-block; width:auto; color: #414141; font-size: 13px; letter-spacing: 0.81px; text-transform:uppercase; text-decoration:none;	line-height: 32px;}
+
+#footer .end_flogo{float:right; width:auto;}
+#footer .end_flogo a{display:inline-block; width:auto; vertical-align:top;}
+
+/*===== End Footer CSS Section Here =====*/
+
+
+/*===== Start Thursday CSS Section Here =====*/
+
+#thurday{display:inline-block; width:100%; vertical-align:top; padding-top:150px;}
+#thurday .inner_thurday{display:inline-block; width:100%; vertical-align:top;}
+#thurday h2.icon_sectitle{position:relative; padding-top:70px;}
+#thurday h2.icon_sectitle:after{position:absolute; content:""; background:url(../assets/images/3d_shapes.png); background-repeat:no-repeat; width:158px; height:122px; left:0; right:0; top:0; margin:0 auto; z-index:-1;}
+#thurday .title_nav{margin-bottom:91px;}
+
+#thurday .more_articelist{display:inline-block; width:100%; vertical-align:top;}
+#thurday .more_articelist li{float:left; width:25%; padding:0 16px; margin-bottom:48px; text-align:center;}
+#thurday .more_articelist li .artice_box{display:inline-block; width:auto; vertical-align:top; position:relative;}
+#thurday .more_articelist li h4{display:inline-block; width:100%; vertical-align:top; padding:0 15px; text-align:center; text-transform:uppercase; font-size: 24px;	line-height: 19px; font-family: 'IntegralCF-ExtraBold'; position:relative; margin-top:-15px; color:#fff; }
+#thurday .more_articelist li h4 a{color:#fff; display:inline-block; width:auto; vertical-align:top;}
+#thurday .more_articelist li .artice_box.more h4{position: absolute; left:0; width:100%; text-align:center; top: 50%; transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); -webkit-transform: translateY(-50%); margin-top:0;}
+#thurday .more_articelist li .artice_box.more h4 a{position:relative; padding-bottom:10px;}
+#thurday .more_articelist li .artice_box.more h4 a:after{position:absolute; content:""; left:0; width:100%; height:1px; background:#fff; bottom:0;}
+#thurday .more_articelist li img.absoImg{min-height:100%; min-width:100%;}
+
+/*===== Start Thursday CSS Section Here =====*/
+
+
+/*===== Start FRIDAY - SUNDAY CSS Section Here =====*/
+
+.frieday#thurday{padding-top:53px; margin-bottom:204px;}
+.frieday#thurday h2.icon_sectitle{padding-top:100px;}
+.frieday#thurday h2.icon_sectitle:after{background:url(../assets/images/3d_shapes_2.png); background-repeat:no-repeat; width:178px; height:131px;}
+
+/*===== Start FRIDAY - SUNDAY  CSS Section Here =====*/
+
+
+/*===== Start Pro DEALS Banner CSS Section Here =====*/
+.pro#banner .inner_banner{position:relative;}
+.pro#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.pro#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.pro#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.pro#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.pro#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.pro#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+/*===== Start Pro DEALS Banner CSS Section Here =====*/
+
+/*===== Start Pro Slider Section Here =====*/
+
+#pro_slider{display:inline-block; width:100%; vertical-align:top; margin-bottom:206px;}
+#pro_slider #inner_proslider{display:inline-block; width:100%; vertical-align:top; position:relative;}
+#pro_slider #inner_proslider .owl-item{float:left; width:100%;}
+#inner_proslider .owl-controls{display:none;}
+#pro_slider .custom_btn{width:auto; display:inline-block; vertical-align:top; position:absolute; left:0; bottom:0; background:#111111; z-index:999; padding:4px 0;}
+#pro_slider .custom_btn div{float:left; width:63px; height:56px; text-align:center; position:relative; cursor:pointer;}
+#pro_slider .custom_btn div:after{position:absolute; content:""; left:0; right:0; top:0; bottom:0; margin:auto; background:url(../assets/icons/icon-arrow_white.svg); background-repeat:no-repeat; width:12px; height:12px; transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all;}
+#pro_slider .custom_btn div.customNextBtn{border-left:1px solid #414141;}
+#pro_slider .inner_pro{display:inline-block; width:100%; vertical-align:top; position:relative;}
+#pro_slider .custom_btn div.customPrevBtn:after{transform:rotate(-180deg); -moz-transform:rotate(-180deg); -ms-transform:rotate(-180deg); -o-transform:rotate(-180deg); -webkit-transform:rotate(-180deg);}
+
+#pro_slider .customslideNav{ display:inline-block; width:auto; font-size: 16px;	letter-spacing: 1.6px;	line-height: 24px; vertical-align:top; position:absolute; top:50%; right:-85px; z-index:999;  transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+#pro_slider .customslideNav .counBanner{display:inline-block; width:auto; vertical-align:top; transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); -webkit-transform:rotate(90deg);}
+/*===== Start Pro Slider Section Here =====*/
+
+
+/*===== Start PRO FEATURE Section Here =====*/
+
+#pro_feature{display:inline-block; width:100%; vertical-align:top;}
+#pro_feature .inner_profeature{display:inline-block; width:100%; vertical-align:top; margin-bottom:256px;}
+#pro_feature .leftbar_ftur{width:54.46%; float:left; padding:0 66px;}
+#pro_feature .rightbar_ftur{width:45.54%; float:left; padding:0 66px;}
+#pro_feature .row_ftur{margin:0 -66px;}
+#pro_feature .inner_ftur{display:inline-block; width:100%; vertical-align:top;}
+#pro_feature .inner_ftur h2.block_sec{margin-bottom:28px; padding-right: 80px;}
+#pro_feature .inner_ftur p{display:inline-block; width:100%; vertical-align:top; text-align:left; color: #999999; font-family: "Space Mono";	font-size: 13px;	letter-spacing: 0.28px;	line-height: 24px; margin-bottom:28px;}
+#pro_feature .rightbar_ftur .inner_ftur{padding-top:38px;}
+#pro_feature .inner_ftur .see_more{display:inline-block; width:100%; text-align:left; margin-top:11px;}
+#pro_feature .inner_ftur .see_more a{width:234px; height:64px; line-height:64px; font-size: 14px;	font-weight: 700; color:#111111; letter-spacing: 0.3px;	text-align: center;}
+
+.sec_feature#pro_feature .leftbar_ftur{float:right;}
+.sec_feature#pro_feature .rightbar_ftur .inner_ftur{padding-top:0;}
+.sec_feature#pro_feature .inner_profeature{padding-top:65px; margin-bottom:219px;}
+.sec_feature#pro_feature .inner_profeature .leftbar_ftur .inner_ftur{position:relative;}
+.sec_feature#pro_feature .inner_profeature .leftbar_ftur .inner_ftur:after{position:absolute; content:""; left:163px;  top:-65px; background:url(../assets/images/second_block.png); background-repeat:no-repeat; width:144px; height:133px; z-index:-1;}
+
+.third_feature#pro_feature .inner_profeature{padding-top:53px; margin-bottom:282px;}
+.third_feature#pro_feature .leftbar_ftur .inner_ftur{position:relative;}
+.third_feature#pro_feature .leftbar_ftur .inner_ftur:after{position:absolute; content:""; left:-68px; top:-53px; background:url(../assets/images/third_block.png); background-repeat:no-repeat; width:168px; height:130px;z-index:-1;}
+.third_feature#pro_feature h2.block_sec{margin-bottom:21px;}
+
+/*===== Start PRO FEATURE Section Here =====*/
+
+
+/*===== Start PRO FEATURE Banner Section Here =====*/
+
+#feature_banner{display:inline-block; width:100%; vertical-align:top;}
+#feature_banner .inner_ftrbnr{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:183px;}
+
+/*===== Start PRO FEATURE Banner Section Here =====*/
+
+/*===== Start PRO FEATURE List Section Here =====*/
+
+#feature_list{display:inline-block; width:100%; vertical-align:top;}
+#feature_list .inner_flist{display:inline-block; width:100%; vertical-align:top; padding:0 105px; margin-bottom:161px;}
+#feature_list li{float:left; width:50%; padding:0 27px; margin-bottom:91px;}
+#feature_list ul{margin:0 -27px;}
+#feature_list li .feature_block{display:inline-block; width:100%; vertical-align:top; padding-left:70px; position:relative;}
+#feature_list li .feature_block .ftr_icon{width:auto; display:inline-block; vertical-align:top; position:absolute; left:0; top:0;}
+#feature_list li .feature_block .ftr_dtls{display:inline-block; width:100%; vertical-align:top; padding-right:30px;}
+#feature_list li .feature_block .ftr_dtls h3{display:inline-block; width:100%; vertical-align:top; color: #FFFFFF;	font-size: 20px; font-family: 'IntegralCF-ExtraBold'; line-height: 25px; margin-bottom:12px;}
+#feature_list li .feature_block .ftr_dtls p{display:inline-block; width:100%; vertical-align:top;  color:rgba(255,255,255,0.6);	font-size: 13px; letter-spacing: 0.28px; line-height: 24px; text-align:left;}
+
+/*===== End PRO FEATURE List Section Here =====*/
+
+
+/*===== Start PRO Bookin Section Here =====*/
+
+#booking{display:inline-block; width:100%; vertical-align:top;}
+#booking .inner_booking{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:163px;}
+#booking h2{color: rgba(255,255,255,1); margin-bottom:46.5px;font-family: 'IntegralCF-ExtraBold'; text-transform:uppercase; font-size: 56px;	font-weight: 900;	line-height: 49px;	text-align: center;}
+#booking h2 span{display:block;
+  -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+       -moz-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #fff;
+       -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+}
+#booking a{width:330px; height:72px; line-height:72px; text-align:center; 	color: #111111;	font-family: "Space Mono";	font-size: 16px; font-weight: 700;letter-spacing: 0.34px; margin-bottom:40px;}
+#booking p{display:inline-block; width:100%; vertical-align:top; opacity: 0.6;	color: #FFFFFF; font-size: 13px;	letter-spacing: 0.28px;	line-height: 20px;	text-align: center;}
+/*===== Start PRO Bookin Section Here =====*/
+
+
+/*===== Start Info Banner CSS Section Here =====*/
+
+.info#banner .inner_banner{position:relative;}
+.info#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.info#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.info#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.info#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; padding:0 20px;  max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.info#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.info#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+
+/*===== Start Info Banner CSS Section Here =====*/
+
+/*===== Start Info Image Banner CSS Section Here =====*/
+
+#info_banner{display:inline-block; width:100%; vertical-align:top;}
+#info_banner .innerbner_info{display:inline-block; width:100%; vertical-align:top; margin-bottom:149px;}
+
+/*===== Start Info Image Banner CSS Section Here =====*/
+
+
+/*===== Start Info List CSS Section Here =====*/
+
+#info_list{display:inline-block; width:100%; vertical-align:top; text-align:center;}
+#info_list .inner_infolist{display:inline-block; width:100%; vertical-align:top; max-width:700px; text-align:left; /*margin-bottom:111px;*/}
+#info_list .inner_infolist li .infolist_box{display:inline-block; width:100%; vertical-align:top;}
+#info_list li .infolist_box h3{display:inline-block; width:100%; vertical-align:top; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold';	font-size: 18px; line-height: 21px; margin-bottom:20px;}
+#info_list li .infolist_box p{display:inline-block; width:100%; vertical-align:top; color: #999999; font-weight:400;font-size: 13px;	line-height: 24px;}
+#info_list .inner_infolist li{float:left; width:50%; margin-bottom:49px; padding:0 25px;}
+#info_list .inner_infolist ul{margin:0 -25px;}
+#info_list li .infolist_box p a{display:inline-block; width:auto; vertical-align:top; color:#04c704; text-decoration:none;}
+#info_list .inner_infolist li.full{float:left; width:100%; margin-top:80px;}
+#info_list .inner_infolist li.full p{margin-bottom:26px;}
+
+
+/*===== Start Info List CSS Section Here =====*/
+
+/*===== Start Info Flash CSS Section Here =====*/
+
+#info_flash{display:inline-block; width:100%; vertical-align:top;}
+#info_flash .inner_flashinfo{display:inline-block; width:100%; vertical-align:top; margin-bottom:192px;}
+
+/*===== Start Info Flash CSS Section Here =====*/
+
+/*===== Start Pree Banner CSS Section Here =====*/
+
+.press#banner .inner_banner{position:relative;}
+.press#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.press#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.press#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.press#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; padding:0 20px;  max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.press#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.press#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+
+/*===== Start Pree Banner CSS Section Here =====*/
+
+
+/*===== Start Pree Form CSS Section Here =====*/
+
+#press_form{display:inline-block; width:100%; vertical-align:top; border-bottom:1px solid #414141; margin-bottom:108px;}
+#press_form .inner_pressform{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:123px;}
+#press_form  .main_pressform{display:inline-block; width:100%; max-width:736px; vertical-align:top; text-align:left;}
+#press_form  .main_pressform h2{display:inline-block; width:100%; vertical-align:top; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold'; font-size: 24px;	line-height: 29px; margin-bottom:26px;}
+#press_form  .main_pressform p{display:inline-block; width:100%; vertical-align:top; text-align:left; padding-right:100px; 	color: #FFFFFF;	font-size: 16px; letter-spacing: 0.34px;	line-height: 28px; margin-bottom:28px;}
+#press_form  .main_pressform p a{display:inline-block; width:auto; vertical-align:top; color:#00FF00;}
+#press_form  .main_pressform li{float:left; width:100%; margin-bottom:16px;}
+#press_form .main_pressform li .green_btn{width:100%;}
+#press_form .main_pressform li:last-child{margin-bottom:0;}
+
+/*===== Start Pree Form CSS Section Here =====*/
+
+
+/*===== Start LOGOS & PHOTOS CSS Section Here =====*/
+
+#logosphoto{display:inline-block; width:100%; vertical-align:top;}
+#logosphoto .inner_logosphoto{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:150px;}
+#logosphoto .inner_logosphoto .cnt_logophoto{display:inline-block; width:100%; max-width:690px; text-align:left; margin-bottom:76px;}
+#logosphoto .cnt_logophoto h2{display:inline-block; width:100%; vertical-align:top; text-align:left; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold'; font-size: 24px;	font-weight: 900;	line-height: 29px; margin-bottom:27px;}
+#logosphoto .cnt_logophoto p{display:inline-block; width:100%; vertical-align:top; text-align:left; color: #fff;	font-size: 16px; letter-spacing: 0.34px; line-height: 28px;}
+#logosphoto .cnt_logophoto p a{display:inline-block; width:auto; vertical-align:top; color:#00FF00; text-decoration:none;}
+
+#logosphoto .logo_list{display:inline-block; width:100%; vertical-align:top; text-align:left;}
+#logosphoto .logo_list li{float:left; width:33.33%; padding:0 16px; margin-bottom:35px;}
+#logosphoto .logo_list ul{margin:0 -16px;}
+#logosphoto .logo_list li .logo_box{border: 1px solid #414141; display:inline-block; width:100%; vertical-align:top; text-align:center; position:relative; overflow:hidden;}
+#logosphoto .logo_list li .logo_box .down_link{display:inline-block; width:100%; vertical-align:top; position:absolute; bottom:-100%; left:0; background:rgba(17,17,17,0.9); padding:22px 24px 22px 22px; transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all; opacity:0; visibility:hidden;}
+#logosphoto .logo_list li .logo_box .down_link a{display:inline-block; width:auto; vertical-align:top; padding-left:22.2px; position:relative; color: #00FF00;	font-size: 13px; letter-spacing: 0.28px;	line-height: 28px; float:left;}
+#logosphoto .logo_list li .logo_box .down_link a:after{background:url(../assets/icons/icon-arrow.svg); background-repeat:no-repeat; width:12px; height:12px; content:""; position:absolute; left:0; top:8px; transform:rotate(90deg);}
+#logosphoto .logo_list li .logo_box .down_link .size_img{float:right; width:auto; vertical-align:top; color: #FFFFFF;	font-size: 13px; letter-spacing: 0.28px; line-height: 28px;}
+
+/*===== Start LOGOS & PHOTOS CSS Section Here =====*/
+
+
+/*===== Start merch Banner CSS Section Here =====*/
+
+.merch#banner .inner_banner{position:relative;}
+.merch#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.merch#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.merch#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.merch#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; padding:0 20px;  max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.merch#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.merch#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+
+/*===== End merch Banner CSS Section Here =====*/
+
+/*===== Start merch frame CSS Section Here =====*/
+
+#merch_frame{display:inline-block; width:100%; vertical-align:top;}
+#merch_frame .inner_merchframe{display:inline-block; width:100%; vertical-align:top; margin-bottom:1179px;}
+
+
+/*===== End merch frame CSS Section Here =====*/
+
+
+/*===== Start Festival Banner CSS Section Here =====*/
+
+.festival#banner .inner_banner{position:relative;}
+.festival#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.festival#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.festival#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.festival#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; padding:0 20px;  max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.festival#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.festival#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+
+/*===== End Festival Banner CSS Section Here =====*/
+
+
+/*===== Start Festival Map CSS Section Here =====*/
+
+#fes_map{display:inline-block; width:100%; vertical-align:top;}
+#fes_map .inner_festmap{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:116px;}
+#fes_map .inner_festmap .map_box{display:inline-block; width:100%; vertical-align:top; margin-bottom:111px;}
+#fes_map .inner_festmap .map_text{display:inline-block; width:100%; vertical-align:top; max-width:682px; text-align:left;}
+#fes_map .inner_festmap .map_text p{display:inline-block; width:100%; vertical-align:top; color: #999999; font-size: 16px; line-height: 24px; margin-bottom:30px;}
+#fes_map .inner_festmap .map_text p:last-child{margin-bottom:0;}
+
+/*===== End Festival Map CSS Section Here =====*/
+
+/*===== Start FRAGEN & ANTWORTEN CSS Section Here =====*/
+
+#fest_accrd{display:inline-block; width:100%; vertical-align:top;}
+#fest_accrd .inner_fest_accrd{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:195px;}
+#fest_accrd .inner_fest_accrd .main_fesaccrd{display:inline-block; width:100%; vertical-align:top; max-width:736px; text-align:left;}
+#fest_accrd .main_fesaccrd h2{display:inline-block; width:100%; vertical-align:top; text-align:left; color: #FFFFFF;	font-family: 'IntegralCF-ExtraBold'; font-size: 24px; line-height: 29px; margin-bottom:51px;}
+
+#fest_accrd .main_fesaccrd li:first-child{border-top:1px solid #414141;}
+#fest_accrd .main_fesaccrd li{float:left; width:100%; vertical-align:top; text-align:left; border-bottom:1px solid #414141;}
+#fest_accrd .main_fesaccrd li h3.title{display:inline-block; width:100%; vertical-align:top; 	color:rgba(255,255,255,0.6);	font-size: 16px; letter-spacing: 0.34px;	line-height: 28px; padding-top:20px; padding-bottom:23px; position:relative; padding-right:50px; cursor:pointer;}
+#fest_accrd .main_fesaccrd li h3.title .icon{display:inline-block; width:15px; height:15px; vertical-align:top; position:absolute; right:9px; top:26px;}
+#fest_accrd .main_fesaccrd li h3.title .icon:after{position:absolute; content:""; width:1px; height:15px; background:#00ff00;position:absolute; right:0; top:0; left:0; bottom:0; margin:auto; transition:500ms all; -moz-transition:500ms all; -ms-transition:500ms all; -o-transition:500ms all; -webkit-transition:500ms all; }
+#fest_accrd .main_fesaccrd li h3.title .icon:before{position:absolute; content:""; height:1px; width:15px; background:#00ff00;position:absolute; right:0; top:0; left:0; bottom:0; margin:auto;}
+#fest_accrd .main_fesaccrd li .cnt_accrd{display:none; width:100%; vertical-align:top;}
+#fest_accrd .main_fesaccrd li .inner_cnt{display:inline-block; width:100%; vertical-align:top; padding-bottom:53px; padding-top:4px;}
+#fest_accrd .main_fesaccrd li .cnt_accrd p{opacity: 0.6; color: #FFFFFF; font-size: 13px;	letter-spacing: 0.28px;	line-height: 24px; display:inline-block; width:100%; vertical-align:top; margin-bottom:27px;}
+#fest_accrd .main_fesaccrd li.active h3.title{color:rgba(255,255,255,1);}
+#fest_accrd .main_fesaccrd li.active h3.title .icon:after{transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); -webkit-transform:rotate(90deg);}
+
+/*===== End FRAGEN & ANTWORTEN CSS Section Here =====*/
+
+/*===== Start Contact CSS Section Here =====*/
+
+#contact{display:inline-block; width:100%; vertical-align:top;}
+#contact .inner_contact{display:inline-block; width:100%; vertical-align:top; text-align:center; margin-bottom:200px;}
+#contact .inner_contact .contact_box{display:inline-block; width:100%; vertical-align:top; max-width:736px; text-align:left;}
+#contact .inner_contact .contact_box h3{float:left; width:100%; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold'; font-size: 24px; line-height: 29px; margin-bottom:26px;}
+#contact .inner_contact .contact_box address{display:inline-block; width:100%; vertical-align:top; color: #fff;	font-size: 16px;	letter-spacing: 0.34px;	line-height: 24px;}
+#contact .inner_contact .contact_box address a{display:inline-block; width:auto; vertical-align:top; color:#00FF00; text-decoration:none; margin-top:19px; margin-bottom:26px;}
+
+/*===== Start Contact CSS Section Here =====*/
+
+/*===== Start tickets Banner CSS Section Here =====*/
+
+.tickets#banner .inner_banner{position:relative;}
+.tickets#banner .inner_banner .main_pitch{top:auto; bottom:214.14px; transform:none;}
+.tickets#banner .inner_banner .pitch_date{font-size: 14px;	font-weight: 700; letter-spacing: 1.75px;	line-height: 21px;	text-align: center; margin-bottom:19px;}
+.tickets#banner .inner_banner h1{font-size: 64px;  line-height: 56px; text-align: center; margin-bottom:38px;}
+.tickets#banner .inner_banner p{display:inline-block; width:100%; vertical-align:top; padding:0 20px;  max-width:605px; color: #999999; font-size: 16px;	line-height: 24px;	text-align: center;}
+.tickets#banner .page_down{display:inline-block; width:100%; text-align:center; vertical-align:top; position:absolute; bottom:55px;}
+.tickets#banner .page_down a{width:1px; height:120px; display:inline-block; vertical-align:top; background:#00FF00;}
+
+/*===== End tickets Banner CSS Section Here =====*/
+
+
+/*===== Start TicketS Only CSS Section Here =====*/
+
+#tickets_only{display:inline-block; width:100%; vertical-align:top;}
+#tickets_only .inner_tickonly{display:inline-block; width:100%; vertical-align:top; margin-bottom:92.21px; text-align:center;}
+#tickets_only .inner_tickonly h2{display:inline-block; text-align:center; width:100%; vertical-align:top; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold'; font-size: 32px;	line-height: 37px;	text-align: center; margin-bottom:13px;}
+#tickets_only .inner_tickonly p{display:inline-block; width:100%; vertical-align:top; max-width:376px; color: #999999;	font-size: 13px;	letter-spacing: 0.28px; line-height: 24px; text-align: center; margin-bottom:57px;}
+
+/*===== Start TicketS Only CSS Section Here =====*/
+
+/*===== Start housing  CSS Section Here =====*/
+
+#housing{display:inline-block; width:100%; vertical-align:top;}
+#housing .inner_housing{display:inline-block; width:100%; vertical-align:top; margin-bottom:241.84px; text-align:center;}
+#housing .inner_housing h2{display:inline-block; text-align:center; width:100%; vertical-align:top; color: #FFFFFF; font-family: 'IntegralCF-ExtraBold'; font-size: 32px;	line-height: 37px;	text-align: center; margin-bottom:13px;}
+#housing .inner_housing p{display:inline-block; width:100%; vertical-align:top; max-width:376px; color: #999999;	font-size: 13px;	letter-spacing: 0.28px; line-height: 24px; text-align: center; margin-bottom:57px;}
+
+/*===== Start housing  CSS Section Here =====*/
+
+
+/*===== Start 25 Year CSS Section Here =====*/
+.section_year.active-sec{position:relative; padding-top:315px;}
+.section_year.active-sec:after{display:none;}
+.section_year:after{position:absolute; content:""; width:1px; height:120px; top:0; left:0; right:0;margin:auto; background:#00FF00; }
+.section_year{display:inline-block; width:100%; vertical-align:top;  position:relative; padding-top:194px;}
+.section_year .inner_banner{display:inline-block; width:100%; vertical-align:top;}
+.section_year .inner_banner .main_pitch{display:inline-block; width:100%; vertical-align:top; text-align:center;}
+.section_year	.pitch_date{display:inline-block; width:100%; vertical-align:top; color: #00FF00; font-size: 14px;	font-weight: bold;	letter-spacing: 1.75px;	line-height: 21px;	text-align: center; }
+.section_year h1{display:inline-block; width:100%; vertical-align:top; font-family: 'IntegralCF-ExtraBold'; font-size: 140px;line-height: 169px;	text-align: center; margin-bottom:22.5px;
+	-moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+       -moz-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #fff;
+       -moz-text-stroke-width: 2px;  
+    -webkit-text-stroke-width: 2px;
+}
+.section_year p{display:inline-block; width:100%; max-width:605px; vertical-align:top; color: #999999;	font-size: 16px;	line-height: 24px; margin-bottom:115px;}
+/*===== End 25 Year CSS Section Here =====*/
+
+/*===== Start 25 Year Banner Section CSS Here =====*/
+
+.inner_bnrtwfy{display:inline-block; width:100%; vertical-align:top; margin-bottom:111px;}
+
+/*===== Start 25 Year Banner Section CSS Here =====*/
+
+
+/*===== Start Text Images Section CSS Here =====*/
+
+
+.inner_text_img{display:inline-block; vertical-align:top; width:100%; position:relative; padding-bottom:299.5px;}
+.leftbar{float:left; width:100%; max-width:63.21%;}
+.inner_leftbar{display:inline-block; width:100%; vertical-align:top;}
+.inner_leftbar h2{display:inline-block; width:100%; vertical-align:top; font-family: 'IntegralCF-ExtraBold'; font-size: 48px;	font-weight: 900;	line-height: 58px; color:#fff; text-transform:uppercase;}
+.inner_leftbar h2 span{display:block; vertical-align:	top; font-size: 14px; font-weight: 700; color:#00FF00; letter-spacing: 0.3px;line-height: 21px;	text-align: center; font-family: 'Space Mono', monospace; margin-top:20.5px; text-align:left;
+-moz-text-fill-color: #00FF00;
+    -webkit-text-fill-color: #00FF00;
+       -moz-text-stroke-width: 0px;  
+    -webkit-text-stroke-width: 0px;
+}
+.rightbar{display:inline-block; vertical-align:top; width:auto; position:absolute; bottom:0; right:0;}
+.rightbar .imgbox{margin-bottom:18px;}
+.rightbar > span{display:block; vertical-align:top; text-align:left; font-size: 13px;line-height: 24px; color:#999;}
+.inner_text_img.smile_tag h2{padding-top:104px; position:relative;
+	-moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+       -moz-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #fff;
+       -moz-text-stroke-width: 1px;  
+    -webkit-text-stroke-width: 1px;
+}
+.inner_text_img.smile_tag h2 img{position:absolute; left:0; top:0;}
+
+
+/*===== End Text Images Section CSS Here =====*/
+
+
+/*===== Start Smile tag Section CSS Here =====*/
+
+.inner_smiltag{display:inline-block; vertical-align:top; width:100%; position:relative; margin-bottom:136.16px;}
+.inner_smiltag .leftbar_smil{float:left; width:auto; display:inline-block; vertical-align:top;}
+.inner_smiltag .leftbar_smil .inner_leftsmil{float:left; width:100%;}
+.inner_smiltag .leftbar_smil .imgbox{margin-bottom:11px;}
+
+.inner_smiltag .inner_leftsmil > span{display:block; vertical-align:top; text-align:left; font-size: 13px;line-height: 24px; color:#999;}
+.inner_smiltag .rightbar_smil{float:left; width:auto; position:absolute; right:0; bottom:0;}
+.inner_smiltag .leftbar_smil .inner_tightsmil{float:left; width:100%;}
+.inner_smiltag .rightbar_smil .imgbox{margin-bottom:9px; overflow:visible;}
+.inner_smiltag .rightbar_smil .imgbox .smile_tag{position:absolute; left:-89.67px; top:-85.59px; width:auto; display:inline-block; z-index:-1;}
+.inner_smiltag .inner_tightsmil > span{display:block; vertical-align:top; text-align:left; font-size: 13px;line-height: 24px; color:#999;}
+
+/*===== End Smile tag Section CSS Here =====*/
+
+/*===== Start Two Images CSS Here =====*/
+
+.two_imgs{display:inline-block; width:100%; vertical-align:top; padding-bottom:437px; position:relative; margin-bottom:19.46px;}
+.two_imgs .left_imgs{float:left; width:auto; vertical-align:top;}
+.two_imgs .left_imgs .inner_leftimgs{display:inline-block; width:100%;}
+.two_imgs .inner_leftimgs > span{display:block; vertical-align:top; text-align:left; font-size: 13px;line-height: 24px; color:#999;}
+.two_imgs .inner_leftimgs .imgbox{margin-bottom:17px;}
+
+.two_imgs .right_imgs{float:left; width:auto; vertical-align:top; position:absolute; right:0; bottom:0;}
+.two_imgs .right_imgs .inner_tightimg{display:inline-block; width:100%; vertical-align:top;}
+.two_imgs .inner_tightimg > span{display:block; vertical-align:top; text-align:left; font-size: 13px;line-height: 24px; color:#999;}
+
+/*===== End Two Images CSS Here =====*/
+
+
+/*===== Start Body Fixex Components CSS Here =====*/
+
+ul.section_btn{position:fixed; right:30.5px; top:328.84px; width:25px; margin-right:25px; }
+ul.section_btn:after{position:absolute; content:""; left:12px; margin:auto; width:1px; top:0; bottom:0; background:#414141; z-index:-1;}
+ul.section_btn li{float:left; width:auto; margin-bottom:59px; position:relative;}
+ul.section_btn li a{display:inline-block; vertical-align:top; width:25px; height:25px; background:#111111; 	border: 1px solid #414141; border-radius:100px; -moz-border-radius:100px; -ms-border-radius:100px; -o-border-radius:100px; -webkit-border-radius:100px; position:relative;}
+ul.section_btn li.active a:after{ position:absolute; left:0; right:0; top:0; bottom:0; margin:auto;	height: 13px; width: 13px; background-color: #00FF00; content:""; border-radius:100px; -moz-border-radius:100px; -ms-border-radius:100px; -o-border-radius:100px; -webkit-border-radius:100px;}
+ul.section_btn li span{color: #00FF00;	font-size: 13px; display:none;font-weight: bold;	letter-spacing: 0.28px;	line-height: 20px;	text-align: center;   top:3px; position:absolute; right:-36px; top:2px;  }
+ul.section_btn li:last-child{margin-bottom:0;}
+ul.section_btn li.active span{display:inline-block;}
+
+.social_fix{display:inline-block; width:auto; vertical-align:top; position:fixed; top:750px; left:0; transform:rotate(-90deg); -webkit-transform:rotate(-90deg); -ms-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -o-transform:rotate(-90deg);}
+.social_fix span{display:inline-block; float:left; vertical-align:middle; text-align:left; width:auto; 	color: #414141;	font-size: 13px; font-weight: 700;letter-spacing: 0.28px;	line-height: 20px;	text-align: center; padding-right:18px; position:relative; top:-5px;}
+.social_fix li{float:left; width:auto; padding-right:14px;}
+.social_fix ul{ width:auto; float:left; position:relative; top:-4px;}
+.social_fix li a{display:inline-block; width:auto; vertical-align:top;}
+
+#main_header.fixed-header{position:fixed; background:#111; z-index:9999; top:0;}
+#main_header.fixed-header + div,
+#main_header.fixed-header + section { margin-top:82px;}
+/*===== Start Body Fixex Components CSS Here =====*/
+
+
+
+/* css only for hover effect   */
+@media only screen and (min-width: 1200px){
+#main_header .inner_header .rightbar_head .custom_nav li a:hover:after{width:100%;}
+.container{width:1120px;}
+#festival .inner_festival .artists > ul > li .artist_dtls h3 a:hover{color:#00ff00;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more > ul > li a:hover{color:#00ff00;}
+.green_btn:hover{background-color:#54FF54; color:#000;}
+
+#footer_card .inner_footercard li .f_card:hover .hover_text .inner_hovertext{background:rgba(0,0,0,1);}
+#footer_card .f_card:hover .hover_text .inner_hovertext .green_link{background-color: #00FF00; color: #000000;}
+#footer_card .inner_footercard li .f_card:hover .imgbox:after{background-color:rgba(0,255,0,0.6);}
+#footer .rightbar_flink li a:hover{color:#00FF00;}
+#footer .end_fleft li a:hover{color:#00FF00;}
+.title_nav li a:hover{color:#00FF00;}
+#thurday .more_articelist li .artice_box.more h4 a:hover{color:#00FF00;}
+#thurday .more_articelist li h4 a:hover{color:#00FF00;}
+#pro_slider .custom_btn div:hover:after{background:url(../assets/icons/icon-arrow.svg);}
+#info_list li .infolist_box p a:hover{text-decoration:underline !important;}
+#logosphoto .logo_list li .logo_box:hover .down_link{visibility:visible; opacity:1; bottom:0;}
+
+.container.container_new{width:1130px;}
+
+}
+
+/* Custom responsive css start from here */
+@media only screen and (max-width: 1199px) {
+#festival .inner_festival .artists > ul > li .smile_tag{display:none;}
+.container{width:100%;padding:0 20px;}
+#footer_card .inner_footercard li{width:50%; padding:0 15px;}
+#footer_card .inner_footercard ul{margin:0 -15px;}
+#footer .f_sponsor li{margin-bottom:16px;}
+#main_header .inner_header{padding-left:20px; padding-right:20px;}
+
+#pro_slider .customslideNav{display:none;}
+#pro_feature .leftbar_ftur{padding:0 15px;}
+#pro_feature .rightbar_ftur{padding:0 15px;}
+#pro_feature .row_ftur{margin:0 -15px;}
+#logosphoto .logo_list li .logo_box .down_link{bottom:0; visibility:visible; opacity:1;}
+#fes_map .inner_festmap .map_box { width:100%;}
+#fes_map .inner_festmap .map_box .js-gme-container .js-map { width:100% !important;}
+}
+
+/* common css for screen size < 767  */
+@media only screen and (min-width: 991px) {
+#main_header .inner_header .rightbar_head .custom_nav li.active a:after{width:100%;}
+}
+
+
+/* common css for screen size < 991  */
+@media only screen and (max-width: 991px) {
+#banner{padding-top:89.14px;}
+.toggle_menu{display:inline-block; position:absolute; right:20px; top:27px;}
+#main_header .inner_header .head_logo .logo_tag{display:none;}
+#main_header .inner_header{padding:29.3px 20px 28.94px 20px; background: #000;}
+#main_header .inner_header .rightbar_head .custom_nav{position:fixed; top:0; bottom:0; left:0; right:0; background:#000; z-index:-1; padding-top:89.14px; display:none; overflow:auto;}
+#main_header .inner_header .rightbar_head .custom_nav li{width:100%; text-align:center; padding:0;}
+#main_header .inner_header .rightbar_head .custom_nav ul{margin:0; float:left; width:100%; padding-top:115px;}
+#main_header .inner_header .rightbar_head .custom_nav li a{font-size: 32px;	line-height: 40px;font-family: 'IntegralCF-ExtraBold'; padding:0;}
+#main_header .inner_header .rightbar_head .custom_nav li a:after{display:none;}
+#main_header .inner_header .rightbar_head .righthead_logo{display:none;}
+#main_header .inner_header .head_logo a{max-width:86.03px;}
+.mobile{display:none;}
+span.desktop.close{display:none;}
+span.mobile.open{display:inline-block;}
+body.hidden_over{overflow:hidden;}
+.custom_nav .getticket{display:inline-block; width:100%; vertical-align:top; text-align:center; padding-top:182.89px; padding-left:20px; padding-right:20px; padding-bottom:50px;}
+.custom_nav .getticket a{width:327px;}
+#footer .f_sponsor li{width:25%; margin-bottom:16px;}
+#footer .f_sponsor ul{margin:0 -10px;}
+#footer .f_sponsor li{padding:0 10px;}
+#footer .rightbar_flink li{max-width:100%; width:50%;}
+#footer .f_links .rightbar_flink{width:50%; padding-left:50px;}
+#footer .f_links .leftbar_flink{width:50%;}
+
+#thurday .more_articelist li{width:33.33%;}
+
+
+
+#pro_feature .rightbar_ftur .inner_ftur{padding-top:0;}
+.sec_feature#pro_feature .inner_profeature .leftbar_ftur .inner_ftur:after{display:none;}
+.third_feature#pro_feature .leftbar_ftur .inner_ftur:after{display:none;}
+#feature_list li{padding:0 15px;}
+#feature_list ul{margin:0 -15px;}
+#feature_list li{width:100%; margin-bottom:34.46px;}
+.pro#banner .page_down{display:none;}
+#banner.pro{background-image:none !important; min-height:auto !important; padding-top:89.14px;}
+.pro#banner .inner_banner{height:auto !important;}
+.pro#banner .inner_banner .main_pitch{position:static; padding-top:57.04px;}
+#pro_slider{display:none;}
+.pro#banner .inner_banner .pitch_date{font-size: 13px;	letter-spacing: 2px;	line-height: 20px; margin-bottom:0;}
+.pro#banner .inner_banner .main_pitch h1{font-size: 24px; line-height: 20px; margin-bottom:39.8px;letter-spacing: -1px;}
+.pro#banner .inner_banner p{font-size: 13px;line-height: 24px; margin-bottom:48.42px; opacity:1;}
+
+#pro_feature .leftbar_ftur{margin-bottom:30px; width:100%; text-align:center;}
+#pro_feature .rightbar_ftur{width:100%;}
+#pro_feature .row_ftur{margin:0 -15px;}
+#pro_feature .inner_ftur h2.block_sec{font-size: 16px; line-height: 19px; margin-bottom:13px; padding-right:0;}
+#pro_feature .inner_ftur p{color: #999999; opacity:1;font-size: 13px;line-height: 24px;}
+#pro_feature .inner_profeature{margin-bottom:11px;}
+
+#pro_feature .inner_ftur .see_more{margin-top:0;}
+.sec_feature#pro_feature .inner_profeature{margin-bottom:47.91px; padding-top:0;}
+.third_feature#pro_feature .inner_profeature{margin-bottom:20px; padding-top:0;}
+#feature_banner .container{padding:0;}
+#feature_list li .feature_block .ftr_dtls{padding-right:0;}
+#feature_list li .feature_block .ftr_dtls h3{font-size: 16px; line-height: 19px; margin-bottom:10px; padding-left:48.07px;}
+#feature_list li .feature_block{padding:0;}
+#feature_list li .feature_block .ftr_icon{top:-4px;}
+
+#booking h2{font-size: 32px; line-height: 32px; margin-bottom:35.96px;}
+#feature_list .inner_flist{margin-bottom:36.99px; padding:0;}
+#booking .inner_booking p{font-size: 13px;	letter-spacing: 0.28px;	line-height: 20px; padding:0 40px;}
+#booking .inner_booking p br{display:none;}
+#booking a{margin-bottom:35.78px;}
+#booking .inner_booking{margin-bottom:81.27px;}
+#feature_banner .inner_ftrbnr{margin-bottom:48.91px;}
+
+#banner.info{min-height:auto !important; background-image:none !important;}
+#banner.info .inner_banner{height:auto !important;}
+.info#banner .inner_banner .main_pitch{position:static; padding-top:57.04px;}
+.info#banner .page_down{display:none;}
+.info#banner .inner_banner .main_pitch .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin:0;}
+.info#banner .inner_banner .main_pitch h1{font-size: 24px;	line-height: 20px;	text-align: center; margin-bottom:48.42px;letter-spacing: -1px;}
+.info#banner .inner_banner p{display:none;}
+#info_banner .innerbner_info{margin-bottom:78.61px;}
+#info_banner .container{padding:0;}
+#info_list .inner_infolist li{padding:0 15px; width:100%; margin-bottom:23.83px;}
+#info_list .inner_infolist ul{margin:0 -15px;}
+#info_list li .infolist_box h3{margin-bottom:13px; font-size: 16px;	line-height: 19px;}
+#info_list .inner_infolist li.full{margin-top:0;}
+#info_list .inner_infolist{margin-bottom:0;}
+#info_flash .inner_flashinfo{margin-bottom:48px;}
+
+
+
+.press#banner{min-height:auto !important; background-image:none !important;}
+.press#banner .inner_banner{height:auto !important;}
+.press#banner .inner_banner .main_pitch{position:static; padding-top:57.04px; margin-bottom:50px;}
+.press#banner .page_down{display:none;}
+.press#banner .inner_banner .main_pitch .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin:0;}
+.press#banner .inner_banner .main_pitch h1{font-size: 24px;	line-height: 20px;	text-align: center; margin-bottom:48.42px;letter-spacing: -1px;}
+#press_form .inner_pressform{margin-bottom:50px;}
+#press_form{margin-bottom:50px;}
+
+.merch#banner{min-height:auto !important; background-image:none !important;}
+.merch#banner .inner_banner{height:auto !important;}
+.merch#banner .inner_banner .main_pitch{position:static; padding-top:57.04px; margin-bottom:50px;}
+.merch#banner .page_down{display:none;}
+.merch#banner .inner_banner .main_pitch .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin:0;}
+.merch#banner .inner_banner .main_pitch h1{font-size: 24px;	line-height: 20px;	text-align: center; margin-bottom:48.42px;letter-spacing: -1px;}
+#merch_frame .inner_merchframe{margin-bottom:50px;}
+
+.festival#banner{min-height:auto !important; background-image:none !important;}
+.festival#banner .inner_banner{height:auto !important;}
+.festival#banner .inner_banner .main_pitch{position:static; padding-top:57.04px; margin-bottom:44.32px;}
+.festival#banner .page_down{display:none;}
+.festival#banner .inner_banner .main_pitch .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin:0;}
+.festival#banner .inner_banner .main_pitch h1{font-size: 24px;	line-height: 20px;	text-align: center; margin-bottom:0;letter-spacing: -1px;}
+.festival#banner .inner_banner p{display:none;}
+#fes_map .inner_festmap .map_box{width:100%; margin-left:-20px; margin-right:-20px; margin-bottom:40px;}
+#fes_map .inner_festmap .map_text p{font-size:14px; line-height:24px; margin-bottom:24px;}
+#fes_map .inner_festmap{margin-bottom:38.82px;}
+#fest_accrd .main_fesaccrd h2{color: #FFFFFF;font-size: 16px; line-height: 19px; margin-bottom:30px;}
+#fest_accrd .main_fesaccrd li h3.title{font-size:13px; line-height:24px; padding-top:15px; padding-bottom:8px;}
+#fest_accrd .main_fesaccrd li .inner_cnt{padding-bottom:20px;}
+
+#fest_accrd .inner_fest_accrd{margin-bottom:50px;}
+#contact .inner_contact{margin-bottom:50px;}
+#contact .inner_contact .contact_box h3{color: #FFFFFF;font-size: 16px; line-height: 19px; margin-bottom:15px;}
+
+.tickets#banner{min-height:auto !important; background-image:none !important;}
+.tickets#banner .inner_banner{height:auto !important;}
+.tickets#banner .inner_banner .main_pitch{position:static; padding-top:57.04px; margin-bottom:50px;}
+.tickets#banner .page_down{display:none;}
+.tickets#banner .inner_banner .main_pitch .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin:0;}
+.tickets#banner .inner_banner .main_pitch h1{font-size: 24px;	line-height: 20px;	text-align: center; margin-bottom:48.42px;}
+.tickets#banner .inner_banner p{padding:0;}
+#tickets_only .inner_tickonly h2{color: #FFFFFF; font-size: 16px; line-height: 19px;}
+#tickets_only .inner_tickonly p{margin-bottom:36px;}
+#tickets_only .inner_tickonly{margin-bottom:50px;}
+#housing .inner_housing h2{color: #FFFFFF; font-size: 16px; line-height: 19px;}
+#housing .inner_housing p{margin-bottom:36px;}
+#housing .inner_housing{margin-bottom:40px;}
+
+
+.section_year .pitch_date{font-size: 13px; letter-spacing: 2px; line-height: 20px; margin: 0;}
+.section_year h1{font-size: 90px; line-height: 95px; text-align: center; margin-bottom: 48.42px;}
+.section_year p{margin-bottom:50px;}
+.section_year.active-sec{padding-top:150px;}
+.two_imgs .left_imgs{width:50%; padding:0 10px;}
+.two_imgs .right_imgs{width:50%; position:static; padding:0 10px;}
+.inner_bnrtwfy{margin-bottom:50px;}
+.two_imgrow{margin:0 -10px;}
+.two_imgs{padding-bottom:50px;}
+.leftbar{max-width:100%; margin-bottom:30px;}
+.rightbar{position:static; width:100%; text-align:center;}
+.inner_text_img{padding-bottom:50px;}
+.inner_text_img .rightbar > span{text-align:center;}
+
+.smil_tagrow{margin:0 -10px;}
+.inner_smiltag .leftbar_smil{width:50%; padding:0 10px;}
+.inner_smiltag .rightbar_smil{width:50%; position:static; padding:0 10px;}
+.inner_smiltag .rightbar_smil .imgbox .smile_tag{display:none;}
+
+.inner_leftbar h2{font-size:32px; line-height:45px;}
+.inner_smiltag{margin-bottom:50px;}
+.ce-gallery img { height:auto;}
+}
+
+
+/* common css for screen size < 767  */
+@media only screen and (max-width: 767px) {
+#banner .inner_banner .main_pitch .pitch_date{font-size:13px; line-height:20px; letter-spacing: 1.62px;}
+#banner .inner_banner .main_pitch h1{font-size:32px; line-height:38px;letter-spacing: -1px;}
+#banner .inner_banner .main_pitch h1 span{margin-top:0;}
+#footer_card .inner_footercard li{width:100%; padding:0;}
+#footer_card .inner_footercard ul{margin:0;}
+#main_cards .home_card{width:100%;}
+#banner .inner_banner .main_pitch .pitch_button{margin-top:13.5px;}
+#banner .inner_banner .main_pitch a{max-width:50px;}
+
+#footer .f_links .leftbar_flink{width:100%; margin-bottom:57px;}
+#footer .f_links .rightbar_flink{width:100%; padding:0;}
+#footer .end_flogo{display:none;}
+
+#main_cards .home_card .card_pitch{margin-bottom:15px;}
+#main_cards .home_card .card_pitch h2{font-size: 24px;line-height: 29px;}
+#main_cards .home_card .card_pitch p{font-size: 11px; font-weight: 700;	letter-spacing: 1.37px;	line-height: 16px;	text-align: center;}
+#festival .inner_festival .sec_icon{display:none;}
+h2.sec_title{font-size: 24px; line-height: 20px;	text-align: center;}
+#main_cards .inner_maincard{margin-bottom:57px;}
+#festival .inner_festival p{font-size: 14px; line-height: 24px;	text-align: center;}
+#festival .inner_festival .artists > ul > li .artist_dtls h3{font-size: 16px; line-height: 20px;	text-align: center;}
+#festival .inner_festival .artists > ul > li .artist_dtls{padding:0 5px; margin-top:-12px;}
+#festival .inner_festival .artists > ul > li .artist_dtls .atist_more{display:none;}
+#festival .inner_festival .artists > ul > li{margin-bottom:45.38px;}
+#festival .inner_festival .artists > ul > li:nth-child(even){top:88px;}
+#festival .inner_festival .artists > ul > li{padding:0 10px;}
+#festival .inner_festival .artists > ul{margin:0 -10px;}
+#festival .link_more{margin-top:80px;}
+#festival .inner_festival{margin-bottom:85px;}
+#footer_card .inner_footercard li{margin-bottom:16px;}
+#footer_card .inner_footercard{margin-bottom:20px;}
+#footer_card .f_card .hover_text .inner_hovertext .green_link{background-color: #00FF00; color: #000000;}
+#footer_card .f_card .hover_text .inner_hovertext h3{font-size: 24px; line-height: 24px; text-align: center; margin-bottom:24px;}
+#footer .inner_footer{padding-top:34px;}
+#footer .f_sponsor h4{text-align:center; margin-bottom:22px; font-size: 13px; letter-spacing: 0.81px; line-height: 32px;}
+#footer .f_sponsor li{width:25%;}
+#footer .f_sponsor{padding-bottom:32px; margin-bottom:31px;}
+#footer .f_links .subscr{margin-bottom:26.66px; width:100%;}
+#footer .f_links .inner_flink{max-width:100%;}
+#footer .f_links{padding-bottom:44px; margin-bottom:19px;}
+#footer .rightbar_flink li{padding:0 15px;}
+#footer .rightbar_flink ul{margin:0 -15px;}
+#footer_card .inner_footercard li .f_card .hover_text{background:rgba(56,56,56,0.8);}
+#thurday .more_articelist li{width:50%; padding:0 10px;}
+#thurday .more_articelist ul{margin:0 -10px;}
+#thurday .more_articelist li h4{font-size: 16px; line-height: 20px;}
+#thurday .more_articelist li:nth-child(even){position:relative;top:88px;}
+#thurday h2.icon_sectitle{padding-top:0;}
+#thurday h2.icon_sectitle:after{display:none;}
+#thurday{padding-top:67px;}
+h2.icon_sectitle{font-size:24px; line-height:20px;}
+#thurday .title_nav{margin-bottom:39.42px;}
+.frieday#thurday h2.icon_sectitle{padding:0;}
+.frieday#thurday{padding-top:102px;}
+#logosphoto .inner_logosphoto{margin-bottom:0;}
+#logosphoto .logo_list li{width:50%;}
+
+.inner_smiltag .leftbar_smil{width:100%; margin-bottom:30px;}
+.inner_smiltag .rightbar_smil{width:100%;}
+
+.two_imgs .left_imgs{width:100%; margin-bottom:30px;}
+.two_imgs .right_imgs{width:100%;}
+.inner_text_img .rightbar > span{text-align:left;}
+
+.inner_bnrtwfy{margin-bottom:30px;}
+.inner_text_img{padding-bottom:30px;}
+.social_fix{display:none;}
+}
+
+/* common css for screen size < 479  */
+@media only screen and (max-width: 480px) {
+#footer .f_sponsor li{width:33.33%;}
+#pro_feature .inner_ftur .see_more a{width:100%;}
+#booking a{width:100%;}
+#logosphoto .logo_list li{width:100%;}
+.custom_text{word-break: keep-all; text-overflow: ellipsis;}
+.press#banner .inner_banner p{padding:0;}
+}
+
+
+/* common css for screen size < 320  */
+@media only screen and (max-width: 400px) {
+#footer .f_sponsor li{width:50%;}
+.custom_nav .getticket a{width:100%;}
+}
+
+/* common css for screen size between  768 to 1199  */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+#banner .inner_banner .main_pitch .pitch_date { font-size: 13px; line-height: 20px; letter-spacing: 1.62px;}
+#banner .inner_banner .main_pitch h1 {font-size: 32px;line-height: 38px;letter-spacing: -1px;}
+#banner .inner_banner .main_pitch .pitch_button {margin-top: 13.5px;}
+#banner .inner_banner .main_pitch a{max-width:50px;}
+#banner .inner_banner .main_pitch h1 span{margin:0;}
+#banner .inner_banner .main_pitch{/*padding-top:70px;*/}
+
+
+
+}
+
+
+/* common css for screen size between  768 to 1199  */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {}
+
+/* common css for screen size between  1024 to 1199  */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+}
+
+.gm-style .gm-style-iw {
+   font-size: 16px;
+   font-weight: bold;
+   color: #999999;
+   font-family: 'Space Mono', monospace;
+}
+#banner video{width: 100%;}
+#banner.home-section{position: relative;overflow: hidden; }
+#banner.home-section video{position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;min-height: 100%;}
+#booking a.green_link{color: #00FF00;}
+.tx-go-maps-ext img{max-height:inherit;}

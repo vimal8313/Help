@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="28px" viewBox="0 0 32 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>crown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PRO" transform="translate(-748.000000, -5292.000000)" stroke="#00FF00">
+            <g id="Group-6" transform="translate(92.000000, 936.000000)">
+                <g id="Features" transform="translate(174.000000, 3752.000000)">
+                    <g id="crown" transform="translate(483.000000, 605.000000)">
+                        <path d="M0,21 L30,21" id="Shape"></path>
+                        <polyline id="Shape" points="15 6 8 13 0 6"></polyline>
+                        <polyline id="Shape" points="30 6 22 13 15 6"></polyline>
+                        <polyline id="Shape" stroke-linecap="square" points="0 6 0 26 30 26 30 6"></polyline>
+                        <circle id="Oval" stroke-linecap="square" cx="15" cy="3" r="3"></circle>
+                        <path d="M0,0 L0,6 C1.6568604,6 3,4.6568604 3,3 C3,1.3431396 1.6568604,0 0,0 Z" id="Shape" stroke-linecap="square"></path>
+                        <path d="M30,0 L30,6 C28.3431396,6 27,4.6568604 27,3 C27,1.3431396 28.3431396,0 30,0 Z" id="Shape" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

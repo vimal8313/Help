@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-690.000000, -582.000000)">
+            <g id="Group-7" transform="translate(418.000000, 363.000000)">
+                <g id="icon_play" transform="translate(272.000000, 219.379766)">
+                    <circle id="Oval-3" stroke="#00FF00" fill="#00FF00" cx="30" cy="30" r="29.5"></circle>
+                    <polygon id="Rectangle-18" fill="#111111" points="26.5 22.7218254 37.2781746 30.5 26.5 38.2781746"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

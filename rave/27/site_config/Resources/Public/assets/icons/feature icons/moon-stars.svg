@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>moon-stars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="PRO" transform="translate(-266.000000, -5097.000000)" stroke="#00FF00">
+            <g id="Group-6" transform="translate(92.000000, 936.000000)">
+                <g id="Features" transform="translate(174.000000, 3752.000000)">
+                    <g id="moon-stars" transform="translate(1.000000, 410.000000)">
+                        <path d="M24.2,18 C16.4,18 10,11.6 10,3.8 C10,2.5 10.2,1.2 10.5,0 C4.5,1.7 0,7.2 0,13.7 C0,21.6 6.4,28 14.3,28 C20.9,28 26.4,23.5 28,17.5 C26.8,17.8 25.5,18 24.2,18 Z" id="Shape"></path>
+                        <path d="M19,0 L19,4" id="Shape"></path>
+                        <path d="M17,2 L21,2" id="Shape"></path>
+                        <path d="M26,8 L26,12" id="Shape"></path>
+                        <path d="M24,10 L28,10" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_config/Configuration/PageTS/RTE.ts">
+
+TCEFORM.tt_content.header_layout {
+	altLabels {
+		1 = 1st Heading
+		2 = 2nd Heading
+		3 = 3rd Heading
+		4 = 4th Heading
+		5 = 5th Heading
+	}
+
+}
+
+
+TCEFORM.tt_content.frame_class {
+   addItems.100 = Feature Banner
+   addItems.101 = Info Banner
+   addItems.103 = Contact Container
+   addItems.104 = Booking Container
+   addItems.105 = Press Area
+   addItems.106 = Pro Feature
+   addItems.107 = Pro Second Feature
+   addItems.108 = Pro Third Feature
+   addItems.109 = History Image
+   addItems.110 = Social_fix
+}

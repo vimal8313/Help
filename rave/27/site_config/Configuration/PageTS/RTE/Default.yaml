@@ -1,0 +1,51 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Minimal configuration for the editor
+editor:
+  config:
+    stylesSet:
+      - { name: 'Primary Button', element: 'a', attributes: { 'class': 'btn btn-primary' } }
+      - { name: 'Angebot Heading', element: 'span', attributes: { 'class': 'Angebot-heading' } }
+      - { name: 'Impressum Heading', element: 'span', attributes: { 'class': 'Angebot-heading' } }
+      - {name: "Normal Link", element: "a", attributes: {class: "internal-link"}}
+      - {name: "Overview List", element: "ul", attributes: {class: "overview-list"}}
+    extraPlugins:
+      - justify
+      - font
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+    contentsCss: [EXT:site_config5/Resources/Public/css/docs.css]
+    format_tags: "p;h1;h2;h3;h4"
+    toolbarGroups:
+      - { name: document, groups: [ mode, document, doctools ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: editing, groups: [ find, selection, spellchecker, editing ] }
+      - { name: forms, groups: [ forms ] }
+      - /
+      - { name: styles, groups: [ styles ] }
+      - { name: basicstyles, groups: [ basicstyles, cleanup ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align, bidi, paragraph ] }
+      - { name: links, groups: [ links ] }
+      - { name: insert, groups: [ insert ] }
+      - /
+      - { name: colors, groups: [ colors ] }
+      - { name: tools, groups: [ tools ] }
+      - { name: others, groups: [ others ] }
+      - { name: about, groups: [ about ] }
+
+    removeButtons:
+      - Underline
+      - Subscript
+      - Strike
+      - Superscript
+      - Anchor
