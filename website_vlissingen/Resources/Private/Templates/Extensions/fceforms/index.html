@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-NL" lang="nl-NL">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Form FCE</title>
+</head>
+<body>
+
+<!-- ###ERRORS### begin -->
+<div class="formError">
+	<!-- ###ERROR### begin -->
+	<div>
+		###TEXT###
+	</div>
+	<!-- ###ERROR### end -->
+</div>
+<!-- ###ERRORS### end -->
+
+<!-- ###HASHERROR### begin -->
+<div class="hashError">
+	<h2>Error: Hash controle mislukt</h2>
+	<p>De voor veiligheidsredenen meegegeven hash string is niet correct. Dit kan komen doordat de sessie verlopen is. Probeer het formulier opnieuw in te voeren. <a href="###FORMURL###">Klik hier om terug naar het formulier te gaan.</a></p>
+</div>
+<!-- ###HASHERROR### end -->
+
+<!-- ###OVERVIEW### begin -->
+<div class="overview">
+	<h2 class="overviewtitle">Controleren</h2>
+	<p>Controleer hieronder de antwoorden die u hebt ingevuld. Klopt alles? Dan kunt u dit formulier versturen. Klopt er iets niet? Pas uw antwoorden eerst aan.</p>
+	<input type="hidden" name="tx_fceforms_pi1[data]" value="###DATAUID###" />
+	<input type="hidden" name="tx_fceforms_pi1[hash]" value="###DATAHASH###" />
+</div>
+<!-- ###OVERVIEW### end -->
+
+<!-- ###MULTIPLE### begin -->
+<input type="hidden" name="tx_fceforms_pi1[multiple][###UID###]" value="###NUM###" class="multiple###UID###" />
+<!-- ###MULTIPLE### end -->
+
+<!-- ###EMAIL### begin -->
+Formulier - ###FORMNAME###
+<!-- ###PDF_FIELD### begin -->###LABEL###: ###VALUE###<!-- ###PDF_FIELD_SEPARATOR### begin -->, <!-- ###PDF_FIELD_SEPARATOR### end -->
+<!-- ###PDF_FIELD### end -->
+<!-- ###EMAIL### end -->
+
+<!-- ###EMAIL_HTML### begin -->
+<html>
+<body>
+<table border="0" cellspacing="0" cellpadding="5" width="100%">
+	<tr>
+		<td valign="top">
+			<img src="https://www.vlissingen.nl/typo3conf/ext/website_vlissingen/Resources/Public/Images/logo.png" alt="Gemeente Vlissingen" width="123" height="95" vspace="0" hspace="0" align="right" border="0" />
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" bgcolor="#0097A1" style="border-bottom: 15px solid #0097A1;"></td>
+	</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="5">
+<!-- ###PDF_FIELD### begin -->
+	<tr>
+		<td valign="top" style="font-family: verdana; font-weight: bold;">###LABEL###:</td>
+		<td valign="top" style="font-family: verdana;">###VALUE###</td>
+	</tr>
+	<!-- ###PDF_FIELD_ARRAY### begin -->
+	<ul>
+		<!-- ###PDF_FIELD_ARRAY_FIELD### begin -->
+		<li>###VALUE###</li>
+		<!-- ###PDF_FIELD_ARRAY_FIELD### end -->
+	</ul>
+	<!-- ###PDF_FIELD_ARRAY### end -->
+<!-- ###PDF_FIELD### end -->
+</table>
+</body>
+</html>
+<!-- ###EMAIL_HTML### end -->
+
+<!-- ###EMAIL_CONFIRM### begin -->
+<html>
+<body>
+<table border="0" cellspacing="0" cellpadding="5" width="100%">
+	<tr>
+		<td valign="top">
+			<img src="https://www.vlissingen.nl/typo3conf/ext/website_vlissingen/Resources/Public/Images/logo.png" alt="Gemeente Vlissingen" width="123" height="95" vspace="0" hspace="0" align="right" border="0" />
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" bgcolor="#0097A1" style="border-bottom: 15px solid #0097A1;"></td>
+	</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="2">
+	<tr>
+		<td valign="top" style="font-family: verdana;">###CONFIRMATION_TEXT###</td>
+	</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="5">
+	<!-- ###PDF_FIELD### begin -->
+		<tr>
+			<td valign="top" style="font-family: verdana; font-weight: bold;">###LABEL###:</td>
+			<td valign="top" style="font-family: verdana;">###VALUE###</td>
+		</tr>
+		<!-- ###PDF_FIELD_ARRAY### begin -->
+		<ul>
+			<!-- ###PDF_FIELD_ARRAY_FIELD### begin -->
+			<li style="font-family: verdana;">###VALUE###</li>
+			<!-- ###PDF_FIELD_ARRAY_FIELD### end -->
+		</ul>
+		<!-- ###PDF_FIELD_ARRAY### end -->
+	<!-- ###PDF_FIELD### end -->
+</table>
+</body>
+</html>
+<!-- ###EMAIL_CONFIRM### end -->
+
+<!-- ###PDF### begin -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-NL" lang="nl-NL">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Formulier</title>
+	<link rel="stylesheet" type="text/css" href="typo3conf/ext/fceforms/templates/default.css" />
+</head>
+<body>
+
+	<!-- ###PDF_FIELD### begin -->
+<div class="pair">
+	<label for="tx_fceforms_###ID###">###LABEL###</label>
+	<span class="field" id="tx_fceforms_###ID###">###VALUE###<!-- ###PDF_FIELD_SEPARATOR### begin -->, <!-- ###PDF_FIELD_SEPARATOR### end --></span>
+</div>
+	<!-- ###PDF_FIELD### end -->
+
+</body>
+</html>
+<!-- ###PDF### end -->
+
+<!-- ###ERROR_SETTINGS###
+ A setting is set incorrectly
+-->
+<div class="formError">
+	<div>Er staat een instelling niet goed: <strong>###ERROR###</strong></div>
+</div>
+<!-- ###ERROR_SETTINGS### -->
+
+<!-- ###CSRFTOKENFIELD### begin -->
+<input type="hidden" name="tx_fceforms_pi1[csrftoken]" value="###CSRFTOKEN###" />
+<!-- ###CSRFTOKENFIELD### end -->
+
+<!-- ###ERROR_CSRFTOKEN###
+ The CSRF token is set incorrectly
+-->
+<div class="formError">
+	<div>Het CSRF token is niet goed gezet.</div>
+</div>
+<!-- ###ERROR_CSRFTOKEN### -->
+
+</body>
+</html>

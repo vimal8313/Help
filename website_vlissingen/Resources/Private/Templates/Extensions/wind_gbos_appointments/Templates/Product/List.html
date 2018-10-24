@@ -1,0 +1,40 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="appointments_form">
+	<ul id="steps">
+		<li title="U bent bij deze stap" class="first current"><span class="number">1</span>Onderwerp</li>
+		<li class=""><span class="number">2</span>Datum/tijd</li>
+		<li class=""><span class="number">3</span>Uw gegevens</li>
+		<li class=""><span class="number">4</span>Controleren</li>
+		<li class="last"><span class="number">5</span>Bevestiging</li>
+	</ul>
+	<h1>Afspraak maken</h1>
+	<h2>Waarvoor wilt u een afspraak maken?</h2>
+	<f:flashMessages renderMode="div" />
+	<p>Tip: U kunt meerdere onderwerpen combineren in een afspraak.<br /> Selecteer hieronder de onderwerpen en het aantal personen.<br />Staat uw onderwerp er niet bij bel dan voor een afspraak.</p>
+	<f:form action="datetime" pageUid="{settings.listUid}" id="appointment" noCacheHash="true" enctype="multipart/form-data">
+		<div class="subjects">
+			<div class="labels">
+				<div id="add_product-label">Onderwerpen</div>
+				<div id="choose_persons-label">Aantal personen</div>
+			</div>
+			<div class="options">
+				<f:for each="{products}" as="product">
+					<div class="option">
+						<div class="product_select">
+							{product.productName}
+						</div>
+						<div class="persons_select">
+							<label for="add_persons_{product.uid}">Personen: </label><f:form.select id="add_persons_{product.uid}" name="persons[{product.uid}][]" options="{0: '---', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: 'Meer dan 5'}" value="<ga:compare value='{arguments.product}' compare='{product.uid}' operand='returnvalue' returnvalue='{arguments.persons}' />" />
+						</div>
+					</div>
+				</f:for>
+			</div>
+		</div>
+
+		<div class="add-button"><f:form.submit class="button" value="Volgende stap" name="appointment-add" id="appointment-add" /></div>
+	</f:form>
+</div>
+</f:section>

@@ -1,0 +1,54 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+		xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+		xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+		xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<!-- Set Layout -->
+<f:layout name="Content"/>
+
+<!-- Start Configuration Section -->
+<f:section name="Configuration">
+	<flux:form id="slider" label="LLL:EXT:site_config/Resources/Private/Language/locallang_db.xlf:tx_site_config_domain_model_slider" description="LLL:EXT:site_config/Resources/Private/Language/locallang_db.xlf:tx_site_config_domain_model_slider.description" options="{group:'LLL:EXT:site_config/Resources/Private/Language/locallang_db.xlf:tx_site_config_domain_model_slider.group'}">
+	<flux:form.option.icon value="EXT:site_config/Resources/Public/images/new-slide.png"/>
+			<flux:field.inline.fal name="settings.image" label='LLL:EXT:site_config/Resources/Private/Language/locallang_db.xlf:tx_site_config_domain_model_slider.image' maxItems="10" minItems="1"/>
+	</flux:form>
+</f:section>
+<!-- End Configuration Section -->
+
+<!-- Start Preview Section -->
+<f:section name="Preview">
+	<table>	
+		<tr>
+			<h3><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang_db.xlf:tx_site_config_domain_model_slider.image" /></h3>
+		</tr>
+		<tr>
+			<f:for each="{v:content.resources.fal(field: 'settings.image')}" as="image">
+            	<f:if condition="{image.id}">
+		    		<td>
+		    			<f:image treatIdAsReference="1" src="{image.id}" height="50px" width="50px"/>
+		    		</td>
+		    	</f:if>
+		    </f:for>
+		</tr>
+	</table>
+</f:section>
+<!-- End Preview Section -->
+
+<f:section name="Main">
+	<section id="banner">
+        <div class="banner-slider">
+            <f:for each="{v:content.resources.fal(field: 'settings.image')}" as="image">
+            	<f:if condition="{image.id}">
+            		<div>
+            			<f:image treatIdAsReference="1" src="{image.id}" width="770px" height="427px" title="{image.title}" alt="{image.alternative}" />
+            		</div>
+            	</f:if>
+            </f:for>
+        </div>
+    </section>
+</f:section>
+
+
+<!-- End Main Section -->
+</div>

@@ -1,0 +1,67 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td colspan="2" style="padding:16px 19px 0;" valign="top">
+					<table cellspacing="0" cellpadding="0" width="100%">
+						<tbody>
+							<tr>
+								<td style="padding:0 0 3px; font: 17px Helvetica, Arial, sans-serif; line-height:20px; color:#0097A1;" valign="top">
+									<b></b>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding:0 0 16px;font:13px Helvetica, Arial, sans-serif; line-height:15px; color:#868485;" valign="top">
+									<span></span>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding:0 0 18px;font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333;" valign="top">
+									<div class="news-single-text">
+										<h2>{data.header}</h2>
+										<f:format.html>{data.bodytext}</f:format.html>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td style="font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333; padding:0 0 18px;" valign="top">
+									<f:link.page pageUid="{data.header_link}">
+										Lees verder
+									</f:link.page>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<tr>
+		<td valign="top" colspan="2" style="padding:16px 19px 0;">
+			<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" style="padding:0 0 3px; font: 17px Helvetica, Arial, sans-serif; line-height:20px; color:#B1006B;">
+						<b>{data.header}</b>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="padding:0 0 16px;font:13px Helvetica, Arial, sans-serif; line-height:15px; color:#868485;">
+						<span>{data.date}</span>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="padding:0 0 18px;font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333;">
+						<f:format.html>{data.bodytext}</f:format.html>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333; padding:0 0 18px;">
+					<vh:typolink parameter="{data.header_link}" ATagParams='style="color: #333333 !important; text-decoration: underline;"'>Lees verder</vh:typolink></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</f:section>

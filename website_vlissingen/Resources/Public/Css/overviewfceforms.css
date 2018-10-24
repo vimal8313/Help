@@ -1,0 +1,187 @@
+div#content form.fce_form fieldset {
+	border: 3px double #cccccc;
+	margin: 0 0 1em 0;
+	padding: 5px;
+}
+
+div#content form.fce_form fieldset legend {
+	padding: 0 5px;
+	color: #cccccc;
+	font-weight: bold;
+}
+
+div#content form.fce_form div.pair {
+	overflow: hidden;
+	border: 1px solid #ffffff;
+	padding: 2px;
+	margin: 1px;
+	line-height: 20px;
+}
+
+div#content form.fce_form div.pair.inline,
+div#content form.fce_form div.pair.inline div.pair {
+	padding: 0;
+}
+
+div#content form.fce_form div.pair label {
+	overflow: hidden;
+	font-weight: bold;
+	float: left;
+	width: 200px;
+}
+
+div#content form.fce_form div.pair.inline label:first-child {
+	display: none;
+}
+
+div#content form.fce_form div.pair.inline .field label {
+	display: inline;
+}
+
+div#content form.fce_form div.pair.inline .field {
+	margin: 0;
+}
+
+div#content form.fce_form div.pair .field {
+	margin: 0 0 0 200px;
+	display: block
+}
+
+div#content form.fce_form div.error label {
+	color: #ff0000;
+}
+
+div#content form.fce_form div.pair label span.required {
+	display: none;
+}
+
+div#content form.fce_form div.pair span.fields span.field {
+	float: none;
+	display: block;
+	overflow: hidden;
+}
+
+div#content form.fce_form div.pair span.fields span.field label {
+	float: none;
+	font-weight: normal;
+	width: auto;
+	text-align: left;
+}
+
+div#content form.fce_form ul.multiplevalues,
+div#content form.fce_form p {
+	margin: 0;
+}
+
+div#content form.fce_form h2,
+div#content form.fce_form h3 {
+	color: #007D85;
+	font-size: 17px;
+}
+
+div#content div#content form.fce_form {
+	padding: 15px;
+	overflow: hidden;
+}
+
+div#content form.fce_form .buttons {
+	overflow: hidden;
+	text-align: right;
+	padding: 10px 0 30px;
+	margin: 10px 0 0;
+	background: url('../Images/dotted-grey.png') repeat-x left bottom;
+}
+
+div#content form.fce_form .buttons input {
+	font-size: 11px;
+	text-transform: uppercase;
+	width: 130px;
+ 	text-align: left;
+	color: #ffffff;
+	height: 28px;
+	line-height: 28px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0 20px 0 10px;
+	background: url('../Images/form_button_next.png') no-repeat top right;
+}
+
+div#content form.fce_form div.formfield.pair ul.multiplevalues li {
+	background: none;
+	padding: 0;
+}
+
+div#content div.fceforms ul.pagesmenu {
+	margin: 0 0 12px 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+div#content div.fceforms ul.pagesmenu li {
+	float: left;
+	background: url('../Images/icon_list.png') no-repeat center left;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 50px 0 0;
+	padding: 5px 0 4px;
+	color: #403c32;
+}
+
+div#content div.fceforms ul.pagesmenu li span.number {
+	display: block;
+	float: left;
+	width: 33px;
+	margin: 0 9px 0 0;
+	text-align: center;
+	font-weight: bold;
+	color: #a5a5a5;
+}
+
+div#content div.fceforms ul.pagesmenu li.activeParent span.number,
+div#content div.fceforms ul.pagesmenu li.active span.number {
+	color: #FFFFFF;
+}
+
+div#content div.fceforms ul.pagesmenu li.activeParent,
+div#content div.fceforms ul.pagesmenu li.active {
+	background-image: url('../Images/icon_list_active.png');
+	color: #0097a1;
+	font-weight: bold;
+}
+
+div#content div.fceforms ul.pagesmenu li.done {
+	cursor: pointer;
+}
+
+div#content div.fceforms ul.pagesmenu li.subpage {
+	display: none;
+}
+
+/***
+	Formpages
+***/
+div#content form.fce_form div.formpages.formpages_processed div.formpage.hidden {
+	display: none;
+}
+
+/*******************************************************************************
+ Content - fceforms mobile
+*******************************************************************************/
+@media all and (max-width: 640px) {
+div#content form.fce_form div.pair .field {
+	display: inline;
+	margin: 0;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu,
+div#content div.fceforms ul.pagesmenu {
+	padding: 0 0 10px;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li,
+div#content div.fceforms ul.pagesmenu li {
+	float: none;
+}
+}

@@ -1,0 +1,72 @@
+{namespace vh=Tx_WindGvop_ViewHelpers}
+<f:layout name="Default"/>
+<f:section name="main">
+<div class="tx_windgvop_pi1 overview">
+	<div class="three_frame">
+		<div class="bekendmakingen-filter">
+			<div class="top categories">
+				<h2>{f:translate(key: 'tx_windgvop_domain_model_publication.cagegoryText')}</h2>
+				<div class="sections list-category">
+					<ul>
+					<f:for each="{categoryList}" as="singleCategory">
+						<li>
+							<f:link.action action="list" section="listarea" arguments="{category:singleCategory.uid}" title="{f:translate(key : 'category_link', arguments : '{0 : \'{singleCategory.name}\'}')}">{singleCategory.name}</f:link.action>
+						</li>
+					</f:for>
+					</ul>
+				</div>
+			</div>
+			<div class="middle">
+				<h2>{f:translate(key: 'tx_windgvop_domain_model_publication.searchText')}</h2>
+				<div class="sections">
+					<f:form>
+						<div class="searchDiv">
+							<label for="freeText"></label>
+							<f:form.textfield name="freeText" id="freeText" value="{freeText}" />
+						</div>
+						<div class="searchDiv">
+							<label for="category">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.categorySelect')}</label>
+							<f:form.select name="category" id="category" options="{categorySelection}" optionValueField="uid" optionLabelField="name" class="catSelect" value="{selectVal}" />
+						</div>
+						<div class="searchDiv">
+							<f:form.submit name="search" value="{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.search')}" />&nbsp;<f:form.submit name="clear" value="{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.clear_filter')}"  />
+						</div>
+					</f:form>
+				</div>
+			</div>
+			<div class="bottom subscription">
+				<h2>Abonneren</h2>
+				<p class="bodytext">Aanmelden voor de e-mailservice van overheid.nl werkt in vijf simpele stappen:<br /><br />1. Inschrijven op e-mailadres<br />2. Postcodegebied instellen<br />3. Interesseprofiel instellen<br />4. Onderwerp selecteren<br />5. Aanmelding bevestigen</p>
+				<p class="bodytext"><a href="http://zoekdienst.overheid.nl/ICTU_Website/Abonneren/abonneren.aspx" title="Meld mij aan" class="external-link-new-window">Meld mij aan</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="map_area" id="mapDiv">
+			 <f:link.external id="mapLink" uri="https://geoviewer.windinternet.nl/viewer/?zoom={settings.coordinate},{settings.zoom}&mapsize=730&user={settings.user}"
+			 style="width:{settings.width};height:{settings.height};">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.click_here_for_map')}</f:link.external>
+		</div>
+		<div class="list_area" id="listarea">
+			<div>
+				<f:for each="{publicationsList}" as="category" key="categoryUid">
+					<h2 class="category-name">
+						<f:link.action action="list" arguments="{category:categoryUid}" section="listarea" title="{f:translate(key : 'category_link', arguments : '{0 : \'{category.categoryName}\'}')}">{category.categoryName}</f:link.action>
+					</h2>
+					<ul class="category">
+						<f:for each="{category.publications}" as="publication" iteration="iterator">
+							<f:if condition="{iterator.cycle} <= {maximumResults}">
+								<li class="publication">
+									<f:link.action pageUid="{settings.detailPid}" arguments="{publication:publication.uid}" title="{f:translate(key : 'publication_link')}">
+										<span class="title">{publication.title}</span>
+										<span class="date">(<f:format.date format="d-m-Y">{publication.publicationDate}</f:format.date>)</span>
+									</f:link.action>
+								</li>
+							</f:if>
+						</f:for>
+					</ul>
+				</f:for>
+			</div>
+		</div>
+	</div>
+</div>
+</f:section>

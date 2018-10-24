@@ -1,0 +1,86 @@
+div#content div.tx-windecards-pi1 div.category_list div.category {
+	width: 355px;
+	margin: 0 0 20px;
+}
+
+div#content div.tx-windecards-pi1 div.category_list div.category.even {
+	float: right;
+}
+
+div#content div.tx-windecards-pi1 div.category_list div.category.odd {
+	float: left;
+}
+
+div#content div.tx-windecards-pi1 div.single_category div.pictures {
+	margin: 10px 0 0;
+}
+
+div#content div.tx-windecards-pi1 div.single_category div.pictures div.single_picture {
+	float: left;
+	width: 228px;
+	margin: 0 15px 0 0;
+}
+
+div#content div.tx-windecards-pi1 div.single_category div.pictures div.single_picture div.title a,
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form div.picture_outer div.title {
+	padding: 0;
+	font-weight: bold;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form div.picture_outer {
+	margin: 10px 0 15px;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.pair {
+	border: 1px solid #FFFFFF;
+	line-height: 20px;
+	margin: 1px 1px 20px 0;
+	overflow: hidden;
+	padding: 2px 2px 2px 0;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.pair label {
+	float: left;
+	font-weight: bold;
+	overflow: hidden;
+	width: 180px;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.pair span.field {
+	display: block;
+	margin: 0 0 0 175px;
+	padding-left: 5px;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.pair span.field input {
+    border: 1px solid #D1C7BE;
+    padding: 6px 9px 10px 0;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.pair span.field textarea {
+	border: 1px solid #D1C7BE;
+	display: block;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form span.required {
+	color: #FF0000;
+	padding: 0 0 0 3px;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.picture_form form div.form div.buttons input {
+	background: url("../../Images/form_button_next.png") no-repeat 0 0;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	font-family: arial;
+	font-weight: bold;
+	height: 31px;
+	margin: 0;
+	padding-bottom: 3px;
+	width: 153px;
+}
+
+div#content div.tx-windecards-pi1 div.single_picture div.confirmation {
+	padding: 10px 0 0;
+}

@@ -1,0 +1,31 @@
+/*******************************************************************************
+ JK_Poll
+*******************************************************************************/
+
+#content .tx-jkpoll-pi1 {
+	margin: 20px 0 0;
+	display: inline-block;
+}
+
+#content .tx_jkpoll_pi1_answer input[type=radio] {
+	margin: 0;
+	margin-right: 3px;
+}
+
+#content .tx_jkpoll_pi1_answer label {
+	vertical-align: middle;
+}
+
+#content .tx-jkpoll-pi1 .pollsubmit {
+	border: none;
+	background: #801d69;
+	color: #fff;
+	font: bold 15px/17px Helvetica, Arial, sans-serif;
+	padding: 10px 14px;
+}
+
+#content .tx-jkpoll-pi1 .pollbar {
+	height: 12px;
+	margin: 0 0 10px 0;
+	background: red;
+}

@@ -1,0 +1,15 @@
+<f:layout name="Default" />
+<f:section name="ContentElement">
+    <f:comment>Custom Hero Element</f:comment>
+        <f:render partial="Image/HeroBackground.html" arguments="{hero_image: hero_image,class:'ce__heroelement'}"/>
+            <div class="container-fluid">
+                <div class="banner-caption">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-8">
+                            <f:format.html>{data.bodytext}</f:format.html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</f:section>

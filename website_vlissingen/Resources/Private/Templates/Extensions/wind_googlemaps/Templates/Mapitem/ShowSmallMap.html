@@ -1,0 +1,80 @@
+{namespace wsm=Tx_WindGooglemaps_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+	<div class="smallmap">
+		<script type="text/javascript">
+			<!--
+
+			var selectedField = '{selectedField}';
+			var selectedValue = '{selectedValue}';
+
+			/*<![CDATA[*/
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(51.44813, 3.569323);
+				var mapOptions = {
+					zoom: 15,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					mapTypeControl: false
+				}
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				var bounds = new google.maps.LatLngBounds();
+
+				/*]]>*/
+				<f:for each="{mapitems}" as="mapitem" iteration="mapitemIteration">
+					var latitude = '{mapitem.latitude}';
+					var longitude = '{mapitem.longitude}';
+					var mapitemname = '<wsm:addSlashes string='{mapitem.name}' />';
+					var moreinfolink = '<f:link.page pageUid="{mapitem.moreinfo}">Meer informatie ></f:link.page>';
+
+					var marker{mapitemIteration.index} = new google.maps.Marker({
+						position: new google.maps.LatLng(latitude,longitude),
+						map: map,
+						title: mapitemname,
+						icon: 'typo3conf/ext/website_vlissingen/Resources/Public/Images/mappointer.png'
+					});
+
+					bounds.extend(new google.maps.LatLng(latitude,longitude));
+
+					var infowindow{mapitemIteration.index} = new google.maps.InfoWindow(/*<![CDATA[*/
+					{
+						/*]]>*/
+						content: '<div class="mapoverlay"><strong>'+mapitemname+'</strong><br />'+
+						moreinfolink +
+						'</div>'
+					});
+
+					google.maps.event.addListener(marker{mapitemIteration.index}, 'click', function() {
+						infowindow{mapitemIteration.index}.open(map,marker{mapitemIteration.index});
+					});
+				</f:for>
+
+				map.fitBounds(bounds);
+
+				google.maps.event.addListenerOnce(map, 'idle', function() {
+					var zoom = map.getZoom();
+					if (zoom > 15) {
+						map.setZoom(15);
+					}
+				});
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+			-->
+		</script>
+
+		<div id="map-canvas"></div>
+		<f:form action="showSmallMap" id="windgooglemapssearch">
+			<div class="selectfields">
+				<p>Selecteer op:</p>
+				<span>Woonplaats, wijk of kern</span>
+				<div class="selectbox">
+					<f:form.select name="place" options="{places}" optionValueField="uid" optionLabelField="place" />
+				</div>
+				<div class="buttons">
+				<f:form.submit name="ophalen" value="<f:translate key=\"getmapitems\">Tonen</f:translate>" />
+				</div>
+			</div>
+		</f:form>
+	</div>
+</f:section>

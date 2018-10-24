@@ -1,0 +1,179 @@
+/*******************************************************************************
+	wind_events - list
+*******************************************************************************/
+#content div.tx-windevents-pi1 h2.title {
+	color: #333333;
+	font-size: 115%;
+	margin: 0;
+}
+
+#content div.tx-windevents-pi1 div.event-subheader {
+	font-size: 100%;
+	color: #878483;
+	margin: 3px 0 15px;
+}
+
+#content div.tx-windevents-pi1 div.event-subheader span {
+	margin: 0 0 0 25px;
+}
+
+#content div.tx-windevents-pi1 div.event-subheader span:first-child {
+	margin-left: 0px;
+}
+
+#content div.tx-windevents-pi1 div.event-subheader span.location {
+	padding: 0 0 0 15px;
+	background: url('../../Images/icon_event.png') no-repeat left 1px;
+}
+
+#content div.tx-windevents-pi1 div.event {
+	overflow: hidden;
+	padding: 20px 0;
+	background: url('../../Images/dotted-grey.png') repeat-x bottom left;
+}
+
+#content div.tx-windevents-pi1 div.event a {
+	text-decoration: underline;
+}
+
+#content div.tx-windevents-pi1 div.event div.image {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+#content div.tx-windevents-pi1 div.list div.event div.description div.pair {
+	padding: 0 0 20px;
+}
+
+#content div.tx-windevents-pi1 div.list div.event div.description div.pair span {
+	font-weight: bold;
+}
+
+#content div.tx-windevents-pi1 div.list div.event div.description p.bodytext {
+	margin: 0 0 10px;
+}
+
+/*******************************************************************************
+	wind_events - calendar
+*******************************************************************************/
+div#sidebar div.tx-windevents-pi1 div.calendar {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext {
+	overflow: hidden;
+	width: 212px;
+	margin: 0 auto;
+	padding: 7px 8px;
+	border-left: 1px solid #D1C7BE;
+	border-right: 1px solid #D1C7BE;
+	border-top: 1px solid #D1C7BE;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.title {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	color: #3F3B32;
+	font-weight: bold;
+	background: none;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.prev,
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.next {
+	background: url('../../Images/icon_previous.png') no-repeat 0 0;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.prev a,
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.next a {
+	width: 23px;
+	height: 23px;
+	padding-left: 25px;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.prev {
+	float: left;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar ul.prevnext li.next {
+	float: right;
+	background-image: url('../../Images/icon_next.png');
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table {
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	width: 230px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #333333;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table thead tr {
+	background-color: #F3F1EE;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table tbody tr td,
+div#sidebar div.tx-windevents-pi1 div.calendar table thead tr th {
+	padding: 7px 0;
+	width: 30px;
+	border: 1px solid #D1C7BE;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table thead tr th {
+	color:#000000;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table tbody tr td.inactive div span.day {
+	color: #B8ADA7;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table tbody tr td.active a {
+	font-weight: bold;
+}
+
+div#sidebar div.tx-windevents-pi1 div.calendar table tbody tr td.current {
+	background: #801C69;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div#sidebar div.tx-windevents-pi1 div.month-menu {
+	border: 1px solid #D1C7BE;
+	margin: 0 0 20px;
+	padding: 14px;
+	overflow: hidden;
+}
+
+div#sidebar div.tx-windevents-pi1 div.month-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 16px;
+	float: left;
+}
+
+div#sidebar div.tx-windevents-pi1 div.month-menu strong {
+	overflow: hidden;
+}
+
+div#sidebar div.tx-windevents-pi1 div.month-menu ul li {
+	float: left;
+	padding: 5px 0 4px 13px;
+	background: url('../../Images/arrow-lightbrown.png') no-repeat left 50%;
+	width: 85px;
+}
+
+div#sidebar div.tx-windevents-pi1 div.month-menu h2.title {
+	font-size: 100%;
+	color: #3F3B32;
+	margin: 0 0 5px;
+}

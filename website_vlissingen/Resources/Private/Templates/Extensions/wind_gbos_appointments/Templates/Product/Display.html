@@ -1,0 +1,93 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="appointments_form">
+	<h1>Afspraak maken</h1>
+	<h2>Uw afspraak</h2>
+	<f:if condition="{error}">
+		<f:then>
+			<f:render partial="SoapError" />
+		</f:then>
+		<f:else>
+			<f:if condition="{appointment.clientMail}">
+				<f:then>
+					<f:form action="canceled" pageUid="{settings.cancelUid}" id="appointment-cancel" noCacheHash="true" enctype="multipart/form-data">
+						<div class="date"><label>Afspraaknummer:</label><span>{arguments.appointment_number}</span></div>
+						<f:form.hidden name="appointmentNumber" value="{arguments.appointment_number}" />
+						<f:form.hidden name="appointmentEmail" value="{appointment.clientMail}" />
+						<div class="products"><label>Betreffende:</label>
+							<ul>
+				       			<f:for each="{products}" as="product">
+									<li>{product}</li>
+								</f:for>
+							</ul>
+						</div>
+						<div class="date"><label>Datum:</label><span><ga:date format='%A %e %B %Y' timestamp='{appointment.appStartTime}' /></span></div>
+						<div class="time"><label>Tijdstip:</label><span><ga:date format='%H.%M' timestamp='{appointment.appStartTime}' /> uur</span></div>
+
+						<h2>Uw gegevens</h2>
+						<div class="filled_in_data">
+							<div class="pair">
+								<label>Voornaam of initialen:</label>
+								<span>{appointment.clientInitials}</span>
+							</div>
+
+							<div class="pair">
+								<label>Achternaam:</label>
+								<span>{appointment.clientLastName}</span>
+							</div>
+
+							<div class="pair">
+								<label>Geslacht:</label>
+								<span>{appointment.clientSex}</span>
+							</div>
+
+							<div class="pair">
+								<label>Geboortedatum:</label>
+								<span><ga:date format='%e %B %Y' timestamp='{appointment.clientDateOfBirth}' /></span>
+							</div>
+
+							<div class="pair">
+								<label>Adres:</label>
+								<span>{appointment.clientAddress}</span>
+							</div>
+
+							<div class="pair">
+								<label>Postcode:</label>
+								<span>{appointment.clientPostalCode}</span>
+							</div>
+
+							<div class="pair">
+								<label>Woonplaats</label>
+								<span>{appointment.clientCity}</span>
+							</div>
+
+							<div class="pair">
+								<label>E-mailadres:</label>
+								<span>{appointment.clientMail}</span>
+							</div>
+
+							<div class="pair">
+								<label>Telefoonnr.:</label>
+								<span>{appointment.clientTel}</span>
+							</div>
+
+							<div class="pair">
+								<label>Opmerking:</label>
+								<span>{appointment.appointmentDesc}</span>
+							</div>
+						</div>
+						<f:form.submit name="view-appointment" value="Afspraak annuleren" class="cancel-appointment" />
+					</f:form>
+				</f:then>
+				<f:else>
+					<p>Het afspraaknummer, het emailadres of de combinatie hiervan is niet juist</p>
+					<div class="return_link_confirm"><f:link.action action="cancel">Vorige stap</f:link.action></div>
+		 		</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>
+</f:section>

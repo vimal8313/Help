@@ -1,0 +1,142 @@
+/*******************************************************************************
+ Content - wind_comments
+*******************************************************************************/
+div#content div.tx-windcomments-pi1 h2 {
+	margin: 0 0 10px;
+	padding: 10px 0 15px;
+	background: url("../../Images/dotted-grey.png") repeat-x left bottom;
+}
+
+div#content div.tx-windcomments-pi1 div.list {
+	margin: 0;
+}
+
+
+div#content div.tx-windcomments-pi1 div.list div.footnote,
+div#content div.tx-windcomments-pi1 div.list div.single {
+	margin: 0 0 10px;
+	padding: 0 0 8px;
+}
+
+div#content div.tx-windcomments-pi1 div.list div.name {
+	color: #0097A0;
+	font-size: 100%;
+	padding: 0 0 5px;
+}
+
+div#content div.tx-windcomments-pi1 div.list div.datetime {
+	color: #000000;
+	font-size: 87%;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 0 0 1px 0;
+}
+
+div#content div.tx-windcomments-pi1 div.list div.single div.comment {
+	font-size: 94%;
+	line-height: 18px;
+	padding: 0 0 10px 0;
+	background: url("../../Images/dotted-grey.png") repeat-x left bottom;
+}
+
+div#content div.tx-windcomments-pi1 div.form {
+	background: url("../../Images/dotted-grey.png") repeat-x left bottom;
+	margin: 0;
+}
+
+div#content div.tx-windcomments-pi1 div.form form {
+	margin: 0 0 10px 0;
+	padding: 0 0 20px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.columns {
+	background: none repeat scroll 0 0 #F7F6F4;
+	border: 1px solid #E1DAD4;
+	float: left;
+	margin-bottom: 20px;
+	padding: 15px 0;
+}
+div#content div.tx-windcomments-pi1 div.form form div.columns h2 {
+	padding: 5px 0 0 15px;
+	background: none;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.columns div.column-left,
+div#content div.tx-windcomments-pi1 div.form form div.columns div.column-right {
+	width: 363px;
+	float: left;
+}
+
+div#content div.tx-windcomments-pi1 div.form div.pair {
+	padding: 5px 0 0 15px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.buttons {
+	padding: 47px 0 0 15px;
+}
+
+div#content div.tx-windcomments-pi1 div.form div.pair label {
+	display: block;
+	font-size: 94%;
+	padding: 0 0 5px;
+	width: 350px;
+}
+
+div#content div.tx-windcomments-pi1 div.form div.pair input {
+	border: 1px solid #D1C7BE;
+	height: 33px;
+	width: 330px;
+}
+
+div#content div.tx-windcomments-pi1 div.form div.pair textarea {
+	border: 1px solid #D1C7BE;
+	height: 161px;
+	width: 330px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form ul.error {
+	margin: 0 0 5px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form ul.error li {
+	color: #ff0000;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.captcha {
+	margin: 0 0 10px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.captcha div.image {
+	border-top: 1px solid #D1C7BE;
+	border-left: 1px solid #D1C7BE;
+	border-right: 1px solid #D1C7BE;
+	width: 200px;
+	padding: 5px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.captcha div.input {
+	border-bottom: 1px solid #D1C7BE;
+	border-left: 1px solid #D1C7BE;
+	border-right: 1px solid #D1C7BE;
+	width: 200px;
+	padding: 5px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.captcha div.input input {
+	width: 150px;
+}
+
+div#content div.tx-windcomments-pi1 div.form form div.buttons input {
+	background: url("../../Images/form_button_next.png") no-repeat 0 0;
+	cursor: pointer;
+	font-family: arial;
+	font-weight: bold;
+	height: 31px;
+	margin: 0;
+	width: 160px;
+	color: #ffffff;
+	border: none;
+	padding: 3px 3px 8px 13px;
+	font-weight: bold;
+	text-align: left;
+}

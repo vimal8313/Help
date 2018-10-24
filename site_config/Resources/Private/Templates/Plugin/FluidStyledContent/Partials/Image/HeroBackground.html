@@ -1,0 +1,11 @@
+
+<f:if condition="{hero_image->f:count()} >0" >
+<f:then>
+	<f:for each="{hero_image}" as="image">
+	    <div class="ce {class}" style="background-image:url({f:uri.image(image:image)});">
+	</f:for>
+</f:then>
+<f:else>
+	<div class="ce {class}">
+</f:else>
+</f:if>

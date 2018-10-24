@@ -1,0 +1,40 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<tr>
+		<td valign="top" colspan="2" style="padding:16px 19px 0;">
+			<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" style="padding:0 0 3px; font: 17px Helvetica, Arial, sans-serif; line-height:20px; color:#B1006B;">
+						<b>{data.header}</b>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="padding:0 0 16px;font:13px Helvetica, Arial, sans-serif; line-height:15px; color:#868485;">
+						<span>{data.date}</span>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="padding:0 0 18px;font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333;">
+						<f:format.html>{data.bodytext}</f:format.html>
+					</td>
+					<td valign="top">
+						<f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" width="20" />
+					</td>
+					<td valign="top" style="padding:0 0 18px;font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333;">
+						<vh:fal uid="{data.uid}" tableName="tt_content" fieldName="image">
+							<f:for each="{objects}" as="image">
+								<f:image src="{image.publicUrl}" alt="{image.alternative}"/>
+							</f:for>
+						</vh:fal>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" style="font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333; padding:0 0 18px;">
+					<vh:typolink parameter="{data.header_link}" ATagParams='style="color: #333333 !important; text-decoration: underline;"'>Lees verder</vh:typolink>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</f:section>

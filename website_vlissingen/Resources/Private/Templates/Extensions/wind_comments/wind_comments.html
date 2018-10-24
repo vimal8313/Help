@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>WIND Comments</title>
+</head>
+<body>
+
+<!-- ###LIST### begin -->
+<div class="list">
+	<h2>Reacties</h2>
+	<!-- ###LIST_SINGLE### begin -->
+	<div class="single" id="comment###NUM###">
+		<div class="name">Door ###NAME### op ###DATE###</div>
+		<div class="comment">###COMMENT###</div>
+	</div>
+	<!-- ###LIST_SINGLE### end -->
+</div>
+<!-- ###LIST### end -->
+
+<!-- ###LIST_NONE### begin -->
+<div class="list">
+	<h2>Reacties</h2>
+	<p class="none">###MESSAGE###</p>
+</div>
+<!-- ###LIST_NONE### end -->
+
+<!-- ###LATEST### begin -->
+<div class="latest">
+	<!-- ###LATEST_SINGLE### begin -->
+	<div class="single">
+		<div class="page"><a href="###URL###">###PAGETITLE###</a></div>
+		<div class="name">###NAME###</div>
+		<div class="datetime"> ###TIME###</div>
+		<div class="rating"><img src="typo3conf/ext/wind_comments/templates/rating###RATING###.gif" alt="###RATING###" /></div>
+		<div class="comment">###COMMENT###</div>
+	</div>
+	<!-- ###LATEST_SINGLE### end -->
+</div>
+<!-- ###LATEST### end -->
+
+<!-- ###LATEST_NONE### begin -->
+<div class="list">
+	<p class="none">###MESSAGE###</p>
+</div>
+<!-- ###LATEST_NONE### end -->
+
+<!-- ###FORM### begin -->
+<div class="form">
+	<form action="###URL###" method="post">
+	<!-- ###FORM_ERRORS### begin -->
+		<ul class="error">
+		<!-- ###FORM_ERRORS_SINGLE### begin -->
+			<li>###ERROR###</li>
+		<!-- ###FORM_ERRORS_SINGLE### end -->
+		</ul>
+	<!-- ###FORM_ERRORS### end -->
+		<div class="columns">
+		<h2>Reageren?</h2>
+			<div class="column-left">
+				<div class="pair name">
+					<label for="tx_windcomments_name">Uw naam *</label>
+					<input type="text" value="###NAME###" name="tx_windcomments_pi1[name]" id="tx_windcomments_name" />
+				</div>
+				<div class="pair email">
+					<label for="tx_windcomments_email">Uw e-mailadres *</label>
+					<input type="text" value="###EMAIL###" name="tx_windcomments_pi1[email]" id="tx_windcomments_email" />
+				</div>
+				<!-- ###FORM_CAPTCHA### begin -->
+					<div class="pair captcha">
+						<label for="tx_windcomments_captcha">Voer de hieronder getoonde code in *</label>
+						<div class="image"><img src="typo3conf/ext/fw_captcha/captcha/image.php" alt="Captcha" /></div>
+						<div class="input"><input type="text" value="" name="tx_windcomments_pi1[captcha]" id="tx_windcomments_captcha" /></div>
+					</div>
+				<!-- ###FORM_CAPTCHA### end -->
+				<div class="pair email">
+					Velden met een * zijn verplicht.
+				</div>
+			</div>
+			<div class="column-right">
+				<div class="pair comment">
+					<label for="tx_windcomments_comment">Uw reactie</label>
+					<textarea name="tx_windcomments_pi1[comment]" id="tx_windcomments_comment" rows="5" cols="30">###COMMENT###</textarea>
+				</div>
+				<div class="buttons">
+					<input type="submit" value="Reactie versturen" />
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- ###FORM### end -->
+
+<!-- ###EMAILCONTENT### begin -->
+Nieuwe reactie op ###PAGETITLE### (UID:###PAGEUID###)
+Er is een nieuwe reactie op ###PAGETITLE### (UID:###PAGEUID###) met de volgende gegevens:
+
+Naam: ###NAME###
+E-mail: ###EMAIL###
+Comment: ###COMMENT###
+
+IP Address: ###IP###
+<!-- ###EMAILCONTENT### end -->
+
+</body>
+</html>

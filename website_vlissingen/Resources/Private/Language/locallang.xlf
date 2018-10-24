@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="website_vlissingen" date="2015-04-08T14:38:32+01:00">
+		<header/>
+		<body>
+			<trans-unit id="Main">
+				<source>Main template</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

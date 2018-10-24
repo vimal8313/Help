@@ -1,0 +1,188 @@
+/* School overview */
+table.tx_windgooglemaps {
+	width: 100%;
+	font-size: 1em;
+	margin-top: -8px;
+}
+
+table.tx_windgooglemaps tr td {
+	background: #007d86;
+	padding: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+table.tx_windgooglemaps tr td.name,
+table.tx_windgooglemaps tr td.address,
+table.tx_windgooglemaps tr td.zipcodeplace,
+table.tx_windgooglemaps tr td.moreinfo {
+	width: 180px;
+	color: #000;
+	background: #fff;
+	font-weight: normal;
+}
+
+table.tx_windgooglemaps tr.odd td.name,
+table.tx_windgooglemaps tr.odd td.address,
+table.tx_windgooglemaps tr.odd td.zipcodeplace,
+table.tx_windgooglemaps tr.odd td.moreinfo {
+	background: #d7edf9;
+}
+
+table.tx_windgooglemaps tr td.moreinfo {
+	width: auto;
+}
+
+table.tx_windgooglemaps tr td.moreinfo a {
+	height: 18px;
+	width: 18px;
+	background: url('../../Images/orangearrow.png') no-repeat center center;
+	display: block;
+}
+
+table.tx_windgooglemaps tr td.moreinfo a span {
+	display: none;
+}
+
+table.tx_windgooglemaps tr td a {
+	font-weight: bold;
+	color: #000;
+}
+
+div.tx-windgooglemaps form#windgooglemapssearch div.selectfields div.buttons input {
+	background: url("../../Images/form_button_next.png") no-repeat -50px 0;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: right;
+	font-family: arial;
+	font-weight: bold;
+	height: 31px;
+	margin: 0;
+	padding-bottom: 3px;
+	width: 103px;
+}
+
+div.tx-windgooglemaps div.smallmap form#windgooglemapssearch div.selectfields div.buttons input {
+	margin: 15px 0 0;
+	float: left;
+}
+
+/* Large map */
+div.largemap {
+
+}
+
+div.largemap #map-canvas {
+	width: 730px;
+	height: 370px;
+	border: 1px solid #007d86;
+}
+
+div.largemap #map-canvas div.mapoverlay a {
+	color: #007d86;
+	font-weight: bold;
+	display: block;
+	margin-top: 5px;
+}
+
+div.largemap form#windgooglemapssearch {
+	width: 692px;
+	background: #007d86;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+div.largemap form#windgooglemapssearch div.selectfields {
+	overflow: hidden;
+	margin-left: 8px;
+}
+
+div.largemap form#windgooglemapssearch div.selectbox {
+	width: 180px;
+	height: 25px;
+	overflow: hidden;
+	background: url('../../Images/select-button-purple.png') no-repeat 157px 0 #F7F7F7;
+	border: 1px solid #fff;
+	float: left;
+}
+
+div.largemap form#windgooglemapssearch select {
+	font-weight: bold;
+	height: 25px;
+	width: 210px;
+	background: none;
+	padding: 0;
+	border: none;
+}
+
+div.largemap form#windgooglemapssearch span {
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	float: left;
+	margin: 5px 6px;
+}
+
+/* Small map */
+div.smallmap {
+	display: inline-block;
+}
+
+div.smallmap #map-canvas {
+	width: 510px;
+	height: 264px;
+	border: 1px solid #007d86;
+	float: left;
+}
+
+div.smallmap #map-canvas div.mapoverlay a {
+	color: #007d86;
+	font-weight: bold;
+	display: block;
+	margin-top: 5px;
+}
+
+div.smallmap form#windgooglemapssearch {
+	height: 238px;
+	background: #007d86;
+	float: left;
+	width: 183px;
+	margin-left: 14px;
+	padding: 14px 10px;
+}
+
+div.smallmap form#windgooglemapssearch p {
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+div.smallmap form#windgooglemapssearch select,
+div.smallmap form#windgooglemapssearch span.separator {
+	display: block;
+	width: 180px;
+	line-height: 2em;
+	font-weight: bold;
+}
+
+div.smallmap form#windgooglemapssearch div.selectbox {
+	width: 180px;
+	height: 25px;
+	overflow: hidden;
+	background: url('../../Images/select-button-purple.png') no-repeat 157px 0 #F7F7F7;
+	border: 1px solid #fff;
+}
+
+div.smallmap form#windgooglemapssearch select {
+	font-weight: bold;
+	height: 25px;
+	width: 210px;
+	background: none;
+	padding: 0;
+	border: none;
+}
+
+div.smallmap form#windgooglemapssearch span {
+	color: #fff;
+}

@@ -1,0 +1,49 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="appointments_form">
+	<ul id="steps">
+		<li class="first"><span class="number">1</span>Onderwerp</li>
+		<li class=""><span class="number">2</span>Datum/tijd</li>
+		<li class=""><span class="number">3</span>Uw gegevens</li>
+		<li class=""><span class="number">4</span>Controleren</li>
+		<li title="U bent bij deze stap" class="current"><span class="number">5</span>Bevestiging</li>
+	</ul>
+	<h1>Afspraak maken: uw gegevens</h1>
+	<h2>Uw afspraak</h2>
+	<f:if condition="{error}">
+		<f:then>
+			<f:render partial="SoapError" />
+		</f:then>
+		<f:else>
+			<f:if condition="<ga:compare value='{status}' compare='0' operand='values' /> ">
+				<f:then>
+					<p>Beste <f:if condition="<ga:compare value='{sessionData.client_sex}' compare='V' operand='values' />"><f:then>mevrouw</f:then><f:else>meneer</f:else></f:if> {sessionData.client_initials} {sessionData.client_lastname} ,<br /><br />
+
+					Hierbij bevestigen wij uw afspraak (afspraaknummer: {appointment}) op <ga:date format='%A %e %B %Y' timestamp='{sessionData.choosentime}' /> om <ga:date format='%H.%M' timestamp='{sessionData.choosentime}' /> uur in de Gemeente Vlissingen.<br /><br />
+					Uw afspraak geldt voor de volgende producten (neemt u het volgende per product mee):<br /></p>
+					<f:for each="{sessionData.product_names}" as="product" iteration="iterProduct">
+						<b>{product}:</b><br />
+						<f:for each="{sessionData.notes}" as="note" iteration="iterNote">
+							<f:if condition="<ga:compare value='{iterNote.index}' compare='{iterProduct.index}' operand='values' />"><f:format.html>{note}</f:format.html></f:if>
+						</f:for>
+					</f:for><br />
+					<p>Wij verzoeken u zich +/- 5 minuten voor aanvang van de afspraak te melden in het gemeentehuis.<br /><br />
+					Wij werken op volgorde van afspraaktijd. Het heeft daarom ook geen zin vroeger dan 5 minuten voor de afspraak te komen.<br />
+					Als u bijvoorbeeld een half uur eerder komt is de kans groot dat u ook een half uur moet wachten.<br />
+					Als u te laat komt voor uw afspraak kunnen wij u niet meer helpen, u kunt dan een nieuwe afspraak maken.<br /><br />
+					Mocht u verhinderd zijn, wilt u dan zo vriendelijk zijn dit aan ons door te geven.<br /><br />
+					Met vriendelijke groet,<br /><br />
+					Team KCC (Klant Contact Centrum),<br />
+					Gemeente Vlissingen<br /></p>
+				</f:then>
+				<f:else>
+					<p>Er ging iets mis, controleert u uw stappen en probeer het nogmaals!</p>
+					<div class="return_link_confirm"><f:link.action action="summary">Vorige stap</f:link.action></div>
+		 		</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</div>
+</f:section>

@@ -1,0 +1,316 @@
+/*******************************************************************************
+	tt_news Publications search
+*******************************************************************************/
+div#content div.news-amenu-container ul li {
+	display: inline;
+	background: none;
+}
+
+div#content div.news-amenu-container ul li.first {
+	background: url("../../Images/arrow-lightbrown.png") no-repeat left 10px;
+}
+
+div#content div.news-amenu-container ul li.current span {
+	color: #0097A1;
+	font-weight: bold;
+}
+
+div#content div.publications-search-form form.form-holder {
+	margin: 10px 0 34px 1px;
+	padding: 9px 0 14px 24px;
+	width: 591px;
+}
+
+/*******************************************************************************
+	tt_news List/Blog/Publications
+*******************************************************************************/
+div#content div.publications-list-item,
+div#content div.news-blog-item,
+div#content div.news-list-item {
+	background: url('../../Images/dotted-grey.png') repeat-x left bottom;
+	float: left;
+	padding: 23px 0 19px;
+	width: 737px;
+}
+
+div#content div.publications-list-item h2,
+div#content div.news-blog-item div.news-blog-content h2,
+div#content div.news-list-item div.news-list-content h2 {
+	color: #007D85;
+	font: 123%/16px Trebuchet MS, Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+div#content div.publications-list-item h2 a,
+div#content div.news-blog-item div.news-blog-content h2 a,
+div#content div.news-list-item div.news-list-content h2 a {
+	color: #333333;
+	text-decoration: none;
+	line-height: 22px;
+}
+
+div#content div.publications-list-item div.publications-list-date,
+div#content div.news-blog-item div.news-blog-content div.news-blog-date,
+div#content div.news-list-item div.news-list-content div.news-list-date {
+	color: #8E8E8E;
+	margin: 2px 0 0;
+	line-height: 15px;
+	font-size: 95%;
+}
+
+div#content div.publications-list-item div.publications-list-text,
+div#content div.news-blog-item div.news-blog-content div.news-blog-text,
+div#content div.news-list-item div.news-list-content div.news-list-text {
+	color: #323232;
+	font-size: 100%;
+	line-height: 19px;
+	margin: 17px 0 0;
+}
+
+div#content div.publications-list-item div.publications-list-text span.publications-list-morelink,
+div#content div.news-blog-item div.news-blog-content div.news-blog-text span.news-list-morelink,
+div#content div.news-list-item div.news-list-content div.news-list-text span.news-list-morelink {
+	display: inline-block;
+	width: 84px;
+	height: 17px;
+	padding: 0 0 2px 5px;
+}
+
+div#content div.publications-list-item div.publications-list-text span.publications-list-morelink a,
+div#content div.news-blog-item div.news-blog-content div.news-blog-text span.news-list-morelink a,
+div#content div.news-list-item div.news-list-content div.news-list-text span.news-list-morelink a {
+	text-decoration: underline;
+	color: #323232;
+}
+
+div#content div.news-blog-item div.news-blog-image,
+div#content div.news-list-item div.news-list-image {
+	margin: 62px 0 0;
+	float: right;
+	width: 150px;
+	height: 100px;
+	position: relative;
+}
+
+div#content div.news-blog-item div.news-blog-image img,
+div#content div.news-list-item div.news-list-image img {
+	border: 1px solid #cccecd;
+}
+
+/*******************************************************************************
+	tt_news Detailview /Detailblog /Detailpublications
+*******************************************************************************/
+div#content div.news-single-item {
+	overflow: hidden;
+}
+
+div#content div.publication-single-item h1,
+div#content div.blog-single-item h1,
+div#content div.news-single-item h1 {
+	margin: 0;
+}
+
+div#content div.publication-single-item div.publication-single-date,
+div#content div.blog-single-item div.blog-single-date,
+div#content div.news-single-item div.news-single-date {
+	padding: 5px 0 22px;
+	color: #878483;
+}
+
+div#content div.publication-single-item div.publication-single-date span,
+div#content div.blog-single-item div.blog-single-date span,
+div#content div.news-single-item div.news-single-date span {
+	text-transform: lowercase;
+}
+
+div#content div.blog-single-item div.blog-single-img,
+div#content div.news-single-item div.news-single-img {
+	position: relative;
+	float: right;
+	overflow: hidden;
+	margin: 0 0 10px 15px;
+}
+
+div#content div.blog-single-item div.blog-single-img img,
+div#content div.news-single-item div.news-single-img img {
+	vertical-align: middle;
+	border: 1px solid #cccecd;
+}
+
+div#content div.blog-single-item div.blog-single-img p.blog-single-imgcaption {
+	display: none;
+}
+
+div#content div.publication-single-item div.publication-single-subheader p,
+div#content div.publication-single-item div.publication-single-text p,
+div#content div.blog-single-item div.blog-single-footertext,
+div#content div.blog-single-item div.blog-single-text p,
+div#content div.blog-single-item div.blog-single-subheader p,
+div#content div.news-single-item div.news-single-footertext,
+div#content div.news-single-item div.news-single-text p,
+div#content div.news-single-item div.news-single-subheader p {
+	color: #323232;
+	font-size: 100%;
+	line-height: 20px;
+}
+
+div#content div.publication-single-item div.publication-single-text a,
+div#content div.blog-single-item div.blog-single-text a,
+div#content div.news-single-item div.news-single-text a {
+	text-decoration: underline;
+}
+
+div#content div.publication-single-item div.publication-single-text h2,
+div#content div.blog-single-item div.blog-single-text h2,
+div#content div.news-single-item div.news-single-text h2 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+div#content div.publication-single-item div.publication-single-backlink,
+div#content div.blog-single-item div.blog-single-backlink,
+div#content div.news-single-backlink {
+	background: url('../../Images/dotted-grey.png') repeat-x left top;
+	padding: 14px 0 14px;
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 19px 0 30px;
+}
+
+div#content div.blog-single-item div.blog-single-backlink {
+	margin-bottom: 0;
+}
+
+div#content div.blog-single-backlink,
+div#content div.news-single-backlink {
+	background: url('../../Images/dotted-grey.png') repeat-x left top;
+}
+
+div#content div.publication-single-item div.publication-single-backlink a,
+div#content div.blog-single-item div.blog-single-backlink a,
+div#content div.news-single-backlink a {
+	background: url('../../Images/arrow-lightbrown-left.png') left 5px no-repeat;
+	padding-left: 16px;
+	text-decoration: none;
+}
+
+div#content div.news-single-item .downloads {
+	margin-bottom: 20px;
+}
+
+/*******************************************************************************
+	tt_news Latest/Blog/Publications
+*******************************************************************************/
+div#content div.publications-latest-container span.link,
+div#content div.news-latest-container span.link {
+    background: url("../../Images/arrow-black.png") no-repeat left 50%;
+    color: #3F3933;
+    display: block;
+    font: bold 100%/21px Helvetica,Arial,sans-serif;
+    padding: 0 0 1px 13px;
+    position: relative;
+}
+
+div#content div.publications-latest-container span.link a,
+div#content div.news-latest-container span.link a {
+	color: #3F3933;
+}
+
+/*******************************************************************************
+	tt_news - Amenu
+*******************************************************************************/
+div#sidebar div.news-amenu-container{
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #cccecd;
+	padding: 10px;
+	margin: 0 0 20px;
+}
+
+div#sidebar div.news-amenu-container h2 {
+	color: #3F3B32;
+	margin: 0;
+	font-size: 100%;
+}
+
+div#sidebar div.news-amenu-container ul{
+	display: block;
+	position: relative;
+	list-style: none;
+	padding: 0px;
+	float: left;
+}
+
+div#sidebar div.news-amenu-container ul li{
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100px;
+	margin: 1px 0 0;
+}
+
+div#sidebar div.news-amenu-container ul li a{
+	display: block;
+	color: #3F3B32;
+	height: 17px;
+	line-height: 17px;
+	background: url("../../Images/arrow-lightbrown.png") no-repeat left 5px;
+	padding: 0 9px 0 10px;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+div#sidebar div.news-amenu-container ul li.current a{
+	color: #333333;
+	text-decoration: underline;
+}
+
+/*******************************************************************************
+	tt_news Mobile view
+*******************************************************************************/
+@media all and (max-width: 640px) {
+div#content div.news-list-item {
+	float: left;
+	padding: 23px 0 19px;
+	width: 100%;
+}
+
+div#content div.news-list-item div.news-list-content h2 a {
+	color: #333333;
+	font-size: 123%;
+	text-decoration: none;
+	line-height: 22px;
+	width: 100%;
+}
+
+div#content div.news-list-item div.news-list-image {
+	display: none;
+}
+
+div#sidebar div.news-amenu-container ul li {
+	background: none;
+	padding-left: 0;
+}
+
+.w2 div#main div.news-list-container div.pagebrowser ul {
+	margin: 5px 0 0 100px;
+	display: inline-block;
+	background: none;
+}
+.w2 div#main div.news-list-container div.pagebrowser ul li {
+	padding: 0;
+	background: none;
+}
+
+#content div.pagebrowser ul li span,
+#content div.pagebrowser ul li a {
+    color: #888483;
+    font-size: 13px;
+}
+
+#content div.pagebrowser ul li.current,
+#content div.pagebrowser ul li.current span {
+    color: #0097A0;
+}
+}

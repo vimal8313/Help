@@ -1,0 +1,34 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="footer_inner">
+		<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_footer_kolom">
+			<f:for each="{items}" as="item" iteration="iterator">
+				<f:if condition="{iterator.index}==0">
+					<f:then>
+						<div class="column first">
+							<ul class="csc-menu csc-menu-def">
+								<li>
+									<f:link.page pageUid="{item.link}">
+										{item.link_text}
+									</f:link.page>
+								</li>
+							</ul>
+						</div>
+					</f:then>
+					<f:else>
+						<div class="column">
+							<ul class="csc-menu csc-menu-def">
+								<li>
+									<f:link.page pageUid="{item.link}">
+										{item.link_text}
+									</f:link.page>
+								</li>
+							</ul>
+						</div>
+					</f:else>
+				</f:if>
+			</f:for>
+		</vh:dataRelation>
+	</div>
+</f:section>

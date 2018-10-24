@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 12pt;
+	color: #000000;
+}
+
+div,
+div#header,
+div#header strong a,
+div#background-border {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+#header.style {
+    border-bottom: none;
+}
+
+div#main {
+	width: 100%;
+}
+
+a {
+	color: #000000;
+}
+
+img {
+	display: block;
+}
+
+/****************************
+content elements
+*****************************/
+body #content,
+body #content div.news-single-date,
+body #content a,
+body #content table {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	width: 100% !important;
+}
+
+body #content ul {
+	margin: auto;
+
+}
+
+body #content ul li {
+	color: #000000;
+}
+
+body div#header h1,
+body #content p, p,
+body #content h1, h1,
+body #content h2, h2,
+body #content h3, h3,
+body #content h4, h4,
+body #content h5, h5,
+body #content h6, h6{
+	border: 0;
+	padding: 0;
+	margin: 5px 0;
+	color: #000000;
+	width: 100%;
+}
+
+body #content h1 {
+	color: #007d85;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+body #content h2 {
+	color: #007d85;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+body #content h3 {
+	color: #007d85;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body #content h4 {
+	color: #007d85;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body #content h5 {
+	color: #007d85;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body #content h6 {
+	color: #007d85;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body #content p {
+	font-size: 13px;
+}
+
+body .sidebar-holder {
+	float: left;
+	border: none;
+	display: none;
+	width: 0;
+}
+
+body #content p,
+body #content {
+	width: 100% !important;
+}
+
+div.tx-windfaq-pi1 div#questions ul.list li a,
+div.tx-windfaq-pi1 div#questions ul.list li {
+	width: 100%;
+}
+
+.content-box,
+.photo-area {
+	width: 48%;
+	margin: 0;
+	padding: 0;
+}
+
+div.content-box div.section div.block {
+	width: 48%;
+	margin: 0;
+	padding: 0;
+}
+
+/****************************
+hidden elements
+*****************************/
+div.tx-windcomments-pi1 div.form,
+div.news-amenu-container,
+#footer,
+#content div.news-single-backlink,
+div#header a.skip,
+div#header div.header-holder,
+div.addthis-socialmedia,
+div.main-holder,
+div.appointment-button,
+ul.breadcrumbs,
+ul.social-networks,
+ul.add-info,
+ul.add-navigation,
+div#cookie-outer,
+div.skiptocontent {
+	display: none;
+}

@@ -1,0 +1,56 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+<div class="appointments_form">
+	<ul id="steps">
+		<li class="first"><span class="number">1</span>Onderwerp</li>
+		<li title="U bent bij deze stap" class="current"><span class="number">2</span>Datum/tijd</li>
+		<li class=""><span class="number">3</span>Uw gegevens</li>
+		<li class=""><span class="number">4</span>Controleren</li>
+		<li class="last"><span class="number">5</span>Bevestiging</li>
+	</ul>
+	<h1>Afspraak maken: datum/tijd</h1>
+	<h2>Uw afspraak</h2>
+
+	<f:if condition="{error}">
+		<f:then>
+			<f:render partial="SoapError" />
+		</f:then>
+		<f:else>
+			<div class="products">
+				<label>Betreffende:</label>
+				<ul>
+				    <f:for each="{arguments.product_names}" as="product">
+						<li>{product}</li>
+					</f:for>
+				</ul>
+			</div>
+			<div class="duration"><label>Geschatte duur:</label><span>&plusmn; {duration} minuten</span></div>
+			<div class="moreinfo">
+				<f:for each="{arguments.moreinfo}" as="moreinfo">
+					<f:if condition="{moreinfo}"><div class="singleinfo"><f:format.html>{moreinfo}</f:format.html></div></f:if>
+				</f:for>
+			</div>
+			<h2>Kies uw datum/tijd</h2>
+			<f:flashMessages renderMode="div" />
+			<p>Onderstaand ziet u alle datums en tijden waarvoor u op dit moment een afspraak kunt maken.</p>
+			<f:form action="personal" pageUid="{settings.listUid}" id="appointment-date" noCacheHash="true" enctype="multipart/form-data">
+				<div class="select-info"><span class="date-info">Datum</span><span class="date-info">Kies tijdstip</span></div>
+				<ul class="date-select">
+					<f:for each="{times}" as="time" key="number">
+					<li>
+						<span class="day_name"><ga:date format='%a' timestamp='{number}' />.</span>
+						<span class="day"><ga:date format='%e' timestamp='{number}' /></span>
+						<span class="month"><ga:date format='%B' timestamp='{number}' /></span>
+						<label for="date_{number}">Tijdstip: </label><f:form.select name="choosentime[]" id="date_{number}" options="{time}" />
+					</li>
+					</f:for>
+				 </ul>
+				<div class="return_link"><f:link.action class="return_link" action="list">Vorige stap</f:link.action></div>
+
+				<f:form.submit class="button" name="make-appointment-step-date" value="Volgende stap" />
+			</f:form>
+		</f:else>
+	</f:if>
+</div>
+</f:section>

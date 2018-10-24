@@ -1,0 +1,15 @@
+<div class="windtwitter-status">
+    <div class="ewindtwitter-status-avatar">
+        <img src="{status.profileImageUrl}" alt="Profile" />
+    </div>
+    <div class="windtwitter-status-names">
+        <span class="windtwitter-screenname"><f:link.external uri="http://twitter.com/{status.fromUser}">{status.fromUser}</f:link.external></span>
+        <span class="windtwitter-name">{status.fromUserName}</span>
+    </div>
+    <div class="windtwitter-status-text">
+        <f:format.html>{status.text}</f:format.html>
+    </div>
+    <div class="windtwitter-status-actions">
+        <span class="windtwitter-tweetaction windtwitter-twitter-icon">{status.createdAt -> f:format.date(format: 'd. M Y')}</span>
+    </div>
+</div>

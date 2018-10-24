@@ -1,0 +1,4 @@
+div.largemap form#windgooglemapssearch div.selectbox,
+div.smallmap form#windgooglemapssearch div.selectbox {
+	height: 22px;
+}

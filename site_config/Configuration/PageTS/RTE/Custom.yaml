@@ -1,0 +1,71 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Minimal configuration for the editor
+editor:
+  config:
+    stylesSet:
+      - { name: 'btn-calypso', element: 'a', attributes: { 'class': 'btn btn-calypso' } }
+      - { name: 'btn-min-width-205', element: 'a', attributes: { 'style': 'min-width:205px' } }
+      - { name: 'btn-min-width-263', element: 'a', attributes: { 'style': 'min-width:263px' } }
+      - { name: 'btn-calypso-link', element: 'a', attributes: { 'class': 'btn btn-calypso offset-top-10' } }
+      - { name: 'h2-link-class', element: 'h2', attributes: { 'class': 'text-extra-big text-spacing-inverse-50' } }
+      - { name: 'h5-link-class', element: 'h5', attributes: { 'class': 'offset-top-10 text-spacing-75' } }
+      - { name: 'Blue Heading', element: 'span', attributes: { 'class': 'text-turquoise' } }
+      - { name: 'Span Style', element: 'span', attributes: { 'class': 'text-uppercase text-bold font-accent text-spacing-50 text-mine-shaft' } }
+      - { name: 'table text', element: 'span', attributes: { 'class': 'p text-silver-chalice text-extra-small' } }
+      - { name: 'Ul Wrapper', element: 'ul', attributes: { 'class': 'list-marked list-marked-silver-chalice text-spacing-0 text-left' } }
+      - { name: 'text-spacing-0', element: 'p', attributes: { 'class': 'text-spacing-0' } }
+      - { name: 'font-accent', element: 'p', attributes: { 'class': 'font-accent text-bold text-spacing-50' } }
+      - { name: 'offset-top-30', element: 'p', attributes: { 'class': 'offset-top-30' } }
+      - { name: 'paragraph top margin', element: 'p', attributes: { 'class': 'para-top-0' } }
+      - { name: 'paragraph top 10', element: 'p', attributes: { 'class': 'offset-top-10' } }
+      - { name: 'table class', element: 'table', attributes: { 'class': 'table table-custom table-fixed text-left' } }
+      - { name: 'tr class', element: 'tr', attributes: { 'class': 'font-accent bg-mine-shaft' } }
+      - { name: 'td class', element: 'td', attributes: { 'class': 'text-mine-shaft text-uppercase' } }
+      - {name: "Normal Link", element: "a", attributes: {class: "internal-link"}}
+      - {name: "Overview List", element: "ul", attributes: {class: "overview-list"}}
+      - {name: "ul class", element: "ul", attributes: {class: "list-marked p text-left"}}
+      - {name: "li class", element: "li", attributes: {class: "offset-top-15"}}
+    extraPlugins:
+      - justify
+      - font
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+    contentsCss: [EXT:site_config5/Resources/Public/css/docs.css]
+    format_tags: "p;h1;h2;h3;h4;h5"
+    toolbarGroups:
+      - { name: document, groups: [ mode, document, doctools ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: editing, groups: [ find, selection, spellchecker, editing ] }
+      - { name: forms, groups: [ forms ] }
+      - /
+      - { name: styles, groups: [ styles ] }
+      - { name: basicstyles, groups: [ basicstyles, cleanup ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align, bidi, paragraph ] }
+      - { name: links, groups: [ links ] }
+      - { name: insert, groups: [ insert ] }
+      - /
+      - { name: colors, groups: [ colors ] }
+      - { name: tools, groups: [ tools ] }
+      - { name: others, groups: [ others ] }
+      - { name: about, groups: [ about ] }
+
+    removeButtons:
+      - Underline
+      - Subscript
+      - Superscript
+      - Anchor
+
+processing:
+  allowTags:
+    - s

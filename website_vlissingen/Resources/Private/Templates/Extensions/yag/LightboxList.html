@@ -1,0 +1,32 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+{namespace rbac=Tx_Rbac_ViewHelpers}
+
+<extlist:comment>
+<!-- Template for rendering an album. -->
+</extlist:comment>
+
+<f:layout name="Default" />
+<f:section name="head">
+    <f:if condition="{config.settings.feed.active}">
+        <ptx:Head.link rel="alternate" type="application/rss+xml" title="{config.settings.feed.title}" href="{yag:uri.current(format:'rss')}" />
+    </f:if>
+</f:section>
+<f:section name="main">
+	<div class="tx-yag-album-items">
+		<f:for each="{listData}" key="rowIndex" as="listRow">
+			<f:cycle values="{0:'', 1:'', 2:'', 3: 3}" as="isFourth">
+				<div class="singleImage{f:if(condition: '{isFourth}==3', then: ' isFourth')}">
+					<a href="{yag:resource.image(item: listRow.image.value, resolutionName: 'medium')}"
+						class="fancybox "
+						rel="album{listRow.image.value.album.uid}"
+						title="{listRow.image.value.title}">
+						<yag:image item="{listRow.image.value}" resolutionName="thumb" alt="{listRow.image.value.description}"/>
+					</a>
+				</div>
+			</f:cycle>
+		</f:for>
+	</div>
+</f:section>
+
+<f:section name="feEdit"></f:section>

@@ -1,0 +1,28 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+
+		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+			<td class="wrapper" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Century Gothic', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 13px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+				<table class="links" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;">
+					<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+						<td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Century Gothic', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 20px; font-size: 13px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
+							<h2 class="title" style="color: #008ABD; font-family: 'Century Gothic', 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 20px; margin: 10px 0; padding: 0;" align="left">{data.button_title}</h2>
+							<div class="links">
+								<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_linklist_item">
+								<f:for each="{items}" as="item" iteration="iterator">
+								<div class="link" style="font-weight: bold; color: #FFFFFF; font-family: arial;">
+									&gt;
+									<vh:typolink parameter="{item.link}" ATagParams='style="color: #222222 !important; text-decoration: none; font-weight: normal;"'>{item.link_text}
+									</vh:typolink>
+								</div>
+								</f:for>
+								</vh:dataRelation>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+</f:section>

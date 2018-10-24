@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/wind_be_secure_pw/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/wind_be_secure_pw/Configuration/TypoScript/setup.txt">

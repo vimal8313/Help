@@ -1,0 +1,44 @@
+/*******************************************************************************
+ Twitter
+*******************************************************************************/
+#content .windtwitter .windtwitter-timeline-header .title {
+	font: 138%/29px Trebuchet MS, Arial, Helvetica, sans-serif;
+	color: #007d85;
+}
+
+#content .windtwitter .windtwitter-status {
+	float: left;
+	width: 100%;
+	padding: 8px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+#content .windtwitter .windtwitter-status-names {
+	float: left;
+	width: 18%;
+}
+
+#content .windtwitter .windtwitter-status-text {
+	float: left;
+	width: 80%;
+}
+
+#content .windtwitter .windtwitter-status-text p {
+	margin: 0;
+}
+
+#content .windtwitter .windtwitter-status-actions a,
+#content .windtwitter .windtwitter-status-text a {
+	color: #007d85;
+}
+
+#content .windtwitter .windtwitter-status-actions {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+}
+
+#content .windtwitter .windtwitter-status-actions span.windtwitter-weetaction{
+	float: right;
+	color: #aaa;
+}

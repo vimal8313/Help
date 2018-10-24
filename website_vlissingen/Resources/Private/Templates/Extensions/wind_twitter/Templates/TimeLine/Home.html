@@ -1,0 +1,6 @@
+<f:layout name="Timeline" />
+<f:section name="Content">
+    <f:for each="{homeTimeLine}" as="status">
+        <f:render partial="Timeline_status" arguments="{status: status}" />
+    </f:for>
+</f:section>

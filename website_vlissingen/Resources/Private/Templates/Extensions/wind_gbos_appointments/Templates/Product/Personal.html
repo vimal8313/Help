@@ -1,0 +1,89 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="appointments_form">
+	<ul id="steps">
+		<li class="first"><span class="number">1</span>Onderwerp</li>
+		<li class=""><span class="number">2</span>Datum/tijd</li>
+		<li title="U bent bij deze stap" class="current"><span class="number">3</span>Uw gegevens</li>
+		<li class=""><span class="number">4</span>Controleren</li>
+		<li class="last"><span class="number">5</span>Bevestiging</li>
+	</ul>
+	<h1>Afspraak maken: uw gegevens</h1>
+	<h2>Uw afspraak</h2>
+	<f:form action="summary" pageUid="{settings.listUid}" id="appointment-personal" noCacheHash="true" enctype="multipart/form-data">
+		<div class="products"><label>Betreffende:</label>
+			<ul>
+				<f:for each="{sessionData.product_names}" as="product">
+					<li>{product}</li>
+				</f:for>
+			</ul>
+		</div>
+		<div class="duration"><label>Geschatte duur:</label><span>&plusmn; {sessionData.duration} minuten</span></div>
+		<div class="date"><label>Datum:</label><span><ga:date format='%A %e %B %Y' timestamp='{arguments.choosentime}' /></span></div>
+		<div class="time"><label>Tijdstip:</label><span><ga:date format='%H.%M' timestamp='{arguments.choosentime}' /> uur</span></div>
+
+		<h2>Uw gegevens</h2>
+		<f:flashMessages renderMode="div" />
+		<div class="form_data">
+			<div class="info">Velden met een <span class="required">*</span> zijn verplicht</div>
+			<div class="pair text">
+				<label>Voornaam of initialen</label>
+				<span class="field"><f:form.textfield name="client_initials" value="{sessionData.client_initials}" /></span>
+			</div>
+
+			<div class="pair text">
+				<label>Achternaam<span class="required">*</span></label>
+				<span class="field"><f:form.textfield name="client_lastname" value="{sessionData.client_lastname}" /></span>
+			</div>
+
+			<div class="pair radio">
+				<label>Geslacht<span class="required">*</span></label>
+				<f:form.radio name="client_sex" value="M" checked="<f:if condition='<ga:compare value=\'M\' compare=\'{sessionData.client_sex}\' />' >TRUE</f:if>" /> Man
+				<f:form.radio name="client_sex" value="V" checked="<f:if condition='<ga:compare value=\'V\' compare=\'{sessionData.client_sex}\' />' >TRUE</f:if>" /> Vrouw
+			</div>
+
+			<div class="pair date">
+				<label>Geboortedatum<span class="required">*</span></label>
+				<span class="field"><f:form.textfield name="client_dateofbirth" class="date medium" size="12" value="{sessionData.client_dateofbirth}" /></span>
+				<span class="example">DD-MM-JJJJ (bv. 23-08-1980)</span>
+			</div>
+
+			<div class="pair text">
+				<label>Straat + huisnummer</label>
+				<span class="field"><f:form.textfield name="client_address" value="{sessionData.client_address}" /></span>
+			</div>
+
+			<div class="pair text">
+				<label>Postcode</label>
+				<span class="field"><f:form.textfield name="client_postalcode" value="{sessionData.client_postalcode}" /></span>
+			</div>
+
+			<div class="pair text">
+				<label>Woonplaats</label>
+				<span class="field"><f:form.textfield name="client_city" value="{sessionData.client_city}" /></span>
+			</div>
+
+			<div class="pair text">
+				<label>Telefoonnr<span class="required">*</span></label>
+				<span class="field"><f:form.textfield name="client_tel" value="{sessionData.client_tel}" /></span>
+				<span class="example">bv. 06-12345678 of 0499-123456</span>
+			</div>
+
+			<div class="pair email">
+				<label>E-mailadres<span class="required">*</span></label>
+				<span class="field"><f:form.textfield name="client_mail" type="email" value="{sessionData.client_mail}" /></span>
+			</div>
+
+			<div class="pair textarea">
+				<label>Opmerking</label>
+				<span class="field"><f:form.textarea cols="30" rows="5" name="appointment_description" value="{sessionData.appointment_description}" /></span>
+			</div>
+		</div>
+		<div class="return_link"><f:link.action action="datetime">Vorige stap</f:link.action></div>
+		<f:form.submit class="button" name="make-appointment-step-summary" value="Volgende stap" />
+	</f:form>
+</div>
+</f:section>

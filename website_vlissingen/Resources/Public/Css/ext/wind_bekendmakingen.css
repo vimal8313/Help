@@ -1,0 +1,122 @@
+/*******************************************************************************
+ Bekendmakingen naar PDF
+*******************************************************************************/
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.buttons,
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.pair {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.pair div.label {
+	width: 150px;
+	float: left;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.pair div.field {
+	float: left;
+	overflow: hidden;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.pair div.field input.date {
+	width: 100px;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.pair div.field div.option input {
+	margin-left: 0;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.buttons {
+	text-align: left;
+}
+
+div.tx-windbekendmakingen-pi1 div.bekendmakingen_form div.buttons input {
+	margin-left: 150px;
+}
+
+body.pdf_header,
+body.pdf_footer,
+body.pdf {
+	background-image: none;
+	color: #000000;
+	padding: 0;
+	margin: 0;
+}
+
+body.pdf div#content {
+	padding: 0;
+	margin: 0;
+	width: auto;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking {
+	border-bottom: 1px dotted #000000;
+	padding: 24px 0 24px 0;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking:last-child {
+	border-bottom: 0px;
+	padding: 24px 0 0 0;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking div.title {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking div.date {
+	font-style: italic;
+	background: url('../../Images/calendar-pdf.png') 0 2px no-repeat;
+	padding-left: 20px;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking div.subheader {
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_full div.bekendmaking div.description {
+	margin-top: 10px;
+	font-weight: normal;
+}
+
+body.pdf div#content div.tx-windbekendmakingen-pi1 div.pdf_headers div.bekendmaking div.title {
+	font-weight: normal;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+body.pdf_header {
+}
+
+body.pdf_header div.pdf_header {
+	background: url('../../Images/logo-pdf.png') 0 0 no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	border-bottom: 1px solid #000000;
+	overflow: hidden;
+	height: 100px;
+}
+
+body.pdf_header div.pdf_header div.dates {
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	top: 54px;
+	font-size: 20px;
+	color: #999999;
+}
+
+body.pdf_footer div.pdf_footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	border-top: 1px solid #000000;
+	overflow: hidden;
+	padding-top: 8px;
+	font-size: 10px;
+}
+
+body.pdf_footer div.pdf_footer div.pages {
+	float: right;
+}

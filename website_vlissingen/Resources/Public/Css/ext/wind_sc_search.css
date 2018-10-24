@@ -1,0 +1,28 @@
+/*******************************************************************************
+	wind_sc_search
+*******************************************************************************/
+div#content div.tx-windscsearch-pi1 ul {
+	list-style: none;
+	margin: 0 0 22px;
+	padding: 0;
+	line-height: 17px;
+}
+
+div#content div.tx-windscsearch-pi1 ul li {
+	position: relative;
+	padding: 5px 0 4px 13px;
+	background: url('../../Images/arrow-lightbrown.png') no-repeat left 11px;
+}
+
+div#content div.tx-windscsearch-pi1 ul li div.link a {
+	font-weight: bold;
+}
+
+div#content div.tx-windscsearch-pi1 ul li div.source {
+	font-style: italic;
+}
+
+div#content div.tx-windscsearch-pi1 div.browser ul li{
+	padding: 5px 0 4px;
+	background: none;
+}

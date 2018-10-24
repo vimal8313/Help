@@ -1,0 +1,294 @@
+body.kcc {
+	width: 720px;
+	height: 520px;
+	color: #3F3933;
+	font: 13px/18px Arial,Helvetica,sans-serif;
+	margin: 5px;
+}
+
+a {
+	color: #3F3933;
+	text-decoration: none;
+}
+
+/*******************************************************************************
+	content
+*******************************************************************************/
+div#content {
+	float: left;
+	padding: 0 10px 0 0;
+	width: 485px;
+}
+
+div#content h1 {
+	color: #007D85;
+	font: bold 138%/22px Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 10px;
+}
+
+div#content h2 {
+ color: #007D85;
+	font: bold 123%/19px Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 9px;
+}
+
+div#content h3 {
+	color: #007D85;
+	font: bold 100%/16px Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 3px;
+}
+
+div#content ul {
+	line-height: 16px;
+	list-style: none outside none;
+	margin: 0 0 22px;
+	padding: 0;
+}
+
+#content ul li {
+	background: url('../Images/arrow-lightbrown.png') no-repeat left 10px;
+	padding: 5px 0 4px 13px;
+	position: relative;
+}
+
+div#content p.bodytext a {
+	text-decoration: underline;
+}
+
+/*******************************************************************************
+	content alfabet
+*******************************************************************************/
+div#content ul.alphabet {
+	list-style: none;
+	overflow: hidden;
+	padding: 2px 0 0 0;
+	font: bold 19px/23px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+div#content ul.alphabet li {
+	float: left;
+	padding: 0;
+	background: none;
+}
+
+div#content ul.alphabet a {
+	color: #333;
+	display: block;
+	padding: 1px 2px 2px 1px;
+	border: 2px solid #037f87;
+	width: 23px;
+	border-width: 2px 1px;
+	border-collapse: collapse;
+}
+
+div#content ul.alphabet a:hover,
+div#content ul.alphabet li.current {
+	background: #037f87;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div#content ul.alphabet li.current a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div#content div.products h2.letter span {
+	color: #007D85;
+	font: bold 42px/50px Arial,Helvetica,sans-serif;
+	margin: 0 0 0 6px;
+}
+
+/*******************************************************************************
+	content search/sections
+*******************************************************************************/
+div#content div.search form.form-holder {
+	background: #F7F6F4;
+	border: 1px solid #E1DAD4;
+	margin: 0 0 10px;
+	padding: 10px;
+}
+
+div#content div.search form.form-holder label {
+	margin: 0 16px 0 0;
+}
+
+div#content div.search form.form-holder div.pair div.field div.pair {
+	display: inline-block;
+}
+
+div#content div.search form.form-holder div.search-form {
+	float: none;
+	margin: 0 0 13px;
+	overflow: hidden;
+	width: 226px;
+	background: none repeat scroll 0 0 #0097A1;
+	border: 2px solid #0097A1;
+	display: inline-block;
+}
+
+div#content div.search form.form-holder div.search-form input[type="text"] {
+	background: #FFFFFF;
+	border: none;
+	color: #404040;
+	float: left;
+	font: 100%/23px Arial,Helvetica,sans-serif;
+	height: 23px;
+	margin: 0;
+	padding: 1px 7px 4px;
+	width: 182px;
+}
+
+div#content div.search form.form-holder div.search-form input[type="submit"] {
+	background: url('../Images/sprite.png') no-repeat 0 -112px;
+	border: none;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 0;
+	height: 28px;
+	line-height: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -9999px;
+	width: 30px;
+}
+
+div#content ul.section-holder li.section,
+div#content div.categories ul li.category {
+	margin: 0;
+	overflow: hidden;
+	padding: 0 0 20px;
+	background: none;
+}
+
+/*******************************************************************************
+	content product
+*******************************************************************************/
+div#content div.tabs {
+	margin: 0 0 0 1px;
+	padding: 1px 0 0;
+	display: block;
+	height: 23px;
+}
+
+div#content ul.tabset {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#content ul.tabset h2 {
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+div#content ul.tabset li {
+	float: left;
+	padding: 0;
+	margin: 0 3px 0 0;
+}
+
+div#content ul.tabset li a {
+	display: block;
+	background: #d7d9d9;
+	padding: 5px 18px 6px 17px;
+}
+
+div#content div.tabs ul.tabset li.active a,
+div#content div.tabs ul.tabset li a:hover {
+	background: #ffffff;
+	color: #007D85;
+	border: 1px solid #d7d9d9;
+	border-width: 1px 1px 0 1px;
+	padding: 4px 17px 7px 16px;
+	text-decoration: none;
+	margin: 0;
+}
+
+div#content div.product {
+	border: 1px solid #D7D9D9;
+	line-height: 21px;
+	margin: 4px 0 0 1px;
+	padding: 18px 17px 12px 14px;
+}
+
+div#content div.product div.related {
+	background: url('../Images/divider04.png') repeat-x 0 top;
+	margin: 10px 0 0;
+	padding: 20px 0 0;
+}
+
+/*******************************************************************************
+	submenu
+*******************************************************************************/
+div#sidebar {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 225px;
+}
+
+div#sidebar ul.add-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 19px 17px 1px 17px;
+	background: #f7f7f7;
+}
+
+div#sidebar ul.add-navigation li {
+	padding: 5px 0 7px;
+	background: url('../Images/divider04.png') repeat-x;
+}
+
+div#sidebar ul.add-navigation li.current {
+	font-weight: bold;
+}
+
+div#sidebar ul.add-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0 1px 13px;
+}
+
+div#sidebar ul.add-navigation ul li {
+	position: relative;
+	padding: 0 0 4px 9px;
+	background: url('../Images/sprite.png') no-repeat -52px -103px;
+}
+
+div#sidebar ul.add-navigation li.current {
+	font-weight: bold;
+}
+
+div#sidebar ul.add-navigation .drop a {
+	color: #7f1966;
+}
+
+div#sidebar ul.add-navigation .drop a:after {
+	background: url('../Images/sprite.png') no-repeat -83px -99px;
+}
+
+
+/*******************************************************************************
+	Solr
+*******************************************************************************/
+div#content div.tx-solr div#tx-solr-search {
+	width: auto;
+	float: none;
+}
+
+div#content div.tx-solr div#tx-solr-search div.tx-solr-search-form div.input {
+	width: 300px;
+}
+
+div#content div.tx-solr div#tx-solr-search div.tx-solr-search-form div.input input#search-field {
+	width: 200px;
+}
+
+div#content div.tx-solr div#tx-solr-search-functions {
+	display: none;
+}

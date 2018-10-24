@@ -1,0 +1,45 @@
+/*Suchergebnisse*/
+div.content form#MainSearch2 input.SuchBtn {
+	paddin-bottom: 3px;
+}
+div.content form#MainSearch2 input.text {
+	width: 115px;
+	font-size: 95%;
+	border: none;
+	background: #eee;
+	padding: 2px 0;
+}
+div.tx-indexedsearch {
+	margin-left: 15px;
+}
+div.tx-indexedsearch div.tx-indexedsearch-noresults {
+	text-align:center;
+	font-weight:bold;
+}
+div.tx-indexedsearch-res TD.tx-indexedsearch-descr {
+	font-style:italic;
+	font-size: 97%;
+}
+div.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-info {
+	font-size: 95%;
+}
+div.tx-indexedsearch-browsebox {
+	margin: 10px 0;
+}
+div.tx-indexedsearch-browsebox ul.browsebox {
+	list-style: none;
+	background-color: #eee;
+	height: 18px;
+}
+div.tx-indexedsearch-browsebox ul.browsebox li {
+	float: left;
+	padding: 1px;
+}
+div.tx-indexedsearch-whatis {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+p.tx-indexedsearch-noresults {
+	padding-bottom: 25px;
+	color: #FF0000;
+}

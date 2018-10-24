@@ -1,0 +1,33 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_config/Configuration/PageTS/RTE.ts">
+
+TCEFORM.tt_content.header_layout {
+	altLabels {
+		1 = 1st Heading
+		2 = 2nd Heading
+		3 = 3rd Heading
+		4 = 4th Heading
+		5 = 5th Heading
+	}
+
+	addItems {
+		10 = h2 Heading
+		11 = h5 Heading
+		12 = h5 cell-sm-10
+	}
+}
+
+
+TCEFORM.tt_content.frame_class {
+   addItems.100 = top-30 top-50
+   addItems.101 = top-30 top-60
+   addItems.102 = range-xs-center offset-top-25
+   addItems.103 = range-xs-center offset-top-55
+   addItems.104 = top-20 top-44
+   addItems.105 = Blue Buttons
+   addItems.106 = cell sm 6
+   addItems.107 = cell sm 10
+   addItems.108 = cell-sm-10 cell-lg-8 offset-top-30
+   addItems.109 = offset-top-64 offset-md-top-95
+   addItems.110 = offset-top-25
+   addItems.111 = col-lg-service
+}

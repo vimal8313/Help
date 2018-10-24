@@ -1,0 +1,14 @@
+{namespace viewhelper=Tx_WindFontsize_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+<f:for each="{buttons}" as="button">
+	<f:if condition="{cookieValue} == {button.class}">
+		<f:then>
+			<f:link.action title="{button.text}" class="{button.class} active" action="resize" arguments="{fontsize : button.class}" addQueryString="TRUE"><span class="style">A</span></f:link.action>
+		</f:then>
+		<f:else>
+			<f:link.action title="{button.text}" class="{button.class}" action="resize" arguments="{fontsize : button.class}" addQueryString="TRUE"><span>A</span></f:link.action>
+		</f:else>
+	</f:if>
+</f:for>
+</f:section>

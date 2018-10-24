@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>WIND Raadsmoelenboek</title>
+</head>
+
+<body>
+
+<!-- ###OVERVIEW### begin -->
+<div class="overview">
+	<h2>Overzicht raadsleden</h2>
+	<table>
+		<thead>
+			<tr>
+				<th id="name" class="###NAAM_ORDER###" scope="col"><a href="###URL_SORT_NAAM###">Naam</a></th>
+				<th id="fraction" class="###FRACTIE_ORDER###" scope="col"><a href="###URL_SORT_FRACTIE###">Fractie</a></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		<!-- ###SINGLE_ROW### begin -->
+			<tr ###CLASS###>
+				<td id="name">
+					<a href="###URL_SINGLE###">
+						###NAAM###
+					</a>
+				</td>
+				<td>
+					###PARTIJ###
+				</td>
+				<td class="partijlidlink">
+					<div>
+					<a href="###URL_SINGLE###">
+						Ga naar het partijlid.
+					</a>
+					</div>
+				</td>
+
+			</tr>
+		<!-- ###SINGLE_ROW### end -->
+		</tbody>
+	</table>
+</div>
+<!-- ###OVERVIEW### end -->
+
+<!-- ###SINGLE### begin -->
+<div class="single">
+	<div class="pi_container">
+		<h2>###NAAM###</h2>
+		<div class="personal_info">
+			<div class="plaatje">
+				<img src="###IMAGE###" alt="###NAAM###" />
+			</div>
+			<div class="naam">
+				###NAAM###
+			</div>
+			<div class="adres">
+				###ADRES###
+			</div>
+			<div class="postcodewoonplaats">
+				####POSTCODE### ###WOONPLAATS###
+			</div>
+			<!-- ###PHONENUMBER### begin -->
+			<div class="telefoonnummer">
+				<span>T </span>###TELEFOONNUMMER###
+			</div>
+			<!-- ###PHONENUMBER### end -->
+			<div class="mobielnummer">
+				<span>M </span>###MOBIELNUMMER###
+			</div>
+			<!-- ###EMAIL### begin -->
+			<div class="emailadres">
+				<a href="mailto:###EMAILADRES###">
+					###EMAILADRES_DISPLAY###
+				</a>
+			</div>
+			<!-- ###EMAIL### end -->
+			<!-- ###NEVENFUNCTIES### begin -->
+			<div class="nevenfuncties">
+				<a href="###NEVENFUNCTIES_LINK###" class="showpopup">
+					Hoofd- en nevenfuncties
+				</a>
+				<div class="nevenfuncties-popup smoelenboek-popup">
+					<div class="top-border"> </div>
+					<div class="left-border"> </div>
+					<div class="content">
+						<div class="head">
+							<h3>Hoofd- en nevenfuncties</h3>
+							<span class="close">Sluiten</span>
+						</div>
+						<div class="nevenfuncties-popup-container">
+							<div class="pi-popup"></div>
+							<div class="nevenfuncties-popup-content">
+								###NEVENFUNCTIES_CONTENT###
+							</div>
+						</div>
+					</div>
+					<div class="right-border"></div>
+					<div class="bottom-border"></div>
+				</div>
+			</div>
+			<!-- ###NEVENFUNCTIES### end -->
+			<!-- ###SOCIALNETWORKS### begin -->
+			<div class="socialnetworks">
+
+				<!-- ###TWITTER### begin -->
+					<div class="socialnetworks_icon">
+						<a href="###TWITTER_LINK###">
+							<f:image src="EXT:website_vlissingen/Resources/Public/Images/twitter_icon.gif" alt="Twitter" />
+						</a>
+					</div>
+				<!-- ###TWITTER### end -->
+				<!-- ###FACEBOOK### begin -->
+					<div class="socialnetworks_icon">
+						<a href="###FACEBOOK_LINK###">
+							<f:image src="EXT:website_vlissingen/Resources/Public/Images/facebook_icon.gif" alt="Facebook" />
+						</a>
+					</div>
+				<!-- ###FACEBOOK### end -->
+				<!-- ###LINKEDIN### begin -->
+					<div class="socialnetworks_icon">
+						<a href="###LINKEDIN_LINK###">
+							<f:image src="EXT:website_vlissingen/Resources/Public/Images/linkedin_icon.gif" alt="Linkedin" />
+						</a>
+					</div>
+				<!-- ###LINKEDIN### end -->
+			</div>
+			<!-- ###SOCIALNETWORKS### end -->
+		</div>
+	</div>
+
+	<div class="info">
+		<h3>Ken uw gemeentebestuurder</h3>
+		###INFO###
+	</div>
+
+</div>
+<!-- ###SINGLE### end -->
+
+<!-- ###PARTIJLIJST### begin -->
+<div class="partijlijst">
+	<h2>Fracties</h2>
+	<ul>
+	<!-- ###PARTIJ### begin -->
+		<li class="###PARTIJ_ACTIVE###">
+			<h3>
+				<a href="###PARTIJ_LINK###">
+					###PARTIJ_NAAM###
+				</a>
+				<div class="partijlogo"><img src="###PARTIJ_LOGO###" alt="###PARTIJ_NAAM###" /></div>
+			</h3>
+			<ul class="###OPEN###">
+				<!-- ###LEDEN### begin -->
+				<li class="###ACTIVE###">
+					<a href="###URL_LID###">
+						<img src="###LID_IMG###" alt="###LID_NAAM###" />
+						<span>###LID_NAAM###</span>
+					</a>
+				</li>
+				<!-- ###LEDEN### end -->
+			</ul>
+		</li>
+	<!-- ###PARTIJ### end -->
+	</ul>
+
+</div>
+<!-- ###PARTIJLIJST### end -->
+
+<!-- ###PARTIJPAGINA### begin -->
+<div class="partijpagina">
+	<h2>###PARTIJ_NAAM###</h2>
+	<div class="partijlogo"><img src="###PARTIJ_LOGO###" alt="###PARTIJ_NAAM###" /></div>
+	<p>
+		###PARTIJ_NAAM### is met ###AANTAL_ZETELS### zetel(s) vertegenwoordigd in de gemeenteraad.
+	</p>
+
+	<!-- ###WEBSITE### begin -->
+	<p>
+		###PARTIJ_NAAM### heeft een eigen website: <a href="###URL###">###URL###</a>
+	</p>
+	<!-- ###WEBSITE### end -->
+
+	<h4>De leden</h4>
+	<ul>
+		<!-- ###LID### begin -->
+		<li>
+			<a href="###LID_URL###">###LID_NAAM###</a>
+			<!-- ###FUNCTIE### begin -->(###FUNCTIE_NAAM###)<!-- ###FUNCTIE### end -->
+		</li>
+		<!-- ###LID### end -->
+	</ul>
+</div>
+<!-- ###PARTIJPAGINA### end -->
+</body>
+</html>

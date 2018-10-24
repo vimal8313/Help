@@ -1,0 +1,335 @@
+/* ***********************************************************************************************
+ * WIND Smoelenboek
+ * ***********************************************************************************************/
+div.tx-windraadsmoelenboek-pi1 a {
+	font-weight: bold;
+	color: #3F3B33;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijpagina ul li a {
+	line-height:20px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table thead tr th#fraction,
+div.tx-windraadsmoelenboek-pi1 div.overview table thead tr th#name {
+	width: 50%;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table thead tr th#name,
+div.tx-windraadsmoelenboek-pi1 div.overview table tbody tr td#name {
+	padding: 0 0 0 10px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table thead tr th#residence {
+	width:20%;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table thead tr th {
+	background: #F3F1EE;
+	width:0%;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst {
+	margin-bottom: 20px;
+	border: 1px solid #D1C7BE;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst div.extra-foto {
+	width: 274px;
+	padding: 13px;
+}
+
+div#sidebar div.tx-windraadsmoelenboek-pi1 div.partijlijst h2 {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #D1C7BE;
+	color: #0097a1;
+	font-weight: bold;
+	height: 20px;
+	margin: 0 0 10px;
+	padding: 7px 10px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul {
+	margin: 0;
+	padding: 0 10px 7px 10px;
+	list-style: none;
+	width: 208px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li {
+	padding: 0;
+	margin: 0 0 3px;
+	overflow: hidden;
+	background: url("../'../Images/dotted-grey.png") repeat-x left bottom;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li h3 {
+	margin: 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li.active h3 {
+	border-color: #efeff0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li h3 a {
+	text-decoration: none;
+	color: #3F3933;
+	display: block;
+	background: url('../../Images/arrow-down.png') no-repeat right 50%;
+	line-height: 25px;
+	padding: 0 10px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li h3 a:hover {
+	text-decoration: underline;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li.active h3 a {
+	background: url("../../Images/arrow-up.png") no-repeat right 50%;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul {
+	display: none;
+	overflow: hidden;
+	padding: 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul.open {
+	display: block;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul li {
+	width: 97px;
+	height: 160px;
+	margin: 5px 6px 5px 0;
+	padding: 10px 0 0;
+	float: left;
+	background: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul li.active {
+	background: #0097A1;
+	border-color: #0097A1;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul li a {
+	text-decoration: none;
+	display: block;
+	height: 130px;
+	padding: 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul li a span {
+	display: block;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.partijlijst ul li ul li.active a {
+	color: #ffffff;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single {
+	overflow: hidden;
+	min-height: 700px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.pi_container {
+	float: left;
+	width: 210px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.pi_container h2 {
+	display: none;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.personal_info,
+div.tx-windraadsmoelenboek-pi1 div.single div.pi-popup {
+	padding: 10px;
+	border: 1px solid #D1C7BE;
+	color: #3F3B33;
+	line-height: 18px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.personal_info a {
+	line-height: 37px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.pi_container div.pi-popup div.smoelenboek-popup {
+	display: none;
+}
+
+
+div.tx-windraadsmoelenboek-pi1 div.single div.personal_info div.plaatje img,
+div.tx-windraadsmoelenboek-pi1 div.single div.pi-popup div.plaatje img {
+	border: 1px solid #ffffff;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.personal_info div,
+div.tx-windraadsmoelenboek-pi1 div.single div.pi-popup div {
+	line-height: 1.5em;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.personal_info div.naam,
+div.tx-windraadsmoelenboek-pi1 div.single div.pi-popup div.naam {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #3F3B33;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.pi_container div.smoelenboek-popup {
+	display: none;
+	position: absolute;
+	width: 600px;
+	height: 450px;
+	top: 50px;
+	left: 0;
+	border: 1px solid #D1C7BE;
+	background: #ffffff;
+	z-index: 100;
+	padding: 10px 0 0 10px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.info {
+	margin: 0 0 0 221px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup {
+	overflow: hidden;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup iframe {
+	border: 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup div.head {
+	overflow: hidden;
+	line-height: 40px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup div.head h3,
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup div.head h4 {
+	float: left;
+	margin: 0 0 0 2em;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.smoelenboek-popup div.head span.close {
+	float: right;
+	background: url('../../Images/closebtn.gif') no-repeat right top;
+	display: block;
+	height: 17px;
+	width: 17px;
+	overflow: hidden;
+	margin: 5px;
+	line-height: 4em;
+	cursor: pointer;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.info h3 {
+	color:#0097A1;
+	font-size:20px;
+	margin-top: 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.info h4 {
+	color:#0097A1;
+	font-size:12px;
+	font-weight: bold;
+	margin: -10px 0 -10px 0;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.pi-popup {
+	overflow: hidden;
+	float: left;
+	margin: 0 10px 0 0;
+	width: 250px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.single div.nevenfuncties-popup-content {
+	float: left;
+	width: 300px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview h2 {
+	font-size: 1em;
+	padding: 0 0 3px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table a:hover {
+	text-decoration: underline;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview h3 {
+	color: #0097A1;
+	font-size: 1.4em;
+	padding: 0 0 3px;
+	margin: 0;
+	border-bottom: 1px dotted #0097A1;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table {
+	font-size: 1em;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table td a {
+	color:#000000;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table th,
+div.tx-windraadsmoelenboek-pi1 div.overview table td {
+	text-align: left;
+	line-height: 2em;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table td {
+	border-bottom: 1px solid #D1C7BE;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table th a {
+	background: url('../../Images/nosorting.png') no-repeat right center;
+	padding: 0 10px 0 0 ;
+	color: #0097A1;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table th.ASC a {
+	background-image: url('../Images/sortAsc.png');
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table th.DESC a {
+	background-image: url('../../Images/sortDesc.png');
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table td.partijlidlink div {
+	overflow: hidden;
+	height: 2em;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.overview table td.partijlidlink a {
+	display: block;
+	background: url('../../Images/arrow.png') no-repeat 40px .75em;
+	padding-top: 3em;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.socialnetworks {
+	width: 149px;
+	height: 16px;
+	margin-top: 10px;
+}
+div.tx-windraadsmoelenboek-pi1 div.socialnetworks div.socialnetworks_icon {
+	float: left;
+	margin-right: 5px;
+}
+
+div.tx-windraadsmoelenboek-pi1 div.socialnetworks div.socialnetworks_icon a img{
+	float: left;
+}

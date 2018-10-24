@@ -1,0 +1,28 @@
+<f:layout name="Vervolg" />
+<f:section name="content">
+	<div class="main-holder">
+		<div class="gallery-box alignleft gallery-js-ready">
+			<f:cObject typoscriptObjectPath="lib.content.left" />
+		</div>
+		<div class="widget">
+			<f:cObject typoscriptObjectPath="lib.content.sidebar" />
+		</div>
+	</div>
+	<div class="twocolumns">
+		<div id="content">
+			<f:cObject typoscriptObjectPath="lib.rootline" />
+			<f:cObject typoscriptObjectPath="lib.pagetitle" />
+			<f:cObject typoscriptObjectPath="lib.content.main" />
+		</div>
+
+		<div id="sidebar">
+			<f:cObject typoscriptObjectPath="lib.sidebar_appointment" />
+			<div class="sidebar-holder">
+				<f:cObject typoscriptObjectPath="lib.sidebar_address" />
+			</div>
+		</div>
+	</div>
+	<div class="addthis-socialmedia">
+		<f:cObject typoscriptObjectPath="lib.addThisJS" />
+	</div>
+</f:section>

@@ -1,0 +1,72 @@
+{namespace d=Dpool\Website\ViewHelpers}
+<f:if condition="{configuration.insertAbove}">
+    <f:render section="paginator" arguments="{pagination: pagination, configuration: configuration}" />
+</f:if>
+
+<f:renderChildren arguments="{contentArguments}" />
+
+<f:if condition="{configuration.insertBelow}">
+    <f:render section="paginator" arguments="{pagination: pagination, configuration: configuration}" />
+</f:if>
+
+<f:section name="paginator">
+
+    <f:if condition="{pagination.previousPage}">
+        <f:if condition="{pagination.previousPage} > 1">
+            <f:then>
+                <d:headerData><link rel="prev" href="{f:widget.uri(arguments: {currentPage: pagination.previousPage}) -> f:format.htmlentities()}" /></d:headerData>
+            </f:then>
+            <f:else>
+                <d:headerData><link rel="prev" href="{f:widget.uri() -> f:format.htmlentities()}" /></d:headerData>
+            </f:else>
+        </f:if>
+    </f:if>
+    <f:if condition="{pagination.nextPage}">
+        <d:headerData><link rel="next" href="{f:widget.uri(arguments: {currentPage: pagination.nextPage}) -> f:format.htmlentities()}" /></d:headerData>
+    </f:if>
+
+
+
+
+
+
+    <ul class="f3-widget-paginator pagination justify-content-center">
+        <f:if condition="{pagination.displayRangeStart} > 1">
+            <li class="first page-item">
+                <f:widget.link class="page-link" addQueryStringMethod="{configuration.addQueryStringMethod}" section="{configuration.section}">1</f:widget.link>
+            </li>
+        </f:if>
+        <f:if condition="{pagination.hasLessPages}">
+            <li>...</li>
+        </f:if>
+        <f:for each="{pagination.pages}" as="page">
+            <f:if condition="{page.isCurrent}">
+                <f:then>
+                    <li class="current page-item active">
+                        <a class="page-link color__P01" href="#">{page.number}</a>
+                    </li>
+                </f:then>
+                <f:else>
+                    <li class="page-item">
+                        <f:if condition="{page.number} > 1">
+                            <f:then>
+                                <f:widget.link class="page-link" arguments="{currentPage: page.number}" addQueryStringMethod="{configuration.addQueryStringMethod}" section="{configuration.section}">{page.number}</f:widget.link>
+                            </f:then>
+                            <f:else>
+                                <f:widget.link class="page-link" addQueryStringMethod="{configuration.addQueryStringMethod}" section="{configuration.section}">{page.number}</f:widget.link>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:else>
+            </f:if>
+        </f:for>
+        <f:if condition="{pagination.hasMorePages}">
+            <li class="page-item dotdotdot"><span>...</span></li>
+        </f:if>
+        <f:if condition="{pagination.displayRangeEnd} < {pagination.numberOfPages}">
+            <li class="last page-item">
+                <f:widget.link class="page-link" arguments="{currentPage: pagination.numberOfPages}" addQueryStringMethod="{configuration.addQueryStringMethod}" section="{configuration.section}">{pagination.numberOfPages}</f:widget.link>
+            </li>
+        </f:if>
+    </ul>
+</f:section>

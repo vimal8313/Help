@@ -1,0 +1,23 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="appointments_form">
+	<h1>Uw afspraak is geannuleerd</h1>
+	<f:if condition="{error}">
+		<f:then>
+			<f:render partial="SoapError" />
+		</f:then>
+		<f:else>
+			<f:if condition="<ga:compare value='{status}' compare='0' operand='values' /> ">
+				<f:then>
+					<p>Uw afspraak met afspraaknummer: {arguments.appointmentNumber} is geannuleerd.<br />
+					Deze bevestiging is ook naar {arguments.appointmentEmail} gestuurd.</p>
+				</f:then>
+				<f:else>
+					<p>Uw afspraak met afspraaknummer: {arguments.appointmentNumber} kan niet worden gevonden.</p>
+		 		</f:else>
+			</f:if>
+		</f:else>
+</div>
+</f:section>

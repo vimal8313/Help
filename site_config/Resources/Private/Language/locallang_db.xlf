@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-15T20:20:14Z" product-name="revoslider">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_site_config_domain_model_slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_site_config_domain_model_slider.description">
+				<source>Create Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_site_config_domain_model_slider.group">
+				<source>New Content Element</source>
+			</trans-unit>
+			<trans-unit id="tx_site_config_domain_model_slider.image">
+				<source>Slider Images</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

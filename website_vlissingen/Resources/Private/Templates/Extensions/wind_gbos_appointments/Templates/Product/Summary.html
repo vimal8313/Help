@@ -1,0 +1,86 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="main">
+
+<div class="appointments_form">
+	<ul id="steps">
+		<li class="first"><span class="number">1</span>Onderwerp</li>
+		<li class=""><span class="number">2</span>Datum/tijd</li>
+		<li class=""><span class="number">3</span>Uw gegevens</li>
+		<li title="U bent bij deze stap" class="current"><span class="number">4</span>Controleren</li>
+		<li class=""><span class="number">5</span>Bevestiging</li>
+	</ul>
+
+	<h1>Controleer uw gegevens</h1>
+	<h2>Uw afspraak</h2>
+	<div class="products"><label>Betreffende:</label>
+		<ul>
+		    <f:for each="{sessionData.product_names}" as="product">
+				<li>{product}</li>
+			</f:for>
+		</ul>
+	</div>
+	<div class="duration"><label>Geschatte duur:</label><span>&plusmn; {sessionData.duration} minuten</span></div>
+	<div class="date"><label>Datum:</label><span><ga:date format='%A %e %B %Y' timestamp='{sessionData.choosentime}' /></span></div>
+	<div class="time"><label>Tijdstip:</label><span><ga:date format='%H.%M' timestamp='{sessionData.choosentime}' /> uur</span></div>
+
+	<h2>Uw gegevens</h2>
+		<div class="filled_in_data">
+			<div class="pair">
+				<label>Voornaam of initialen:</label>
+				<span>{arguments.client_initials}</span>
+			</div>
+
+			<div class="pair">
+				<label>Achternaam:</label>
+				<span>{sessionData.client_lastname}</span>
+			</div>
+
+			<div class="pair">
+				<label>Geslacht:</label>
+				<span>{sessionData.client_sex}</span>
+			</div>
+
+			<div class="pair">
+				<label>Geboortedatum:</label>
+				<span><ga:date format='%e %B %Y' timestamp='{sessionData.client_dateofbirth}' /></span>
+			</div>
+
+			<div class="pair">
+				<label>Adres:</label>
+				<span>{sessionData.client_address}</span>
+			</div>
+
+			<div class="pair">
+				<label>Postcode:</label>
+				<span>{sessionData.client_postalcode}</span>
+			</div>
+
+			<div class="pair">
+				<label>Woonplaats</label>
+				<span>{sessionData.client_city}</span>
+			</div>
+
+			<div class="pair">
+				<label>E-mailadres:</label>
+				<span>{sessionData.client_mail}</span>
+			</div>
+
+			<div class="pair">
+				<label>Telefoonnr.:</label>
+				<span>{sessionData.client_tel}</span>
+			</div>
+
+			<div class="pair">
+				<label>Opmerking:</label>
+				<span>{sessionData.appointment_description}</span>
+			</div>
+		</div>
+
+	<f:form action="send" pageUid="{settings.listUid}" id="appointment-summary" noCacheHash="true" enctype="multipart/form-data">
+		<div class="return_link"><f:link.action action="personal">Vorige stap</f:link.action></div>
+		<f:form.submit class="button" name="make-appointment-step-send" value="Afspraak maken" />
+	</f:form>
+</div>
+</f:section>

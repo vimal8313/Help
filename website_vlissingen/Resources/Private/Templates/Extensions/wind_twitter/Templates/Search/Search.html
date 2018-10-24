@@ -1,0 +1,13 @@
+<f:layout name="Search" />
+<f:section name="Content">
+    <f:if condition="<f:count subject='{search.results}' /> > 0">
+        <f:then>
+            <f:for each="{search.results}" as="status">
+                <f:render partial="Search_status" arguments="{status: status}" />
+            </f:for>
+        </f:then>
+        <f:else>
+            <f:render partial="Search_noresult" arguments="{search: search}" />
+        </f:else>
+    </f:if>
+</f:section>

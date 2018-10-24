@@ -1,0 +1,65 @@
+/*f4n_JQueryAccordeon.css*/
+/*Akkordeon (vertikal)*/
+div.Content div.accordion {
+	margin: 10px 0;
+}
+div.accordion h1 {
+	background: #F6F6F6;
+	color: #925051;
+	font-weight: bold;
+	font-size: 95%; /*Bezugsebene sind die 140 % in Content h1*/
+	padding: 6px 0 7px 10px;
+	margin: 8px 0;
+	border: 0;
+}
+div.accordion div {
+	border: 0;
+	margin: 10px 0 15px 0;
+}
+div.accordion .ui-icon-triangle-1-s {
+	/*ICON (ausgefahren, "minus")*/
+	background: url(../picture_layout/Accordeon/ICON-Minus.gif) no-repeat left bottom;
+	width: 23px;
+	height: 15px;
+	display: block;
+	float: left;
+}
+div.accordion .ui-icon-triangle-1-e {
+	/*ICON (eingefahren, "plus")*/
+	background: url(../picture_layout/Accordeon/ICON-Plus.gif) no-repeat left bottom;
+	width: 23px;
+	height: 15px;
+	display: block;
+	float: left;
+}
+div.accordion div.Zweispaltig div.Bild {
+	margin: 10px 0;
+	width: auto;
+}
+div.accordion div.Zweispaltig h2 {
+	color: #F09300;
+	font-size: 100%;
+	background: url(../picture_layout/Accordeon/bg_h3.gif) no-repeat left center;
+	padding: 3px 0 3px 20px;
+	margin: 5px 0 2px 0;
+}
+div.accordion div.Zweispaltig div.left h2 {
+	margin-top: 0;
+}
+div.accordion div.Zweispaltig div.left, div.accordion div.Zweispaltig div.right {
+	padding: 0;
+	margin-top: 0;
+	font-size: 100%;
+}
+div.accordion div.Zweispaltig div.clear {
+	clear: left;
+	width: auto;
+	height: 1px;
+}
+div.accordion div.Zweispaltig p {
+	margin: 3px 0;
+	padding: 0;
+}
+div#accordion div.Zweispaltig p strong, div#accordion div.Zweispaltig p b {
+	color: #747474;
+}

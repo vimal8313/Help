@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:typo3conf/ext/website_vlissingen/Resources/Private/TypoScript/">
+
+plugin.tx_website_vlissingen {
+	view {
+		templateRootPaths.0 = EXT:website_vlissingen/Resources/Private/Templates/Content/
+		partialRootPaths.0 = EXT:website_vlissingen/Resources/Private/Partials/
+		layoutRootPaths.0 = EXT:website_vlissingen/Resources/Private/Layouts/
+	}
+}

@@ -1,0 +1,23 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Empty" /><f:section name="main">
+Beste <f:if condition="<ga:compare value='{appointment.client_sex}' compare='V' operand='values' />"><f:then>mevrouw</f:then><f:else>meneer</f:else></f:if> {appointment.client_initials} {appointment.client_lastname},<br /><br />
+
+Hierbij bevestigen wij uw afspraak (afspraaknummer: {appointment.appointment}) op <ga:date format='%A %d %B %Y' timestamp='{appointment.choosentime}' /> om <ga:date format='%H:%M' timestamp='{appointment.choosentime}' /> uur in de Gemeente Vlissingen.<br /><br />
+Uw afspraak geldt voor de volgende producten (neemt u het volgende per product mee):<br />
+<f:for each="{appointment.product_names}" as="product" iteration="iterProduct">
+	<f:if condition="{iterProduct.isLast}"><f:then>{product}</f:then><f:else>{product},</f:else></f:if>
+</f:for>
+op <ga:date format='%A %d %B %Y' timestamp='{appointment.choosentime}' /> om <ga:date format='%H:%M' timestamp='{appointment.choosentime}' /> uur in de Gemeente Vlissingen.<br /><br />
+
+<f:for each="{appointment.notes}" as="note">
+<f:format.html>{note}</f:format.html><br />
+</f:for>
+Wij verzoeken u zich +/- 5 minuten voor aanvang van de afspraak te melden in het gemeentehuis.<br /><br />
+Wij werken op volgorde van afspraaktijd. Het heeft daarom ook geen zin vroeger dan 5 minuten voor de afspraak te komen.<br />
+Als u bijvoorbeeld een half uur eerder komt is de kans groot dat u ook een half uur moet wachten.<br />
+Als u te laat komt voor uw afspraak kunnen wij u niet meer helpen, u kunt dan een nieuwe afspraak maken.<br /><br />
+Mocht u verhinderd zijn, wilt u dan zo vriendelijk zijn dit aan ons door te geven.<br /><br />
+Met vriendelijke groet,<br /><br />
+Team KCC (Klant Contact Centrum),<br />
+Gemeente Vlissingen<br />
+</f:section>

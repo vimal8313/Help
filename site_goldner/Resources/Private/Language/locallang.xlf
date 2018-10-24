@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-06-02T11:47:10Z" product-name="news">
+		<header/>
+		<body>
+			<trans-unit id="Related-news" xml:space="preserve">
+				<source>ÄHNLICHE BEITRÄGE</source>
+			</trans-unit>
+			<trans-unit id="Read-more" xml:space="preserve">
+				<source>Weiterlesen</source>
+			</trans-unit>
+			<trans-unit id="All-news" xml:space="preserve">
+				<source>alle news</source>
+			</trans-unit>
+			<trans-unit id="Previous-article" xml:space="preserve">
+				<source>vorheriger Artikel</source>
+			</trans-unit>
+			<trans-unit id="Next-article" xml:space="preserve">
+				<source>vnächster Artikel</source>
+			</trans-unit>
+			<trans-unit id="More" xml:space="preserve">
+				<source>Mehr dazu</source>
+			</trans-unit>
+			<trans-unit id="noresult.noResult" xml:space="preserve">
+				<source>KEINE Ergebnisse gefunden.</source>
+			</trans-unit>
+			<trans-unit id="searchFor" xml:space="preserve">
+				<source>Suche nach</source>
+			</trans-unit>
+			<trans-unit id="searchlabel" xml:space="preserve">
+				<source>Suchen nach</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

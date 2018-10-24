@@ -1,0 +1,37 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="appointments_widget">
+	<h1>Direct een afspraak maken</h1>
+	<f:form action="list" pageUid="{settings.listUid}" id="appointment" noCacheHash="true" enctype="multipart/form-data">
+		<div class="form-widget">
+			<div class="selectbox">
+				<label>Waarvoor wilt u een afspraak maken?</label>
+				<select id="add_product" name="tx_windgbosappointments_productselect[product]">
+					<optgroup label="--------">
+						<f:for each="{products}" as="product">
+							<f:if condition="{product.highlight}">
+								<option value="{product.uid}">{product.productName}</option>
+							</f:if>
+						</f:for>
+					</optgroup>
+					<optgroup label="--------">
+						<f:for each="{products}" as="product">
+							<f:if condition="<ga:compare value='{product.highlight}' compare='0' operand='values' />">
+								<option value="{product.uid}">{product.productName}</option>
+							</f:if>
+						</f:for>
+					</optgroup>
+				</select>
+			</div>
+			<div class="selectbox">
+				<label>Voor hoeveel personen geldt de afspraak?</label>
+				<f:form.select id="add_persons" name="persons" options="{1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: 'Meer dan 5'}" />
+			</div>
+			<f:form.submit name="make-appointment" value="Afspraak plannen" />
+		</div>
+	</f:form>
+</div>
+</f:section>

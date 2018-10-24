@@ -1,0 +1,49 @@
+<f:layout name="Default"/>
+<f:section name="main">
+<div class="tx_windgvop_pi1 detail">
+  	<h1>{publication.title}</h1>
+	<div class="summary">
+		<div class="row">
+			<div class="label bold">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.download_pdf')}:</div>
+			<div class="value">
+				<f:link.external uri="{settings.publication_link}{publication.identifier}.pdf"><f:image src="EXT:wind_gvop/Resources/Public/Images/pdf-small.gif" width="16" height="17" alt="{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.image_pdf')}" /></f:link.external>
+			</div>
+		</div>
+		<div class="row">
+			<div class="label bold">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.original_link')}:</div>
+			<div class="value">
+				<f:link.external uri="{settings.publication_link}/{publication.identifier}.html"><f:image src="EXT:wind_gvop/Resources/Public/Images/html_icon_small.gif" width="20" height="20" alt="{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.image_link')}" /></f:link.external>
+			</div>
+		</div>
+		<div class="row">
+			<div class="label bold">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.document_omschrijving')}:</div>
+			<div class="value">{publication.type}</div>
+		</div>
+		<f:if condition="{publication.zipcodeHousenumber}">
+			<div class="row">
+				<div class="label bold">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.postcode_en_huisnummer')}:</div>
+				<div class="value">{publication.zipcodeHousenumber}</div>
+			</div>
+		</f:if>
+		<div class="row">
+			<div class="label bold">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.publicatiedatum')}:</div>
+			<div class="value"><f:format.date format="d.m.Y">{publication.publicationDate}</f:format.date></div>
+		</div>
+	</div>
+	<f:if condition="{publication.publicationsummary}">
+		<div class="publication_text"><f:format.html>{publication.publicationsummary}</f:format.html></div>
+	</f:if>
+	<f:if condition="{publication.publicationtext}">
+		<div class="publication_text"><f:format.html>{publication.publicationtext}</f:format.html></div>
+	</f:if>
+	<f:if condition="{map}">
+		<div class="detailed_map" id="mapDiv">
+			 <f:link.external id="mapLink" uri="https://geoviewer.windinternet.nl/viewer/?zoom={map},{settings.zoom}&mapsize=800&user={settings.user}"
+			 style="width:{settings.width};height:{settings.height};">{f:translate(key: 'tx_windgvop_domain_model_publicationcategory.click_here_for_map')}</f:link.external>
+		</div>
+	</f:if>
+	<div class="return">
+		<f:cObject typoscriptObjectPath="lib.returnLinkGVOP" />
+	</div>
+</div>
+</f:section>

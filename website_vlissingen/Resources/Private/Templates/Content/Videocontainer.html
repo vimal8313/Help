@@ -1,0 +1,41 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="videocontainer">
+		<div class="left-boxes">
+			<div class="box green">
+				<vh:dataProcessor uid="{data.uid}" table="tx_website_vlissingen_groen_blok_mm" foreignField="uid_local">
+					<f:for each="{items}" as="item" iteration="iterator">
+						<vh:dataRelation uid="{item.uid_foreign}" table="tt_content" as='items1' foreignField="uid">
+							<f:for each="{items1}" as="item1">
+								<vh:content uid="{item1.uid}"></vh:content>
+							</f:for>
+						</vh:dataRelation>
+					</f:for>
+				</vh:dataProcessor>
+			</div>
+			<div class="box purple">
+				<vh:dataProcessor uid="{data.uid}" table="tx_website_vlissingen_paars_blok_mm" foreignField="uid_local">
+					<f:for each="{items}" as="item" iteration="iterator">
+						<vh:dataRelation uid="{item.uid_foreign}" table="tt_content" as='items1' foreignField="uid">
+							<f:for each="{items1}" as="item1">
+								<vh:content uid="{item1.uid}"></vh:content>
+							</f:for>
+						</vh:dataRelation>
+					</f:for>
+				</vh:dataProcessor>
+			</div>
+		</div>
+		<div class="video-content">
+			<vh:dataProcessor uid="{data.uid}" table="tx_website_vlissingen_video_blok_mm" foreignField="uid_local">
+				<f:for each="{items}" as="item" iteration="iterator">
+					<vh:dataRelation uid="{item.uid_foreign}" table="tt_content" as='items1' foreignField="uid">
+						<f:for each="{items1}" as="item1">
+							<vh:content uid="{item1.uid}"></vh:content>
+						</f:for>
+					</vh:dataRelation>
+				</f:for>
+			</vh:dataProcessor>
+		</div>
+	</div>
+</f:section>

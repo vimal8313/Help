@@ -1,0 +1,17 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<h1>{data.header}</h1>
+	<ul>
+		<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_sidebar_widget">
+			<f:for each="{items}" as="item" iteration="iterator">
+				<li>
+					<f:link.page pageUid="{item.link}">
+						{item.link_text}
+					</f:link.page>
+				</li>
+			</f:for>
+		</vh:dataRelation>
+	</ul>
+	<f:link.page pageUid="{data.header_link}">Meer loket</f:link.page>
+</f:section>

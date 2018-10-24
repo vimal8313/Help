@@ -1,0 +1,65 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/Homeitem.html
+-->
+<div class="owl-item article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}" itemscope="itemscope" itemtype="http://schema.org/Article">
+<div class="post-destination">
+
+	<n:excludeDisplayedNews newsItem="{newsItem}"/>
+
+	<f:if condition="{newsItem.mediaPreviews}">
+		<!-- media preview element -->
+		<f:then>
+			<div class="post-destination-img-wrap">
+
+					<f:alias map="{mediaElement: '{newsItem.mediaPreviews.0}'}">
+						<f:if condition="{mediaElement.originalResource.type} == 2">
+							<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}" class="img-circle img-responsive center-block"/>
+						</f:if>
+						<f:if condition="{mediaElement.originalResource.type} == 4">
+							<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}"/>
+						</f:if>
+						<f:if condition="{mediaElement.originalResource.type} == 5">
+							<f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}" class="img-circle img-responsive center-block"/>
+						</f:if>
+					</f:alias>
+
+			</div>
+		</f:then>
+		<f:else>
+			<f:if condition="{settings.displayDummyIfNoMedia}">
+				<div class="news-img-wrap">
+					<span class="no-media-element">
+
+							<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}" maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}"/>
+
+					</span>
+				</div>
+			</f:if>
+		</f:else>
+	</f:if>
+	<div class="post-destination-caption">
+	    <div>
+	      <h5 class="p text-spacing-0 text-capitalize text-white">
+	      	<f:link.page pageUid="{settings.listPid}" class="text-white" >{newsItem.title}</f:link.page>
+	      </h5>
+	    </div>
+	    <div class="offset-top-4">
+
+	      <p class="font-accent text-spacing-0 text-white">
+	      	<f:if condition="{newsItem.categories}">
+			<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
+		</f:if>
+	      <f:format.date format="d.m.Y, H.i">{newsItem.datetime}</f:format.date></p>
+	    </div>
+  	</div>
+	<!-- header -->
+
+
+</div>
+</div>
+
+</html>

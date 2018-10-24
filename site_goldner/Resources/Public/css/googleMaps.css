@@ -1,0 +1,52 @@
+/*Google Maps*/
+div#map_canvas {
+	width: 620px;
+	height: 500px;
+	margin: 15px 0 25px 0;
+}
+#saddr {
+	width: 255px;
+	height: 50px;
+	background: #fff;
+	border: solid 1px #eee;
+}
+form.F4NDirection div.Btn {
+	background: url(../picture_layout/Content/bg_button.gif) no-repeat left top #925051;
+	width: auto;
+	float: left;
+	margin: -28px 0 0 275px;
+}
+form.F4NDirection div.Btn input.Btn {
+	background: transparent;
+	color: #FFF;
+	border: none;
+	overflow: visible;
+	display: inline;
+	margin: 0;
+	padding: 2px 40px 2px 40px;
+	font-size: 100%;
+	font-weight: normal;
+	height: 28px;
+}
+div#getdirections {
+	position: relative;
+	margin: 40px 0 10px 0;
+	width: auto;
+}
+div#getdirections table.GRouteDesc td {
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+div#getdirections table.GRouteDesc td.t1 {
+	width: 2%;
+}
+div#getdirections table.GRouteDesc td.t2 {
+	width: 88%;
+}
+div#getdirections table.GRouteDesc td.t3 {
+	width: 10%;
+}
+div#getdirections p.CopyRight {
+	font-size: 85%;
+	padding: 0;
+}

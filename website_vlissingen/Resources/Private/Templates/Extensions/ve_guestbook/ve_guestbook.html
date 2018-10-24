@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+	</head>
+	<body>
+
+	<!-- ###TEMPLATE_LIST### begin -->
+	<div class="messagelist">
+		<h2>Berichten</h2>
+		<div class="tx-guestbook-pagination">
+			###LINK_PREV### ###PAGES### ###LINK_NEXT###
+		</div>
+		<!-- ###CONTENT### begin -->
+		<!-- ###ENTRY### begin -->
+			<div class="tx-guestbook-header">Door ###GUESTBOOK_FIRSTNAME### op ###GUESTBOOK_DATE###</div>
+
+			<div class="tx-guestbook-right">
+				<p>###GUESTBOOK_ENTRY###</p>
+			</div>
+		<!-- ###ENTRY### end-->
+
+		<!-- ###CONTENT###  end -->
+
+		<div class="tx-guestbook-pagination">
+			###LINK_PREV### ###PAGES### ###LINK_NEXT###
+		</div>
+	</div>
+	<!-- ###TEMPLATE_LIST### end -->
+
+	<!-- ###TEMPLATE_FORM### -->
+	<div class="reactform">
+		<h2>Uw bericht</h2>
+		<p class="tx-guestbook-form-error">###FORM_ERROR###</p>
+		###FORM_ERROR_FIELDS###
+
+		<form method="post" action="###ACTION_URL###">
+			<fieldset>
+				<legend>###FORM_LEGEND###</legend>
+
+				<div class="tx-guestbook-field">
+					<label for="firstname">###FORM_FIRSTNAME### <span class="tx-guestbook-form-obligationfield">###FORM_FIRSTNAME_OBLIGATION###</span></label>
+					<input type="text" name="tx_veguestbook_pi1[firstname]" value="###VALUE_FIRSTNAME###" class="tx-guestbook-form-inputfield-med" id="firstname" />
+				</div>
+				<div class="tx-guestbook-field">
+					<label for="email">###FORM_EMAIL### <span class="tx-guestbook-form-obligationfield">###FORM_EMAIL_OBLIGATION###</span></label>
+					<input type="text" name="tx_veguestbook_pi1[email]" value="###VALUE_EMAIL###" class="tx-guestbook-form-inputfield-big" id="email" />
+				</div>
+			<!-- ###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+			    <div class="tx-guestbook-field">
+					<label for="capture">###FORM_CAPTCHA_RESPONSE### <span class="tx-guestbook-form-obligationfield">*</span><br />###CAPTCHA_IMAGE###</label>
+					<input type="text" class="tx-guestbook-form-inputfield-med" name="tx_veguestbook_pi1[captcha_response]" value="" id="capture" />
+
+			    </div>
+			 <!-- ###CAPTCHA_INSERT### -->
+
+			<!-- ###SR_FREECAP_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+			 	<div class="tx-guestbook-field">
+					<label for="freecap">###SR_FREECAP_NOTICE### <span class="tx-guestbook-form-obligationfield">*</span><br /><span class="freecap-span">###SR_FREECAP_CANT_READ###</span></label>
+					###SR_FREECAP_IMAGE###&nbsp;<input type="text" class="tx-guestbook-form-inputfield-med" name="tx_veguestbook_pi1[captcha_response]" title="###SR_FREECAP_NOTICE###" value="" id="freecap" />
+
+				</div>
+			<!-- ###SR_FREECAP_INSERT### -->
+
+				<div class="tx-guestbook-field">
+					<label for="message">###FORM_ENTRY### <span class="tx-guestbook-form-obligationfield">###FORM_ENTRY_OBLIGATION###</span></label>
+					<textarea name="tx_veguestbook_pi1[entry]" class="tx-guestbook-form-textarea" rows="4" cols="25" id="message">###VALUE_ENTRY###</textarea>
+				</div>
+
+				<div class="tx-guestbook-field">
+					<input type="hidden" name="id" value="###PID###" />
+					<input type="hidden" name="tx_veguestbook_pi1[submitted]" value="1" />
+					<input type="submit" value="###FORM_SUBMIT###" class="tx-guestbook-submit" />
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+	<!-- ###TEMPLATE_FORM### end -->
+
+	</body>
+</html>

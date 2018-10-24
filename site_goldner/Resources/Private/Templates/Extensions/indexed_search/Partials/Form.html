@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="tx-indexedsearch-searchbox tx-indexedsearch">
+	<f:form action="search" method="post" id="MainSearch2" pageUid="{settings.targetPid}">
+		<div class="tx-indexedsearch-hidden-fields">
+			<f:form.hidden name="search[_sections]" value="0" />
+			<f:form.hidden name="search[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_" />
+			<f:form.hidden name="search[pointer]" id="tx_indexedsearch_pointer" value="0" />
+			<f:form.hidden name="search[ext]" value="{searchParams.ext}" />
+			<f:form.hidden name="search[searchType]" value="{searchParams.searchType}" />
+			<f:form.hidden name="search[defaultOperand]" value="{searchParams.defaultOperand}" />
+			<f:form.hidden name="search[mediaType]" value="{searchParams.mediaType}" />
+			<f:form.hidden name="search[sortOrder]" value="{searchParams.sortOrder}" />
+			<f:form.hidden name="search[group]" value="{searchParams.group}" />
+			<f:form.hidden name="search[languageUid]" value="{searchParams.languageUid}" />
+			<f:form.hidden name="search[desc]" value="{searchParams.desc}" />
+			<f:form.hidden name="search[numberOfResults]" value="{searchParams.numberOfResults}" />
+			<f:form.hidden name="search[extendedSearch]" value="{searchParams.extendedSearch}" />
+		</div>
+		<table cellpadding="0" cellspacing="0" border="0" summary="Search form">
+			<tbody>
+			<tr>
+				<td><f:translate key="LLL:EXT:site_goldner/Resources/Private/Language/locallang.xlf:searchlabel" />:</td>
+				<td colspan="2"><f:form.textfield name="search[sword]" value="{sword}" class="tx-indexedsearch-searchbox-sword search-text text" />
+				<input type="submit" value="Suche" class="search-class SuchBtn">
+		        </input></td>
+		    </tr>
+	        </tbody>
+        </table>
+        <p></p>
+	</f:form>
+</div>
+
+</html>

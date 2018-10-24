@@ -1,0 +1,679 @@
+div#content form.fce_form div.notice span.required {
+	color: #d60000;
+}
+
+form.fce_form form.fce_form,
+div#content form.fce_form div.formpages div.formpage div.formpage,
+div#content form.fce_form div.formpages div.formpages,
+div.formfield,
+div.formpage,
+div.formpages {
+	border: 5px solid #FFFFFF;
+}
+
+div#content div.fceforms-finalize div.formpage,
+div#content form.fce_form div.formfield,
+div#content form.fce_form div.formpages div.formpage,
+div#content form.fce_form div.formpages {
+	border: none;
+}
+
+div#content form.fce_form {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 730px;
+	float: left;
+}
+
+div#content form.fce_form div.buttons {
+	margin: 0 0 0 160px;
+}
+
+div#content form.fce_form div.formpages_processed {
+	overflow: hidden;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu,
+div#content form.fce_form div.formpages_processed ul.pagesmenu {
+	margin: 0 0 12px 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li {
+	background: none;
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 50px 0 0;
+	padding: 5px 0 4px;
+	color: #403c32;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li span.number,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li span.number {
+	background: url('../Images/icon_list.png') no-repeat center left;
+	display: block;
+	float: left;
+	width: 33px;
+	margin: 0 9px 0 0;
+	text-align: center;
+	font-weight: bold;
+	color: #626262;
+}
+div#content div.fceforms-finalize ul.pagesmenu li.active span.number,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.activeParent span.number,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.active span.number {
+	background: url('../Images/icon_list_active.png') no-repeat left center #007d85;
+	color: #ffffff;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li.active,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.activeParent,
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.active {
+	background: #ffffff;
+	color: #007d85;
+	font-weight: bold;
+}
+
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.done {
+	cursor: pointer;
+}
+
+div#content form.fce_form div.formpages_processed ul.pagesmenu li.subpage {
+	display: none;
+}
+
+div#content form.fce_form div.formpages_processed div.formpage div.pagesbuttons {
+	background: url('../Images/dotted-grey.png') repeat-x left bottom;
+	overflow: hidden;
+	text-align: right;
+	padding: 10px 0 30px;
+	margin: 10px 0;
+}
+
+div#content form.fce_form div.formpages_processed div.formpage div.pagesbuttons input {
+	font-size: 11px;
+	text-transform: uppercase;
+	width: 153px;
+ 	text-align: left;
+	color: #ffffff;
+	height: 31px;
+	line-height: 28px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0 20px 0 10px;
+	background: url('../Images/form_button_next.png') no-repeat top left #000000;
+	float: right;
+	right: 0px;
+}
+
+div#content form.fce_form div.formpages_processed div.formpage div.pagesbuttons input.previous {
+	background: url('../Images/form_button_previous.png') no-repeat top left #ffffff;
+	padding: 0 10px 1px 25px;
+	color: #000000;
+	float: left;
+	left: 0px;
+}
+
+div#content form.fce_form div.formError {
+	background-color: #801D69;
+	border: 1px solid #3D0E32;
+	padding: 5px 5px 5px 60px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+	background-image: url("../Images/form_error.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	line-height: 45px;
+}
+
+div#content form.fce_form fieldset {
+	border: none;
+	margin: 0 0 1em 0;
+	padding: 5px;
+}
+
+div#content form.fce_form fieldset legend {
+	display: block;
+	padding: 0 5px 0 181px;
+	color: #3f3933;
+	font-weight: bold;
+}
+
+div#content form.fce_form div.pair {
+	overflow: hidden;
+	padding: 2px;
+	margin: 1px 1px 7px;
+	line-height: 20px;
+}
+
+div#content form.fce_form div.formpage div.formfield.pair.select label,
+div#content form.fce_form div.formpage div.formfield.pair.checkbox label:first-child {
+	font-weight: normal;
+}
+
+div#content form.fce_form div.formpage div.formfield.pair.radio span.fields span.field label,
+div#content form.fce_form div.formpage div.formfield.pair.checkbox span.fields span.field label {
+	width: 455px;
+	height: auto;
+	min-height: 15px;
+}
+
+div#content form.fce_form div.formpage.below div.formfield.pair.radio span.fields span.field label,
+div#content form.fce_form div.formpage.below div.formfield.pair.checkbox span.fields span.field label,
+div#content form.fce_form div#fcepage1.formpage div.formfield.pair.radio span.fields span.field label,
+div#content form.fce_form div#fcepage1.formpage div.formfield.pair.checkbox span.fields span.field label {
+	width: auto;
+}
+
+div#content form.fce_form div.error {
+	background-color: #801D69;
+	border: 1px solid #3D0E32;
+}
+
+div#content form.fce_form div.pair.password.error input,
+div#content form.fce_form div.pair.static.error input,
+div#content form.fce_form div.pair.text.error input,
+div#content form.fce_form div.pair.date.error input {
+	border: 1px solid #3D0E32;
+}
+
+div#content form.fce_form div.error div.errorMessage {
+	clear: left;
+	font-size: 80%;
+	color: #FFFFFF;
+}
+
+div#content form.fce_form div.pair label {
+	overflow: hidden;
+	font-weight: normal;
+	line-height: 26px;
+	min-height: 26px;
+}
+
+div#content form.fce_form div.error label {
+	color: #FFFFFF;
+}
+
+div#content form.fce_form div.pair label span.required {
+	padding: 0 0 0 3px;
+	color: #d60000;
+}
+
+div#content form.fce_form div.pair label img {
+	vertical-align: text-bottom;
+	margin-top: 5px;
+	position: absolute;
+	right: 73px;
+}
+
+div#content form.fce_form div.inline div.field,
+div#content form.fce_form div.pair span.fields,
+div#content form.fce_form div.pair span.field {
+	display: block;
+}
+
+div#content form.fce_form div.formfield.inline div.field {
+	margin-left: 185px;
+}
+
+div#content form.fce_form div.pair span.fields span.field {
+	margin: 0;
+	overflow: hidden;
+}
+
+div#content form.fce_form div.formfield.inline div.field p {
+	margin-left: 4px;
+}
+
+div#content form.fce_form div.pair span.fields span.field input {
+	float: left;
+	margin-left: 0px;
+}
+
+div#content form.fce_form div.pair.radio span.fields span.field label {
+	float: left;
+	min-height: 20px;
+}
+
+div#content form.fce_form div.pair.radio span.fields span.field {
+	margin-left: 0px;
+}
+
+div#content form.fce_form div.pair span.fields span.field label {
+	float: none;
+	font-weight: normal;
+	width: auto;
+	margin: -1px 0 0 10px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+
+div#content form.fce_form div.pair span.field textarea.preview,
+div#content form.fce_form div.pair span.field input.preview {
+	color: #5D5856;
+}
+
+div#content form.fce_form div.multiple div.buttons {
+	margin-top: 20px;
+	text-align: left;
+	margin-left: 160px;
+}
+
+div#content form.fce_form div.buttons input{
+	font-size: 12px;
+	text-transform: uppercase;
+	width: 103px;
+	text-align: center;
+	color: #000000;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #000000;
+	background-color: #ffffff;
+}
+
+div#content form.fce_form div.buttons input[type=submit] {
+	background-color: #0097a1;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 103px;
+	margin: 0;
+	padding: 0;
+}
+
+div#content form.fce_form div.buttons input:hover{
+	padding: 0;
+	margin: 0;
+}
+
+div#content form.fce_form div.pair.inline div.field select option {
+	display: block;
+}
+
+div#content form.fce_form .formfield.pair.inline,
+div#content form.fce_form div.pair.inline {
+	padding: 0;
+	margin: 0 0 7px;
+}
+
+div#tooltip {
+	text-align: left;
+	max-width: 300px;
+}
+
+div#tooltip h3,
+div#tooltip div {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+div#content form.fce_form div.pair.password input,
+div#content form.fce_form div.pair.static input,
+div#content form.fce_form div.pair.text input,
+div#content form.fce_form div.pair.date input {
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #D1C7BE;
+	padding: 0 5px;
+}
+
+div#content form.fce_form div.pair.date input {
+	margin: 0 5px 0 0;
+}
+
+div#content form.fce_form div.pair.select select {
+	min-width: 185px;
+	font-size: 11px;
+}
+
+div#content form.fce_form div.pair.textarea textarea {
+	border: 1px solid #D1C7BE;
+	width: 432px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+div#content form.fce_form div.pair.select label,
+div#content form.fce_form div.pair.checkbox label {
+	float: left;
+	font-weight: normal;
+	line-height: 19px;
+	width: 150px;
+}
+
+div#content form.fce_form div.pair.select span.field,
+div#content form.fce_form div.pair.checkbox span.fields {
+	margin: 0 0 0 155px;
+}
+
+div#content form.fce_form div.pair.radio span.fields span.field label,
+div#content form.fce_form div.pair.checkbox span.fields span.field label {
+	margin: 0 0 0 5px;
+}
+
+/*************************************************************
+	CSS FOR LOGINPAGE
+
+	 fcepage1 is always the loginpage
+*************************************************************/
+
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair label,
+div#content form.fce_form div.formpage div.pair label {
+	float: left;
+	width: 185px;
+}
+
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.field
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair span.field,
+div#content form.fce_form div.formpage div.pair span.fields,
+div#content form.fce_form div.formpage div.pair span.field {
+	display: block;
+	margin: 0 0 0 185px;
+}
+
+div#content form.fce_form div.formpage.below div.pair label,
+div#content form.fce_form div#fcepage2.formpage div.pair label,
+div#content form.fce_form div#fcepage3.formpage div.pair label,
+div#content form.fce_form div#fcepage4.formpage div.pair label
+div#content form.fce_form div#fcepage5.formpage div.pair label,
+div#content form.fce_form div#fcepage6.formpage div.pair label,
+div#content form.fce_form div#fcepage7.formpage div.pair label,
+div#content form.fce_form div#fcepage8.formpage div.pair label,
+div#content form.fce_form div#fcepage9.formpage div.pair label,
+div#content form.fce_form div#fcepage10.formpage div.pair label,
+div#content form.fce_form div#fcepage11.formpage div.pair label,
+div#content form.fce_form div#fcepage12.formpage div.pair label,
+div#content form.fce_form div#fcepage13.formpage div.pair label,
+div#content form.fce_form div#fcepage14.formpage div.pair label
+div#content form.fce_form div#fcepage15.formpage div.pair label,
+div#content form.fce_form div#fcepage16.formpage div.pair label,
+div#content form.fce_form div#fcepage17.formpage div.pair label
+div#content form.fce_form div#fcepage18.formpage div.pair label,
+div#content form.fce_form div#fcepage19.formpage div.pair label,
+div#content form.fce_form div#fcepage20.formpage div.pair label {
+	width: 185px;
+	float: none;
+}
+
+div#content form.fce_form div.formpage.below div.pair span.fields,
+div#content form.fce_form div.formpage.below div.pair span.field,
+div#content form.fce_form div#fcepage2.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage3.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage4.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage5.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage6.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage7.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage8.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage9.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage10.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage11.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage12.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage13.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage14.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage15.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage16.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage17.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage18.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage19.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage20.formpage div.pair span.fields,
+div#content form.fce_form div#fcepage2.formpage div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage div.pair span.field,
+div#content form.fce_form div#fcepage2.formpage div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage div.pair span.field
+div#content form.fce_form div#fcepage11.formpage div.pair span.field,
+div#content form.fce_form div#fcepage12.formpage div.pair span.field,
+div#content form.fce_form div#fcepage13.formpage div.pair span.field,
+div#content form.fce_form div#fcepage14.formpage div.pair span.field,
+div#content form.fce_form div#fcepage15.formpage div.pair span.field,
+div#content form.fce_form div#fcepage16.formpage div.pair span.field,
+div#content form.fce_form div#fcepage17.formpage div.pair span.field,
+div#content form.fce_form div#fcepage18.formpage div.pair span.field,
+div#content form.fce_form div#fcepage19.formpage div.pair span.field,
+div#content form.fce_form div#fcepage20.formpage div.pair span.field {
+	display: block;
+	margin: 0;
+}
+
+div#content form.fce_form div.formpage div.pair.checkbox span.fields span.field {
+	display: block;
+	margin: 0;
+}
+
+div#content form.fce_form div.formpage div.pair.inline div.pair.date label {
+	width: 90px;
+}
+
+div#content form.fce_form div.formpage div.pair.inline div.formfield.pair {
+	float: left;
+}
+
+div#content form.fce_form div.formpage.below div.pair.inline div.csc-default:first-child span.field,
+div#content form.fce_form div.formpage div.pair.inline div.csc-default span.field {
+	margin-left: 0px;
+	float: left;
+}
+
+div#content form.fce_form div.formpage div.pair.inline div.csc-default label {
+	width: 80px;
+	display: block;
+}
+
+div#content div.formpage {
+	border: 1px solid #DFDFDF;
+	padding: 15px 0;
+	overflow: hidden;
+}
+
+div#content div.fceforms-finalize div.formpage h2,
+div#content div.formpage h2 {
+	font-size: 172%;
+	margin: 0 0 10px 0;
+}
+
+/*******************************************************************************
+ Content - fceforms mobile
+*******************************************************************************/
+@media all and (max-width: 640px) {
+div#content form.fce_form {
+	width: 100%;
+	float: none;
+}
+
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair label
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair label,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair label,
+div#content form.fce_form div.formpage div.pair label {
+	float: none;
+	width: 100%;
+}
+
+
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair span.fields,
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage2.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage3.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage4.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage5.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage6.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage7.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage8.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage9.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage10.formpage.nextto div.pair span.field
+div#content form.fce_form div#fcepage11.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage12.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage13.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage14.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage15.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage16.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage17.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage18.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage19.formpage.nextto div.pair span.field,
+div#content form.fce_form div#fcepage20.formpage.nextto div.pair span.field,
+div#content form.fce_form div.formpage div.pair span.fields,
+div#content form.fce_form div.formpage div.pair span.field {
+	margin: 0;
+}
+
+div#content form.fce_form div.formpages_processed div.formpage div.pagesbuttons input {
+	float: left;
+}
+
+div#content form.fce_form div.formpages_processed div.formpage div.pagesbuttons input.previous {
+	margin: 0 0 20px;
+}
+
+div#content form.fce_form div.formfield.inline div.field {
+	margin-left: 0;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li, div#content form.fce_form div.formpages_processed ul.pagesmenu {
+	padding: 0 0 10px;
+}
+
+div#content div.fceforms-finalize ul.pagesmenu li, div#content form.fce_form div.formpages_processed ul.pagesmenu li {
+	float: none;
+}
+
+div#content form.fce_form div.formpage div.formfield.pair.radio span.fields span.field label,
+div#content form.fce_form div.formpage div.formfield.pair.checkbox span.fields span.field label {
+	width: auto;
+}
+
+div#content form.fce_form div.pair.textarea textarea {
+	width: auto;
+}
+}

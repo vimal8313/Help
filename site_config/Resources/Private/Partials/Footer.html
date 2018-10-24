@@ -1,0 +1,92 @@
+<footer class="page-footer bg-white section-75 section-md-top-103 section-md-bottom-55 text-md-left">
+        <div class="shell">
+          <div class="range range-xs-center range-lg-justify">
+<!--        <div class="cell-sm-5 cell-md-4">-->
+
+            <div class="cell-sm-4 cell-md-3">
+              <div class="inset-lg-right-80">
+                <div>
+                  <p class="text-uppercase text-bold font-accent text-spacing-50 text-mine-shaft">&nbsp;</p>
+                </div>
+                <div class="offset-top-25">
+                  <p class="text-gray-light text-extra-small text-spacing-0 text-left">
+                        <f:cObject typoscriptObjectPath="lib.footer_logo" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cell-sm-5 cell-md-4 offset-top-44 offset-sm-top-0">
+              <div class="inset-lg-right-40">
+                <div>
+                  <h5><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:contact_text" /></h5>
+                </div>
+                <div class="offset-top-15 offset-sm-top-25">
+                  <!-- Contact Info-->
+                  <address class="contact-info text-left">
+                    <div>
+                      <p class="text-gray-light text-extra-small text-spacing-0">{settings.footerAddress}</p>
+                    </div>
+                    <dl class="text-extra-small">
+                      <dt class="text-extra-small text-gray-light text-regular reveal-inline-block"><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:tele_text" />:</dt>
+                      <dd class="text-extra-small text-gray-light reveal-inline-block p"><a href="callto:0049915183930" class="text-gray-light">{settings.footerTelephone}</a></dd>
+                    </dl>
+                    <dl class="text-extra-small">
+                      <dt class="text-extra-small text-gray-light text-regular reveal-inline-block"><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:email" />:</dt>
+                      <dd class="text-extra-small text-gray-light p reveal-inline-block"><a href="mailto:info@fackelmanntherme.de" class="text-turquoise">{settings.footerEmail}</a></dd>
+                    </dl>
+                  </address>
+                </div>
+                <div class="offset-top-47">
+                  <div>
+                    <h5><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:newsletter" /></h5>
+                  </div>
+                  <div class="offset-top-20 text-left">
+                    <p class="text-gray-light text-extra-small text-spacing-0"><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:newsletter_text" /></p>
+                  </div>
+                  <div class="offset-top-10 offset-md-top-10">
+                    <f:link.page pageUid="{settings.newsletterpid}" style="min-width:263px;" class="btn btn-primary"><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:newsletter_link" /></f:link.page>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-sm-7 cell-md-3 offset-top-44 offset-md-top-0">
+              <div class="range range-xs-center">
+                <div class="cell-xs-4 cell-sm-6 cell-md-12">
+                  <div>
+                    <h5><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:vitalquelle_title" /></h5>
+                  </div>
+                  <div class="reveal-inline-block offset-top-15 offset-md-top-30">
+                        <f:cObject typoscriptObjectPath="lib.footerVitalquelleMenu" />
+
+                  </div>
+                </div>
+                <div class="cell-xs-4 cell-sm-6 cell-md-12 offset-top-44 offset-xs-top-0 offset-md-top-44">
+                  <div>
+                    <h5><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:event_title" /></h5>
+                  </div>
+                  <div class="reveal-inline-block offset-top-15 offset-md-top-30">
+
+                        <f:cObject typoscriptObjectPath="lib.footerEventMenu" />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-sm-4 cell-md-2 offset-top-44 offset-md-top-0">
+              <div>
+                <h5><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:info_title" /></h5>
+              </div>
+              <div class="reveal-inline-block offset-top-15 offset-md-top-30">
+                     <f:cObject typoscriptObjectPath="lib.footerInfoMenu" />
+              </div>
+            </div>
+          </div>
+          <div class="offset-top-60">
+            <div class="hr bg-gray-lighter"></div>
+          </div>
+          <div class="offset-top-50">
+
+            <p class="text-extra-small text-gray-light"><f:cObject typoscriptObjectPath="lib.copyrightText" /> <f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:rights_text" /></p>
+          </div>
+        </div>
+      </footer>

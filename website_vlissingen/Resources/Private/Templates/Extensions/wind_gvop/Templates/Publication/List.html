@@ -1,0 +1,28 @@
+{namespace vh=Tx_WindGvop_ViewHelpers}
+<f:layout name="Default"/>
+<f:section name="main">
+<div class="tx_windgvop_pi1 list">
+	<div class="content">
+		<div class="list_area" id="listarea">
+			<div>
+				<h2 class="category-name">{category.name}</h2>
+				<ul class="category">
+					<vh:widget.paginate objects="{publications}" as="publicationSelection" configuration="{itemsPerPage : '{settings.list.itemsPerPage}', insertAbove : 0, insertBelow : 1}">
+						<f:for each="{publicationSelection}" as="publication" iteration="iterator">
+							<li class="publication">
+								<f:link.action pageUid="{settings.detailPid}" arguments="{publication:publication.uid}" title="{f:translate(key : 'publication_link')}">
+									<span class="title">{publication.title}</span>
+									<span class="date">(<f:format.date format="d-m-Y">{publication.publicationDate}</f:format.date>)</span>
+								</f:link.action>
+							</li>
+						</f:for>
+					</vh:widget.paginate>
+				</ul>
+			</div>
+			<div class="return">
+				<f:link.action action="overview" section="listarea" title="Terug naar het overzicht">Terug naar het overzicht</f:link.action>
+			</div>
+		</div>
+	</div>
+</div>
+</f:section>

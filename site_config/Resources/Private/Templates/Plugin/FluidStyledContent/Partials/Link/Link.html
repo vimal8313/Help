@@ -1,0 +1,20 @@
+{namespace d=Dpool\Website\ViewHelpers}
+
+<f:link.typolink parameter="{customTypoLink}" class="ce--link" additionalAttributes="{rel:'{f:if(condition: \'{d:getTypoLinkType(parameter:customTypoLink)} == \"external\"\', then: \'nofollow\')}'}">
+    <f:if condition="{d:getTitleFromTypoLink(parameter:customTypoLink)} == ''">
+        <f:then>
+           {fallBackTitle}
+        </f:then>
+        <f:else>
+            {d:getTitleFromTypoLink(parameter:customTypoLink)}
+        </f:else>
+    </f:if>
+    <f:if condition="{d:getTypoLinkType(parameter:customTypoLink)} == 'internal'">
+        <f:then>
+            <span class="icon icon-link">&nbsp;</span>
+        </f:then>
+        <f:else>
+            <span class="icon icon-target">&nbsp;</span>
+        </f:else>
+    </f:if>
+</f:link.typolink>

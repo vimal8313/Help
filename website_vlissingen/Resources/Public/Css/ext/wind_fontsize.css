@@ -1,0 +1,15 @@
+div.header-holder ul.add-nav li.wind_fontsize a.large span {
+	font-size: 16px;
+}
+
+div.header-holder ul.add-nav li.wind_fontsize a.normal span {
+	font-size: 12px;
+}
+
+div.header-holder ul.add-nav li.wind_fontsize a.small span {
+	font-size: 10px;
+}
+
+div.header-holder ul.add-nav li.wind_fontsize a.active {
+	text-decoration: underline;
+}

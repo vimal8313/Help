@@ -1,0 +1,29 @@
+{namespace d=Dpool\Website\ViewHelpers}
+
+<f:comment>Deprecated: use Partial/Link/Link.html instead</f:comment>
+
+<f:link.typolink parameter="{customTypoLink}" class="ce--link">
+    <f:if condition="{customTitle} == 'true'">
+        <f:then>
+            <f:if condition="{d:getTitleFromTypoLink(parameter:customTypoLink)} == ''">
+                <f:then>
+                    <f:translate key="LLL:EXT:website/Resources/Private/Language/locallang.xlf:read_more" />
+                </f:then>
+                <f:else>
+                    {d:getTitleFromTypoLink(parameter:customTypoLink)}
+                </f:else>
+            </f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{customTitle} == 'false'">
+                <f:then>
+                    <f:translate key="LLL:EXT:website/Resources/Private/Language/locallang.xlf:read_more" />
+                </f:then>
+                <f:else>
+                    {customTitle}
+                </f:else>
+            </f:if>
+        </f:else>
+    </f:if>
+    <span class="icon icon-target">&nbsp;</span>
+</f:link.typolink>

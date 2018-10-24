@@ -1,0 +1,24 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="appointments_form">
+	<h1>Afspraak annuleren</h1>
+	<h2>Uw afspraaknummer</h2>
+	<f:flashMessages renderMode="div" />
+	<f:form action="display" pageUid="{settings.cancelUid}" id="appointment-cancel" noCacheHash="true" enctype="multipart/form-data">
+		<div class="pair text">
+			<label>Afspraaknummer:</label>
+			<span class="field"><f:form.textfield name="appointment_number"  /></span>
+		</div>
+
+		<div class="pair email">
+			<label>E-mailadres:</label>
+			<span class="field"><f:form.textfield name="appointment_mail" /></span>
+		</div>
+
+		<f:form.submit name="view-appointment" value="Afspraak bekijken" class="view-appointment" />
+	</f:form>
+</div>
+</f:section>

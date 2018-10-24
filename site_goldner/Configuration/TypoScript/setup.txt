@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_goldner/Configuration/TypoScript/">
+
+plugin.tx_site_goldner {
+	view {
+		templateRootPaths.0 = EXT:site_goldner/Resources/Private/Templates/Pages/
+		partialRootPaths.0 = EXT:site_goldner/Resources/Private/Partials/
+		layoutRootPaths.0 = EXT:site_goldner/Resources/Private/Layouts/
+	}
+}

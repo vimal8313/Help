@@ -1,0 +1,46 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+		<tr><td valign="top" height="7"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="7" /></td></tr>
+		<tr>
+			<td valign="top" rowspan="2" style="font-size:0;line-height:0;padding:5px 0 8px 15px;"><a href="#">
+			<f:image src="EXT:website_vlissingen/Resources/Public/Images/logo.png" alt="Gemeente Vlissingen" width="123" height="95" additionalAttributes="{align: 'left',vspace: '0',hspace: '0',border: '0'}"/>
+			</a></td>
+			<td valign="top" bgcolor="#ffffff" style="padding:6px 0 0;">
+				<table cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td valign="top" style="padding:0 13px 7px;font:12px Helvetica, Arial, sans-serif; line-height:14px;text-align:right; color:#333333;">
+							{data.header}
+						</td>
+					</tr>
+					<tr><td valign="top" width="634" style="font-size:0;line-height:0;">
+					<f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" alt="" width="634" height="3" additionalAttributes="{align: 'left',vspace: '0',hspace: '0'}"/>
+					</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="bottom" style="padding:12px 13px 10px 18px;font:13px Helvetica, Arial, sans-serif; line-height:19px; color:#000000; text-align: right;">
+				<span style="color: #323232; font-size: 20px;">{data.subheader}</span>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" height="7"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="7" /></td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" bgcolor="#801b69" style="padding:16px 18px;font:13px Helvetica, Arial, sans-serif; line-height:19px; color:#ffffff;">
+				<b>{data.bodytext}</b>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="font-size:0;line-height:0;">
+				<vh:fal uid="{data.uid}">
+					<f:for each="{objects}" as="image">
+						<f:image src="{image.publicUrl}" alt="{image.alternative}" width="776" height="217" additionalAttributes="{align: 'left',vspace: '0',hspace: '0'}"/>
+					</f:for>
+				</vh:fal>
+			</td>
+		</tr>
+	</table>
+</f:section>

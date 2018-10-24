@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>E-Cards templates</title>
+</head>
+
+<body>
+
+<!-- ###CATEGORYLIST### begin -->
+<div class="category_list">
+	<!-- ###SINGLE_CATEGORY### begin -->
+	<!-- ###CATEGORY_ODD### begin --->
+	<div class="category odd">
+		<a href="###URL###" title="###TITLE###">###IMAGE###</a>
+		<a href="###URL###" title="###TITLE###"><h2>###TITLE###</h2></a>
+		<div class="short_description">###SHORTDESCRIPTION###</div>
+	</div>
+	<!-- ###CATEGORY_ODD### end --->
+	<!-- ###CATEGORY_EVEN### begin --->
+	<div class="category even">
+		<a href="###URL###" title="###TITLE###">###IMAGE###</a>
+		<a href="###URL###" title="###TITLE###"><h2>###TITLE###</h2></a>
+		<div class="short_description">###SHORTDESCRIPTION###</div>
+	</div>
+	<!-- ###CATEGORY_EVEN### end --->
+	<!-- ###SINGLE_CATEGORY### end -->
+	<!-- ###NO_CATEGORIES### begin -->
+	<div class="no_categories">
+		###MESSAGE###
+	</div>
+	<!-- ###NO_CATEGORIES### end -->
+</div>
+<!-- ###CATEGORYLIST### end -->
+
+<!-- ###CATEGORY### begin -->
+<div class="single_category">
+	<h2>###TITLE###</h2>
+	<div class="description">###DESCRIPTION###</div>
+	<div class="pictures">
+		<!-- ###SINGLE_PICTURE### begin -->
+		<div class="single_picture">
+			<div class="picture"><a href="###URL###" title="###PICTURETITLE###">###IMAGE###</a></div>
+			<div class="title"><a href="###URL###" title="###PICTURETITLE###">###PICTURETITLE###</a></div>
+		</div>
+		<!-- ###SINGLE_PICTURE### end -->
+		<!-- ###NO_PICTURES### begin -->
+		<div class="no_pictures">
+			###MESSAGE###
+		</div>
+		<!-- ###NO_PICTURES### end -->
+	</div>
+</div>
+<!-- ###CATEGORY### end -->
+
+<!-- ###PICTURE### begin -->
+<div class="single_picture">
+	<h2>###CATEGORYTITLE###</h2>
+	<div class="description">###CATEGORYDESCRIPTION###</div>
+	<!-- ###FORM### begin -->
+	<div class="picture_form">
+		<div class="picture_outer">
+			<div class="picture">###IMAGE###</div>
+			<div class="title">###TITLE###</div>
+		</div>
+		<!-- ###ERROR### begin -->
+		<div class="error">
+			###ERRORMESSAGE###
+		</div>
+		<!-- ###ERROR### end -->
+		<h2>Uw gegevens</h2>
+		<form action="###FORMURL###" method="post">
+		<div class="form">
+			<div class="info">Velden met een <span class="required">*</span> zijn verplicht</div>
+			<div class="pair">
+				<label for="tx_windecards_pi1_receiver_name">###LABELRECEIVERNAME###:<span class="required">*</span></label>
+				<span class="field"><input type="text" name="tx_windecards_pi1[receiver_name]" id="tx_windecards_pi1_receiver_name" value="###RECEIVERNAME###" /></span>
+			</div>
+			<div class="pair">
+				<label for="tx_windecards_pi1_receiver_email">###LABELRECEIVEREMAIL###:<span class="required">*</span></label>
+				<span class="field"><input type="text" name="tx_windecards_pi1[receiver_email]" id="tx_windecards_pi1_receiver_email" value="###RECEIVEREMAIL###" /></span>
+			</div>
+			<div class="pair">
+				<label for="tx_windecards_pi1_message">###LABELMESSAGE###:<span class="required">*</span></label>
+				<span class="field"><textarea name="tx_windecards_pi1[message]" id="tx_windecards_pi1_message" cols="30" rows="5">###MESSAGE###</textarea></span>
+			</div>
+			<div class="pair">
+				<label for="tx_windecards_pi1_sender_name">###LABELSENDERNAME###:<span class="required">*</span></label>
+				<span class="field"><input type="text" name="tx_windecards_pi1[sender_name]" id="tx_windecards_pi1_sender_name" value="###SENDERNAME###" /></span>
+			</div>
+			<div class="pair">
+				<label for="tx_windecards_pi1_sender_email">###LABELSENDEREMAIL###:<span class="required">*</span></label>
+				<span class="field"><input type="text" name="tx_windecards_pi1[sender_email]" id="tx_windecards_pi1_sender_email" value="###SENDEREMAIL###" /></span>
+			</div>
+			<div class="buttons">
+				<input type="submit" value="###SUBMIT###" />
+			</div>
+		</div>
+		</form>
+	</div>
+	<!-- ###FORM### end -->
+	<!-- ###CONFIRMATION### begin -->
+	<div class="confirmation">
+		###CONFIRMATIONMESSAGE###
+	</div>
+	<!-- ###CONFIRMATION### end -->
+</div>
+<!-- ###PICTURE### end -->
+
+<!-- ###EMAIL### begin -->
+Beste ###RECEIVERNAME###,
+
+U heeft een e-card ontvangen van ###SENDERNAME###. Klik op onderstaande link om hem te bekijken.
+
+###URL###
+
+Als klikken op de link niet werkt, kopiëer en plak hem dan in de adresbalk van uw Internetbrowser.
+
+Met vriendelijke groet,
+###SENDERSITE###
+<!-- ###EMAIL### end -->
+
+<!-- ###ECARD### begin -->
+<div class="single_card">
+	<!-- ###CARD### begin -->
+	<div class="card_intro">
+		<p>###DEAR### ###RECEIVERNAME###,<br />
+		<br />
+		###CARDRECEIVEDFROM### ###SENDERNAME###</p>
+	</div>
+	<div class="card">
+		###IMAGE###
+		<div class="message">
+			###MESSAGE###
+		</div>
+	</div>
+	<!-- ###CARD### end -->
+	<!-- ###NO_CARD### begin -->
+	<div class="no_card">
+		###MESSAGE###
+	</div>
+	<!-- ###NO_CARD### end -->
+</div>
+<!-- ###ECARD### end -->
+
+</body>
+
+</html>

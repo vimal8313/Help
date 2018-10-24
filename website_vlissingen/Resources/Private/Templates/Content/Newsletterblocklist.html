@@ -1,0 +1,40 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" bgcolor="#F8F5F3">
+		<tr>
+			<td valign="top" height="1"  style="padding:0 19px;">
+				<f:image src="EXT:website_vlissingen/Resources/Public/Images/seperator-smaller.png" width="195" height="1" />
+			</td>
+		</tr>
+		<tr><td valign="top" height="10"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="10" /></td></tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:8px 19px 0;">
+				<h2 style="padding:0 0 3px; margin: 0; font: 18px Helvetica, Arial, sans-serif; line-height:22px; color:#323232;">{data.header}</h2>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="2" style="padding:8px 19px 0;">
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tbody>
+						<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_linklist_item">
+							<f:for each="{items}" as="item" iteration="iterator">
+								<tr>
+									<td valign="top" style="padding:0 0 4px;font:13px Helvetica, Arial, sans-serif; line-height:21px; color:#292824;">
+										<f:image src="EXT:website_vlissingen/Resources/Public/Images/arrow.png" alt="" width="5" height="7" additionalAttributes="{align: 'bottom',vspace: '0',hspace: '0',border: '0'}"/>
+										<f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" alt="" width="6" />
+										<f:link.page pageUid="{item.link}">
+											{item.link_text}
+										</f:link.page>
+									</td>
+								</tr>
+							</f:for>
+						</vh:dataRelation>
+						<tr><td valign="top" height="10"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="10"/></td></tr>
+						<tr><td valign="top" height="15"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="15"/></td></tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+</f:section>

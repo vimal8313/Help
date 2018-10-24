@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>publications template</title>
+</head>
+<body>
+
+<!-- ###TEMPLATE_LIST### begin
+	This is the template for the list of news in the archive or news page or search
+-->
+<div class="publications-list-container">
+###NEWS_CATEGORY_ROOTLINE###
+	<!-- ###CONTENT### begin -->
+		<!-- ###NEWS### begin -->
+		<div class="publications-list-item">
+			<h2><!--###LINK_ITEM###-->###NEWS_TITLE###<!--###LINK_ITEM###--></h2>
+			<div class="publications-list-date">Publicatiedatum: ###PUBLICATION_STARTDATE### ###PUBLICATION_ENDDATE### <span class="category"><span>&nbsp;</span>###NEWS_CATEGORY###</span></div>
+			<div class="publications-list-text">
+				###NEWS_SUBHEADER###
+			</div>
+		</div>
+		<!-- ###NEWS### end-->
+	<!-- ###CONTENT###  end -->
+	###BROWSE_LINKS###
+</div>
+<!-- ###TEMPLATE_LIST### end -->
+
+<!-- ###TEMPLATE_LATEST### begin
+	This is the template for the latest news, typically displayed on a frontpage
+-->
+<div class="publications-latest-container">
+	<h2>Bekendmakingen</h2>
+	<ul>
+	<!-- ###CONTENT### begin
+		This is the part of the template substituted with the list of news:
+	-->
+		<!-- ###NEWS### begin
+			Template for a single item
+		-->
+			<li class="publications-latest-item">
+				<!--###LINK_ITEM###-->###NEWS_TITLE###<!--###LINK_ITEM###-->
+			</li>
+		<!-- ###NEWS### end-->
+	<!-- ###CONTENT###  end -->
+	</ul>
+	<span class="link"><!--###LINK_ARCHIVE###-->###GOTOARCHIVE###<!--###LINK_ARCHIVE###--></span>
+</div>
+<!-- ###TEMPLATE_LATEST### end -->
+
+<!-- ###TEMPLATE_SINGLE### begin -->
+<div class="publication-single-item">
+	<h1>###NEWS_TITLE###</h1>
+	<div class="publication-single-date"><span class="start-date">Publicatiedatum: ###PUBLICATION_STARTDATE###</span> ###PUBLICATION_ENDDATE### <span class="category"><span>&nbsp;</span>###NEWS_CATEGORY###</span></div>
+	<div class="publication-single-subheader">###NEWS_SUBHEADER###</div>
+	<div class="publication-single-text">###NEWS_CONTENT###</div>
+	###MAP###
+	<div class="downloads">
+		###TEXT_FILES###
+		###FILE_LINK###
+	</div>
+	<div class="publication-single-backlink">
+	<!--###LINK_ITEM###-->###BACK_TO_LIST###<!--###LINK_ITEM###-->
+	</div>
+</div>
+<!-- ###TEMPLATE_SINGLE### end -->
+
+
+<!-- ###TEMPLATE_SINGLE_RECORDINSERT### begin -->
+<div class="publications-single-item">
+	<h2>###NEWS_TITLE###</h2>
+	<div class="publications-single-category">###NEWS_CATEGORY###</div>
+	###NEWS_SUBHEADER###
+	###NEWS_CONTENT###
+	<div class="publications-single-backlink">
+		<!--###LINK_ITEM###-->###BACK_TO_LIST###<!--###LINK_ITEM###-->
+	</div>
+</div>
+<!-- ###TEMPLATE_SINGLE_RECORDINSERT### end -->
+
+<!-- ###TEMPLATE_ARCHIVE### begin -->
+<div class="news-amenu-container">
+	<ul>
+	<!-- ###CONTENT### begin -->
+		<!-- ###MENUITEM### begin -->
+		###ARCHIVE_YEAR###
+		<li ###ARCHIVE_ACTIVE###><!--###LINK_ITEM###-->###ARCHIVE_TITLE###: ###ARCHIVE_COUNT### ###ARCHIVE_ITEMS###<!--###LINK_ITEM###--></li>
+		<!-- ###MENUITEM### end-->
+	<!-- ###CONTENT###  end -->
+	</ul>
+</div>
+<!-- ###TEMPLATE_ARCHIVE### end -->
+
+
+<!-- ###TEMPLATE_SEARCH### begin
+	Subpart for the search-form
+-->
+<div class="publications-search-form">
+<form class="form-holder" method="post" action="###FORM_URL###">
+	<div class="label">
+		<label for="bekendmakingen">Zoeken in bekendmakingen</label>
+	</div>
+	<div class="pair search-form">
+		<input size="30" id="bekendmakingen" maxlength="100" type="text" name="tx_ttnews[swords]" value="###SWORDS###" />
+		<input type="submit" name="search" value="###SEARCH_BUTTON###" />
+	</div>
+</form></div>
+<!-- ###TEMPLATE_SEARCH### end -->
+
+<br />
+<hr /><br />
+<h3>
+  this is shown if the search result is empty </h3>
+  <br />
+
+<!-- ###TEMPLATE_SEARCH_EMPTY### begin -->
+<div class="publications-search-emptyMsg">###SEARCH_EMPTY_MSG###</div>
+<!-- ###TEMPLATE_SEARCH_EMPTY### end -->
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+{namespace vh=TYPO3\SiteGoldner\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+<span class="Accordeon">
+	<vh:dataRelation uid="{data.pauschaletabone}" table="tx_f4n_goldneranker_offers" foreignField="uid">
+	<f:for each="{items}" as="item" iteration="iterator">
+		<div class="trigger trigger_active AccordionPanelTab AccordionFarbeTab1">
+			<h1>{data.nametabone}</h1>
+			<h2>{item.title}</h2>
+		</div>
+		<div class="toggle_container AccordionPanelContent AccordionFarbePanel1">
+			<p class="img">
+				<f:image src="fileadmin/user_upload/{item.image}" alt="{image.alternative}" width="272c" height="152c"/>
+			</p>
+			<p><f:format.crop maxCharacters="70">{item.description}</f:format.crop></p>
+			<p class="link">
+				<f:link.page pageUid="{settings.OfferPID}" additionalParams="{tx_f4ngoldneranker_pi1: {offer_id: '{item.uid}'}}">mehr Informationen</f:link.page>
+				<f:comment><a href="pauschalangebote/kurangebote/?tx_f4ngoldneranker_pi1%5Boffer_id%5D=11&amp;cHash=4fd8844024b3d3813ef8208be12bab55">mehr Informationen</a></p></f:comment>
+		</div>
+	</f:for>
+	</vh:dataRelation>
+	<vh:dataRelation uid="{data.pauschaletabtwo}" table="tx_f4n_goldneranker_offers" foreignField="uid">
+	<f:for each="{items}" as="item" iteration="iterator">
+		<div class="trigger AccordionPanelTab AccordionFarbeTab2">
+			<h1>{data.nametabtwo}</h1>
+			<h2>{item.title}</h2>
+		</div>
+		<div class="toggle_container AccordionPanelContent AccordionFarbePanel1">
+			<p class="img">
+				<f:image src="fileadmin/user_upload/{item.image}" alt="{image.alternative}" width="272c" height="152"/>
+			</p>
+			<p><f:format.crop maxCharacters="70">{item.description}</f:format.crop></p>
+			<p class="link">
+				<f:link.page pageUid="{settings.Offer2PID}" additionalParams="{tx_f4ngoldneranker_pi1: {offer_id: '{item.uid}'}}">mehr Informationen</f:link.page>
+				<f:comment><a href="pauschalangebote/pauschalen/?tx_f4ngoldneranker_pi1%5Boffer_id%5D=4&amp;cHash=154f6ce3b1bf2f4f4c82c710fa2df4cf">mehr Informationen</a></f:comment>
+			</p>
+		</div>
+	</f:for>
+	</vh:dataRelation>
+	<div class="trigger AccordionPanelTab AccordionFarbeTab3">
+		<h1>{data.nametabfour}</h1>
+	</div>
+	<div class="toggle_container AccordionPanelContent AccordionFarbePanel3">
+		<p>{data.pauschaletabfour}</p>
+		<form method="post" action='<f:cObject typoscriptObjectPath="lib.Spry_quickkontakt_url" />' name="Quickkontakt" id="kontaktformular" enctype="multipart/form-data">
+            <p><label>Name:</label> <input type="text" name="tx_powermail_pi1[uid85]" id="uid85" value="" class="text" /> </p>
+     		<p><label>E-Mail:</label> <input type="text" name="tx_powermail_pi1[uid86]" id="uid86" value="" class="text" /> </p>
+            <p><label>Anfrage:</label> <textarea name="tx_powermail_pi1[uid90]" cols="" rows="" class="text" id="uid90"></textarea> </p>
+     		<div class="Btn"><input name="submit" type="submit" value="Anfrage absenden" class="Btn" /></div>
+          </form>
+	</div>
+
+</span>
+</f:section>

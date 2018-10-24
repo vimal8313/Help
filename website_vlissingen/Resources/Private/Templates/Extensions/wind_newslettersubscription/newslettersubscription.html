@@ -1,0 +1,398 @@
+<html>
+<head>
+	<title>Newsletter Subscription</title>
+</head>
+
+<body>
+
+<!-- ###HOMEPAGE### begin -->
+<form action="###ACTION_URL###" method="post">
+	<div class="newsletter-text">
+		<h2>Nieuwsbrief</h2>
+		<label for="newsletter_email">Wilt u op de hoogte gehouden worden?</label>
+	</div>
+	<div class="search-newsletter">
+		<div class="input">
+			<input type="text" name="tx_windnewslettersubscription_pi1[emailaddress]" value="Typ uw e-mailadres" id="newsletter_email" />
+			<input type="hidden" name="tx_windnewslettersubscription_pi1[homepageform]" value="1" />
+		</div>
+		<div class="button">
+			<input type="submit" value="Aanmelden" />
+
+			<!-- ###OPEN_LINK### begin -->
+			<input type="hidden" name="linktootherpage" value="###VALUE###" />
+			<!-- ###OPEN_LINK### end -->
+		</div>
+	</div>
+	<div class="windnewslettersubscription-hiddenlink">
+		<a href="###IFRAMELINK###" class="iframe">Open iframe</a>
+	</div>
+</form>
+<!-- ###HOMEPAGE### end -->
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+
+<!-- ###TABS### begin -->
+<ul class="tabs">
+	<!-- ###ACTIVE### begin -->
+	<li class="active ###TABSIZE###">
+		<span class="step">###NUM###</span> ###NAME###
+	</li>
+	<!-- ###ACTIVE### end -->
+
+	<!-- ###NOLINK### begin -->
+	<li class="disabled ###TABSIZE###">
+		<span class="step">###NUM###</span> ###NAME###
+	</li>
+	<!-- ###NOLINK### end -->
+
+	<!-- ###LINK### begin -->
+	<li class="###TABSIZE###">
+		<a href="###URL###">
+			<span class="step">###NUM###</span> ###NAME###
+		</a>
+	</li>
+	<!-- ###LINK### end -->
+	###TAB###
+</ul>
+<!-- ###TABS### end -->
+
+<!-- ###BUTTONS### begin -->
+<div class="buttons">
+	<!-- ###SEND### begin -->
+	<div class="button submit start">
+		<input type="submit" class="submit" name="tx_windnewslettersubscription_pi1[send]" value="Verzenden" />
+	</div>
+	<!-- ###SEND### end -->
+
+	<!-- ###NEXT### begin -->
+	<div class="button submit next">
+		<input type="submit" class="submit" name="tx_windnewslettersubscription_pi1[next]" value="Volgende stap" />
+	</div>
+	<!-- ###NEXT### end -->
+
+	<!-- ###PREV### begin -->
+	<div class="button submit prev">
+		<input type="submit" class="submit" name="tx_windnewslettersubscription_pi1[prev]" value="Vorige stap" />
+	</div>
+	<!-- ###PREV### end -->
+</div>
+<!-- ###BUTTONS### end -->
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+
+<!-- ###NEWFORM### begin -->
+<div class="newform">
+	<div class="content">
+		###TABS###
+		<div class="tab-content">
+			<form action="###ACTION_URL###" method="post">
+				<div class="hiddenform">
+					<input type="hidden" name="tx_windnewslettersubscription_pi1[newForm]" value="1" />
+				</div>
+				###CONTENT###
+
+				###BUTTONS###
+			</form>
+		</div>
+	</div>
+</div>
+<!-- ###NEWFORM### end -->
+
+<!-- ###CHANGEFORM### begin -->
+<div class="newform">
+	<div class="content">
+		###TABS###
+
+		<form action="###ACTION_URL###" method="post">
+			<div class="hiddenform">
+				<input type="hidden" name="tx_windnewslettersubscription_pi1[changeForm]" value="1" />
+			</div>
+			###CONTENT###
+
+			###BUTTONS###
+		</form>
+	</div>
+</div>
+<!-- ###CHANGEFORM### end -->
+
+<!-- ###REMOVEFORM### begin -->
+<div class="newform">
+	<div class="content">
+		###TABS###
+
+		<form action="###ACTION_URL###" method="post">
+			<div class="hiddenform">
+				<input type="hidden" name="tx_windnewslettersubscription_pi1[removeForm]" value="1" />
+			</div>
+			###CONTENT###
+
+			###BUTTONS###
+		</form>
+	</div>
+</div>
+<!-- ###REMOVEFORM### end -->
+
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
+
+<!-- ###YOURINFO### begin -->
+<div class="yourinfo">
+	<!-- ###INTRO### begin -->
+	<p>
+		Wilt u op de hoogte blijven van het laatste nieuws van de ###SITENAME###? Abonneer u op de digitale nieuwsbrief.
+	</p>
+	<!-- ###INTRO### begin -->
+
+	<h2>Uw gegevens</h2>
+	<div class="pair">
+		<label for="emailaddress">E-mailadres<span class="required">*</span></label>
+		<input type="text" name="tx_windnewslettersubscription_pi1[emailaddress]" id="emailaddress" value="###EMAILADDRESS###" />
+	</div>
+	<div class="pair">
+		<label>Aanhef<span class="required">*</span></label>
+		<div class="field">
+			<div class="radio-pair">
+				<input type="radio" name="tx_windnewslettersubscription_pi1[gender]" id="gender-m" value="M" ###CHECKED_M### />
+				<label for="gender-m">Dhr.</label>
+			</div>
+			<div class="radio-pair">
+				<input type="radio" name="tx_windnewslettersubscription_pi1[gender]" id="gender-f" value="F" ###CHECKED_F### />
+				<label for="gender-f">Mevr.</label>
+			</div>
+		</div>
+	</div>
+	<div class="pair">
+		<label for="firstname">Voornaam</label>
+		<input type="text" name="tx_windnewslettersubscription_pi1[first_name]" id="firstname" value="###FIRSTNAME###" />
+	</div>
+	<div class="pair">
+		<label for="lastname">Achternaam<span class="required">*</span></label>
+		<input type="text" name="tx_windnewslettersubscription_pi1[last_name]" id="lastname" value="###LASTNAME###" />
+	</div>
+
+	<h2>Categorie&euml;n</h2>
+	<!-- ###CATEGORIES### begin -->
+	<div class="checkboxes">
+		<div class="field">
+			<!-- ###SINGLE_CATEGORY### begin -->
+			<div class="checkbox-pair">
+				<input type="checkbox" name="tx_windnewslettersubscription_pi1[categories][]" id="categories-###UID###" value="###UID###" ###CHECKED###>
+				<label for="categories-###UID###">###TITLE###</label>
+			</div>
+			<!-- ###SINGLE_CATEGORY### end -->
+		</div>
+	</div>
+	<!-- ###CATEGORIES### end -->
+
+	<!-- ###ERRORS### begin -->
+	<div class="errorcontainer">
+		<p>
+			Wij wijzen u graag op het volgende:
+		</p>
+		<ul class="errors">
+			<!-- ###SINGLE_ERROR### begin -->
+			<li>###ERROR###</li>
+			<!-- ###SINGLE_ERROR### end -->
+		</ul>
+	</div>
+	<!-- ###ERRORS### end -->
+
+	<!-- ###REMOVE### begin -->
+	<h2>Abonnement opzeggen</h2>
+	<div class="check">
+		<input type="checkbox" name="tx_windnewslettersubscription_pi1[remove]" value="1" id="remove" />
+		<label for="remove">Hierbij zeg ik mijn abonnement op de nieuwsbrief op.</label>
+	</div>
+	<!-- ###REMOVE### end -->
+
+	<!-- ###CHANGE_LINK### begin -->
+	<div class="change">
+		<p>
+			Abonnement <a href="###CHANGEURL###">wijzigen of opzeggen</a>
+		</p>
+	</div>
+
+	<!-- ###CHANGE_LINK### end -->
+</div>
+<!-- ###YOURINFO### end -->
+
+
+<!-- ###INFOCHECK### begin -->
+<div class="infocheck">
+	<p>
+		Wij hebben uw gegevens als volgt geregistreerd:
+	</p>
+	<div class="pair">
+		<div class="label">E-mailadres</div>
+		<div class="field">###EMAILADDRESS###</div>
+	</div>
+	<div class="pair">
+		<div class="label">Aanhef</div>
+		<div class="field">###AANHEF###</div>
+	</div>
+	<div class="pair">
+		<div class="label">Voornaam</div>
+		<div class="field">###FIRSTNAME###</div>
+	</div>
+	<div class="pair">
+		<div class="label">Achternaam</div>
+		<div class="field">###LASTNAME###</div>
+	</div>
+
+	<h2>Categorie&euml;n:</h2>
+	<!-- ###CATEGORIES### begin -->
+	<div class="pair">
+		<ul class="field">
+			<!-- ###SINGLE_CATEGORY### begin -->
+			<li class="category">
+				###TITLE###
+			</li>
+			<!-- ###SINGLE_CATEGORY### end -->
+		</ul>
+	</div>
+	<!-- ###CATEGORIES### end -->
+	<p>
+		<br />Indien uw gegevens onjuist of onvolledig zijn, klik op de knop 'Vorige' om uw gegevens te wijzigen.
+	</p>
+</div>
+<!-- ###INFOCHECK### end -->
+
+
+<!-- ###EMAILSEND### begin -->
+<div class="emailsend">
+	<p>
+		Er is een e-mail gestuurd naar onderstaand adres:<br />
+		<strong>###EMAILADDRESS###</strong>
+	</p>
+
+	<p>
+		In deze e-mail staat een link. Door op deze link te klikken bevestigt u uw inschrijving en kunnen wij u de nieuwsbrief sturen.
+	</p>
+	<p>
+		Ga terug naar de <a href="http://www.vlissingen.nl" title="Ga naar de homepagina van de gemeente Vlissingen">homepagina</a>
+	</p>
+</div>
+<!-- ###EMAILSEND### end -->
+
+<!-- ###EMAIL### begin -->
+<html>
+	<head>
+		<title>Nieuwsbrief ###SITENAME###</title>
+	</head>
+	<body style="font-family: verdana; font-size: 12px; width: 400px;">
+		Geachte ###AANHEF### ###LAST_NAME###,<br />
+		<br />
+		Hartelijk dank voor uw aanvraag voor de nieuwsbrief van de ###SITENAME###.<br />
+		Heeft u zich niet voor deze nieuwsbrief aangemeld en is deze e-mail onterecht ontvangen?<br />
+		U hoeft dan niets te doen. De aanvraag wordt niet verder in behandeling genomen.<br />
+		<br />
+		Om deze aanvraag af te ronden, vragen wij u op onderstaande link te klikken:<br />
+		###CONFIRM_URL###<br />
+		<br />
+		Met vriendelijke groet,<br />
+		<br />
+		###SITENAME###<br />
+	</body>
+</html>
+<!-- ###EMAIL### end -->
+
+<!-- ###CONFIRMED### begin -->
+<div class="confirmed">
+	<h2>Afronden</h2>
+
+	<!-- ###NEW### begin -->
+	<p>
+		Uw aanmelding is nu afgerond. Vanaf nu ontvangt u op het e-mailadres <strong>###EMAILADDRESS###</strong> de nieuwsbrief van de ###SITENAME###.
+	</p>
+	<!-- ###NEW### end -->
+
+	<!-- ###CHANGE### begin -->
+	<p>
+		Uw gegevens zijn succesvol gewijzigd.<br />Bedankt voor het doorgeven.
+	</p>
+	<!-- ###CHANGE### end -->
+
+	<!-- ###REMOVE### begin -->
+	<p>
+		Uw inschrijving en gegevens zijn verwijderd.<br />U ontvangt geen nieuwsbrief meer van ons.
+	</p>
+	<!-- ###REMOVE### end -->
+	<p>
+		Ga terug naar de <a href="http://www.vlissingen.nl" title="Ga naar de homepagina van de gemeente Vlissingen">homepagina</a>
+	</p>
+</div>
+<!-- ###CONFIRMED### end -->
+
+<!-- ---------------------------------------------------------------- -->
+
+<!-- ###REQUESTHASHLINK### begin -->
+<h2>Wijzigen gegevens</h2>
+
+<!-- ###NOTFOUND### begin -->
+<p class="error">
+	Uw e-mailadres is niet bij ons bekend. Klik op <a href="###BACKLINK###">Terug</a> om u alsnog aan te melden of op het kruisje om terug te gaan naar de homepage.
+</p>
+<!-- ###NOTFOUND### end -->
+
+<!-- ###FOUND### begin -->
+<p>
+	Er is een e-mail verstuurd naar uw e-mailadres. In deze mail staat een link naar uw persoonlijke onderhoudspagina.
+</p>
+<!-- ###FOUND### end -->
+
+<!-- ###REQUESTHASHLINK_FORM### begin -->
+<p>
+	Wilt u uw bestaande abonnement wijzigen of opzeggen?<br />
+	Klik dan op de knop 'Verzenden' en u ontvangt van ons een e-mail met daarin een link naar een persoonlijke onderhoudspagina.
+</p>
+
+<div class="pair">
+	<input type="hidden" name="tx_windnewslettersubscription_pi1[requestEditLink]" value="1" />
+	<label for="emailaddress"><span class="required">*</span> E-mailadres</label>
+	<input type="text" name="tx_windnewslettersubscription_pi1[emailaddress]" id="emailaddress" value="" />
+</div>
+<!-- ###REQUESTHASHLINK_FORM### end -->
+<!-- ###REQUESTHASHLINK### end -->
+
+<!-- ###HASHLINK_MAIL### begin -->
+<html>
+	<head>
+		<title>Nieuwsbrief ###SITENAME###</title>
+	</head>
+	<body style="font-family: verdana; font-size: 12px; width: 400px;">
+		Geachte ###AANHEF### ###LAST_NAME###,<br />
+		<br />
+		U heeft aangegeven uw abonnement op de nieuwsbrief van de ###SITENAME### te willen wijzigen of opzeggen.<br />
+		Wilt u geen wijzigingen doorgeven of heeft u deze e-mail onterecht ontvangen? U hoeft dan niets te doen.<br />
+		Uw abonnement blijft ongewijzigd.<br />
+		<br />
+		Om uw wijziging door te geven, vragen wij u op onderstaande link te klikken:<br />
+		###CONFIRM_URL###<br />
+		<br />
+		Met vriendelijke groet,<br />
+		<br />
+		###SITENAME###<br />
+	</body>
+</html>
+<!-- ###HASHLINK_MAIL### end -->
+
+<!-- ###REQUESTHASHLINK_ACTION### begin -->
+<!-- ###SEND### begin -->
+<h2>Succes</h2>
+<p>
+	De code is naar het e-mailadres ###EMAILADDRESS### gestuurd.
+</p>
+<!-- ###SEND### end -->
+
+<!-- ###ERROR### begin -->
+<h2>Probleem</h2>
+<p>
+	Het is helaas niet gelukt om u de link te sturen.
+</p>
+<!-- ###ERROR### end -->
+<!-- ###REQUESTHASHLINK_ACTION### end -->
+
+
+</body>
+</html>

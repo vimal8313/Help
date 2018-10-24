@@ -1,0 +1,35 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * RTL Style Sheet
+ */
+
+
+/* Previous/Next Navigation
+----------------------------------------------------------------------------------------------------*/
+
+#lightbox-right {
+	left: auto;
+	right: 0px;
+}
+#lightbox-left {
+	right: auto;
+	left: 0px;
+}
+
+#lightbox-left-ico,
+#lightbox-right-ico {
+	left: auto;
+	right: -9999px;
+	background-position: 0 -50px;
+}
+#lightbox-left-ico { background-position: 0 0; }
+
+#lightbox-right:hover span {
+	left: auto;
+	right: 30px;
+}
+#lightbox-left:hover span {
+	right: auto;
+	left: 30px;
+}

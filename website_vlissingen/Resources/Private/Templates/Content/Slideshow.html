@@ -1,0 +1,31 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="box">
+		<div class="address">
+			<f:format.raw>{data.adresgegevens}</f:format.raw>
+		</div>
+		<ul class="social-networks">
+			<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_slideshow">
+				<f:for each="{items}" as="item" iteration="iterator">
+					<vh:fal uid="{item.uid}" tableName="tx_website_vlissingen_slideshow" fieldName="images">
+						<f:for each="{objects}" as="image">
+							<li><f:image src="{image.publicUrl}" alt="{image.alternative}" width="170" height="110"/></li>
+						</f:for>
+					</vh:fal>
+				</f:for>
+			</vh:dataRelation>
+		</ul>
+	</div>
+	<ul class="add-info">
+		<li>
+			<vh:typolink parameter="{data.openingstijden}">Openingstijden</vh:typolink>
+		</li>
+		<li>
+			<vh:typolink parameter="{data.plattegrond}">Plattegrond</vh:typolink>
+		</li>
+		<li>
+			<vh:typolink parameter="{data.alarmnummers}">Alarmnummers</vh:typolink>
+		</li>
+	</ul>
+</f:section>

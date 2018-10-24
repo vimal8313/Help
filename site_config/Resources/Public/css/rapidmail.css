@@ -1,0 +1,49 @@
+    @import url(https://taca4fdee.emailsys1a.net/css/main/v2/form.css);
+            
+    div.form {
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        color: #999999;
+    }       
+            
+    div.form .form_field {
+        border: 1px solid #98bae4;
+        border-radius: 30px;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        color: #999999;
+    }       
+            
+    div.form .form_field_error {
+        border: 1px solid #fa0033;
+    }       
+            
+    div.form .form_button_submit {
+        color: #ffffff;
+        background-color: #b5b7b4;
+        min-width: 160px;
+        padding: 10px 19px;
+        font-size: 14px;
+        line-height: 24px;
+        border-radius: 30px;
+        font-weight: 700;
+        font-family: "Quicksand", Georgia, "Times New Roman", Times, serif;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        transition: .3s ease-out;
+    }       
+            
+    div.form .rsError {
+        background-color: #fa0033;
+    }       
+
+/* Overwrite https://tc5f3fd43.emailsys1a.net/css/main/v2/form.css */
+
+    div.form label.required {
+        font-weight: normal;
+    }
+    div.form li.form_button {
+    margin-top: 10px;
+    text-align: left;
+}

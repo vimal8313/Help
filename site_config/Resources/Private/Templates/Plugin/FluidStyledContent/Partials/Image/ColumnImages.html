@@ -1,0 +1,9 @@
+<f:if condition="{colImages->f:count()} >0" >
+	<f:for each="{colImages}" as="image">
+		<div class="col-xl-{f:cObject(typoscriptObjectPath:'lib.calculation', data:'12/{data.custom_imagecols}')} col-lg-3 col-md-4 col-sm-6 align-self-center" >
+			<f:link.typolink parameter="{f:uri.image(image:image)}" class="logo-thumb">
+				<f:image image="{image}"/>
+			</f:link.typolink>
+		</div>
+	</f:for>
+</f:if>

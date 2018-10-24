@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="website_windinternet" date="2015-04-08T14:38:32+01:00">
+		<header/>
+		<body>
+			<trans-unit id="Main">
+				<source>Main template</source>
+			</trans-unit>
+			<trans-unit id="foto_blok">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="foto_blok.tt_content">
+				<source>Item Content</source>
+			</trans-unit>
+			<trans-unit id="foto_blok.link_text">
+				<source>Link Tekst</source>
+			</trans-unit>
+			<trans-unit id="foto_blok.image_alt_text">
+				<source>Afbeelding Alt-tekst</source>
+			</trans-unit>
+			<trans-unit id="foto_blok.images">
+				<source>Afbeelding</source>
+			</trans-unit>
+			<trans-unit id="foto_blok.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="sidebarwidget.link_text">
+				<source>Digitaal Loket Link Tekst</source>
+			</trans-unit>
+			<trans-unit id="sidebarwidget">
+				<source>Sidebar Widget</source>
+			</trans-unit>
+			<trans-unit id="sidebarwidget.tt_content">
+				<source>Sidebar Widget Content</source>
+			</trans-unit>
+			<trans-unit id="slideshow">
+				<source>Slideshow</source>
+			</trans-unit>
+			<trans-unit id="slideshow.tt_content">
+				<source>Slideshow Content</source>
+			</trans-unit>
+			<trans-unit id="slideshow.item_titel">
+				<source>Item Titel</source>
+			</trans-unit>
+			<trans-unit id="slideshow.item_verberg">
+				<source>Item Verberg</source>
+			</trans-unit>
+			<trans-unit id="slideshow.item_logo_alt_tekst">
+				<source>Item Logo Alt-tekst</source>
+			</trans-unit>
+			<trans-unit id="slideshow.item_logo">
+				<source>Item Logo</source>
+			</trans-unit>
+			<trans-unit id="footerkolom">
+				<source>Footer Kolom</source>
+			</trans-unit>
+			<trans-unit id="footerkolom.tt_content">
+				<source>Footer Content</source>
+			</trans-unit>
+			<trans-unit id="footerkolom.link_text">
+				<source>Footer Link Tekst</source>
+			</trans-unit>
+			<trans-unit id="newsletterblocklist">
+				<source>Newsletter Block List</source>
+			</trans-unit>
+			<trans-unit id="newsletterblocklist.tt_content">
+				<source>Newsletter Content</source>
+			</trans-unit>
+			<trans-unit id="newsletterblocklist.link_text">
+				<source>Link Tekst</source>
+			</trans-unit>
+			<trans-unit id="events">
+				<source>Events Block List</source>
+			</trans-unit>
+			<trans-unit id="events.tt_content">
+				<source>Events Content</source>
+			</trans-unit>
+			<trans-unit id="events.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="events.time">
+				<source>Time</source>
+			</trans-unit>
+			<trans-unit id="events.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="events.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="linklist">
+				<source>Link Block List</source>
+			</trans-unit>
+			<trans-unit id="linklist.tt_content">
+				<source>Link List Content</source>
+			</trans-unit>
+			<trans-unit id="linklist.link_text">
+				<source>Link Tekst</source>
+			</trans-unit>
+			<trans-unit id="sliders_item.header">
+				<source>Afbeelding alt/title tekst</source>
+			</trans-unit>
+			<trans-unit id="sliders_item.images">
+				<source>Header Afbeelding</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

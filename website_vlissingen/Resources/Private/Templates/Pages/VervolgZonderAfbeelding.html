@@ -1,0 +1,20 @@
+<f:layout name="VervolgZonderAfbeelding" />
+<f:section name="content">
+	<div class="twocolumns">
+		<div id="content">
+			<f:cObject typoscriptObjectPath="lib.rootline" />
+			<f:cObject typoscriptObjectPath="lib.pagetitle" />
+			<f:cObject typoscriptObjectPath="lib.content.main" />
+		</div>
+		<div id="sidebar">
+			<f:cObject typoscriptObjectPath="lib.submenu" />
+			<f:cObject typoscriptObjectPath="lib.sidebar_appointment" />
+			<div class="sidebar-holder">
+				<f:cObject typoscriptObjectPath="lib.sidebar_address" />
+			</div>
+		</div>
+	</div>
+	<div class="addthis-socialmedia">
+		<f:cObject typoscriptObjectPath="lib.addThisJS" />
+	</div>
+</f:section>

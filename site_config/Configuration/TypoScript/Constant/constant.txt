@@ -1,0 +1,19 @@
+website {
+	htmlTag_langKey = de
+    language = de
+    locale_all = de_DE
+    rootPid = 1
+    sys_language_mode = content_fallback;0,1
+    sys_language_uid = 0
+	logoPath = typo3conf/ext/site_config/Resources/Public/images/logo-fmt-top_176x50.png
+	logoSmallPath = typo3conf/ext/site_config/Resources/Public/images/logo-fmt-top_128x36.png
+	footerLogo = typo3conf/ext/site_config/Resources/Public/images/logo-fmt-bottom_176x50.png
+	rootPid = 1
+	footer {
+		address= Badstrasse 16, 91217 Hersbruck
+		telephone = 09151 / 83 93 0
+		email = info@fackelmanntherme.de
+		newletterpid = 45
+	}
+	companyName = FACKELMANN THERME HERSBRUCK
+}

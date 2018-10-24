@@ -1,0 +1,86 @@
+/*******************************************************************************
+ Condeolance Register
+*******************************************************************************/
+div#content div.tx-veguestbook-pi1 div.messagelist {
+	margin-top: 40px;
+}
+
+div#content div.tx-veguestbook-pi1 div.tx-guestbook-header{
+	font-weight: normal;
+	color: #0097A0;
+}
+
+div#content div.tx-veguestbook-pi1 div.tx-guestbook-right {
+	padding: 10px 5px 10px 0;
+	margin-bottom: 10px;
+	background: url("../../Images/divider04.png") repeat-x 0 bottom;
+}
+
+div#content div.tx-veguestbook-pi1 div.messagelist h2 {
+	background: url("../../Images/divider04.png") repeat-x 0 bottom;
+	margin: 20px 0 10px;
+	padding: 0 0 15px;
+}
+
+div#content div.tx-veguestbook-pi1 div.messagelist div.tx-guestbook-right p {
+	margin: 0 0 5px;
+}
+
+
+/******************************************************************************
+ Condeolance Register Form
+******************************************************************************/
+div#content div.tx-veguestbook-pi1 div.reactform {
+	background: #F7F6F4;
+	border: 1px solid #E1DAD4;
+	padding: 10px;
+}
+
+div#content div.tx-veguestbook-pi1 div.reactform h2 {
+	margin-top: 5px;
+}
+
+div#content div.tx-veguestbook-pi1 div.reactform p.tx-guestbook-form-error,
+div#content div.tx-veguestbook-pi1 div.reactform ul {
+	margin: 0 0 5px;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset {
+	border: 0;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset div.tx-guestbook-field {
+	overflow: hidden;
+	margin: 7px 0;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset div.tx-guestbook-field input {
+	height: 23px;
+	border: 1px solid #D1C7BE;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset div.tx-guestbook-field textarea {
+	border: 1px solid #D1C7BE;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset div.tx-guestbook-field input.tx-guestbook-submit {
+	height: 31px;
+	width: 130px;
+	background: #801D69;
+	color: #ffffff;
+	border: none;
+	font-weight: bold;
+	margin: 10px 0 0 230px;
+	padding-bottom: 4px;
+}
+
+div#content div.tx-veguestbook-pi1 fieldset label {
+	float: left;
+	width: 230px;
+	font-weight: bold;
+}
+
+
+div#content div.tx-veguestbook-pi1 fieldset input,
+div#content div.tx-veguestbook-pi1 fieldset textarea {
+}

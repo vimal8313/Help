@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-NL" lang="nl-NL">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Form FCE</title>
+</head>
+<body>
+
+<div id="form">
+	<form action="#" method="post" enctype="multipart/form-data" class="fce_form">
+		<div class="error">Errors</div>
+		<span id="content">Form content</span>
+		<div class="buttons">
+			<input type="hidden" name="tx_fceforms_pi1[form]" value="1" />
+			<input type="submit" value="Versturen" />
+		</div>
+	</form>
+</div>
+
+<div id="pdfform">
+	<div class="error">Errors</div>
+	<div class="extra">
+	<!-- ###EXTRA### begin -->
+		<div class="formfield pair text">
+			<label for="tx_fceforms_pi1_field###ID###">###TEXT###</label>
+			<span class="field" id="tx_fceforms_pi1_field###ID###">###VALUE###</span>
+		</div>
+	<!-- ###EXTRA### end -->
+	</div>
+	<span id="content">Form content</span>
+</div>
+
+<div id="overviewform">
+	<form action="#" method="post" enctype="multipart/form-data" class="fce_form">
+		<div class="error">Errors</div>
+		<span id="content">Form content</span>
+		<div class="check">
+			<div class="formfield pair select">
+				<label for="tx_fceforms_pi1_check">Zijn de ingevulde gegevens juist?</label>
+				<span class="field">
+					<select id="tx_fceforms_pi1_check" class="required" name="tx_fceforms_pi1[checked]">
+						<option value="1">Ja</option>
+						<option value="0">Nee</option>
+					</select>
+				</span>
+			</div>
+		</div>
+		<div class="buttons">
+			<input type="hidden" name="tx_fceforms_pi1[form]" value="1" />
+			<input type="submit" value="Versturen" />
+		</div>
+	</form>
+</div>
+
+<div id="finalizeform">
+	<div class="finalize">Finalize content</div>
+	<span id="content">Form content</span>
+</div>
+
+<div id="pages">
+	<div class="formpages">
+		<div class="formpage subpage pagebreak">
+			<input type="hidden" class="conditions" value="" />
+			<h2>Page title</h2>
+			<span id="content">Page content</span>
+			<input class="previousButtonText" type="hidden" value="vorige"/>
+			<input class="nextButtonText" type="hidden" value="volgende"/>
+		</div>
+	</div>
+</div>
+
+<div id="pdfpages">
+	<div class="formpages">
+		<div class="formpage subpage pagebreak">
+			<input type="hidden" class="conditions" value="" />
+			<h2>Page title</h2>
+			<span id="content">Page content</span>
+		</div>
+	</div>
+</div>
+
+<div id="overviewpages">
+	<div class="formpages">
+		<div class="formpage subpage pagebreak">
+			<input type="hidden" class="conditions" value="" />
+			<h2>Page title</h2>
+			<span id="content">Page content</span>
+		</div>
+	</div>
+</div>
+
+<div id="multiple">
+	<div class="multiple">
+		Multiple content
+	</div>
+</div>
+
+<div id="pdfmultiple">
+	<div class="multiple">
+		Multiple content
+	</div>
+</div>
+
+<div id="overviewmultiple">
+	<div class="multiple">
+		Multiple content
+	</div>
+</div>
+
+<div id="fieldset">
+	<fieldset>
+		<legend>Legend</legend>
+		<span id="content"></span>
+	</fieldset>
+</div>
+
+<div id="pdffieldset">
+	<fieldset>
+		<legend>Legend</legend>
+		<span id="content"></span>
+	</fieldset>
+</div>
+
+<div id="overviewfieldset">
+	<fieldset>
+		<legend>Legend</legend>
+		<span id="content"></span>
+	</fieldset>
+</div>
+
+<div id="field_text">
+	<div class="formfield pair text">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field"><input type="text" name="field_name" id="field_id" size="30" value="field_value" class="required" /></span>
+	</div>
+</div>
+
+<div id="pdffield_text">
+	<div class="formfield pair text">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_text">
+	<div class="formfield pair text">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_password">
+	<div class="formfield pair password">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field"><input type="password" name="field_name" id="field_id" size="30" value="field_value" class="required" /></span>
+	</div>
+</div>
+
+<div id="pdffield_password">
+	<div class="formfield pair password">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_password">
+	<div class="formfield pair password">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_upload">
+	<div class="formfield pair upload">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field"><input type="file" name="field_name" id="field_id" size="30" value="field_value" class="required" /></span>
+	</div>
+</div>
+
+<div id="pdffield_upload">
+	<div class="formfield pair upload">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_upload">
+	<div class="formfield pair upload">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_date">
+	<div class="formfield pair date">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field"><input type="text" name="field_name" id="field_id" size="30" value="field_value" class="required" /></span>
+	</div>
+</div>
+
+<div id="pdffield_date">
+	<div class="formfield pair date">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_date">
+	<div class="formfield pair date">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_textarea">
+	<div class="formfield pair textarea">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field"><textarea name="field_name" id="field_id" cols="30" rows="5" class="required">field_value</textarea></span>
+	</div>
+</div>
+
+<div id="pdffield_textarea">
+	<div class="formfield pair textarea">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_textarea">
+	<div class="formfield pair textarea">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_select">
+	<div class="formfield pair select">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field">
+			<select name="field_name" id="field_id" class="required">
+				<option value="field_value">field_text</option>
+			</select>
+		</span>
+	</div>
+</div>
+
+<div id="pdffield_select">
+	<div class="formfield pair select">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_select">
+	<div class="formfield pair select">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_checkbox">
+	<div class="formfield pair checkbox">
+		<label for="field_id" title="Field title">Field title</label>
+		<span id="field_id" class="fields required">
+			<span class="field">
+				<input type="checkbox" name="field_name" id="field_id" value="field_value" checked="checked" /> <label for="field_id">field_text</label>
+			</span>
+		</span>
+	</div>
+</div>
+
+<div id="pdffield_checkbox">
+	<div class="formfield pair checkbox">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_checkbox">
+	<div class="formfield pair checkbox">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_radio">
+	<div class="formfield pair radio">
+		<label for="field_id" title="Field title">Field title</label>
+		<span id="field_id" class="fields required">
+			<span class="field">
+				<input type="radio" name="field_name" id="field_id" value="field_value" checked="checked" /> <label for="field_id">field_text</label>
+			</span>
+		</span>
+	</div>
+</div>
+
+<div id="pdffield_radio">
+	<div class="formfield pair radio">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_radio">
+	<div class="formfield pair radio">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="field_inline">
+	<div class="formfield pair inline">
+		<label for="field_id" title="Field title">Field title</label>
+		<div class="field" id="field_id">field_value</div>
+	</div>
+</div>
+
+<div id="pdfinline">
+	<div class="formfield pair inline">
+		<label for="field_id">Field title</label>
+		<div class="field" id="field_id">field_value</div>
+	</div>
+</div>
+
+<div id="overviewinline">
+	<div class="formfield pair inline">
+		<label for="field_id">Field title</label>
+		<div class="field" id="field_id">field_value</div>
+	</div>
+</div>
+
+<div id="field_static">
+	<div class="formfield pair static">
+		<label for="field_id" title="Field title">Field title</label>
+		<span class="field">field_value</span>
+	</div>
+</div>
+
+<div id="pdffield_static">
+	<div class="formfield pair static">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+<div id="overviewfield_static">
+	<div class="formfield pair static">
+		<label for="field_id">Field title</label>
+		<span class="field" id="field_id">field_value</span>
+	</div>
+</div>
+
+
+</body>
+</html>

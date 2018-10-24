@@ -1,0 +1,140 @@
+<!-- ###FORM### begin -->
+<div class="bekendmakingen_form">
+	<form action="###FORM_ACTION###" method="###FORM_METHOD###">
+		<div class="pair">
+			<div class="label">
+				###LABEL_DATE###
+			</div>
+			<div class="field">
+				<input id="bekendmakingen_date" type="text" name="tx_windbekendmakingen_pi1[date]" value="###DATE###" />
+			</div>
+		</div>
+		<div class="pair">
+			<div class="label">
+				###LABEL_LISTTYPE###
+			</div>
+			<div class="field">
+				<!-- ###LISTTYPES### begin -->
+				<div class="option">
+					<input id="bekendmakingen_list_type_###LISTTYPE###" type="radio" name="tx_windbekendmakingen_pi1[list_type]" value="###LISTTYPE###"<!-- ###CHECKED### begin --> checked="checked"<!-- ###CHECKED### end --> /> <label for="bekendmakingen_list_type_###LISTTYPE###">###LABEL_LISTTYPE###</label>
+				</div>
+				<!-- ###LISTTYPES### end -->
+			</div>
+		</div>
+		<div class="buttons">
+			<input type="submit" value="###LABEL_SUBMIT###" />
+		</div>
+	</form>
+</div>
+<!-- ###FORM### end -->
+
+
+<!-- ###PDF_FULL### begin -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="nl-NL" lang="nl-NL" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base href="http://www.vlissingen.nl/" />
+	<title>Gemeente Vlissingen: Bekendmakingen</title>
+	<meta name="generator" content="TYPO3 4.5 CMS" />
+	<link rel="stylesheet" type="text/css" href="typo3conf/ext/website_vlissingen/Resources/Public/Css/ext/wind_bekendmakingen.css" media="screen,projection,print" />
+</head>
+
+<body class="pdf">
+<div id="content">
+	<div class="tx-windbekendmakingen-pi1">
+		<div class="pdf_full">
+			<!-- ###BEKENDMAKINGEN### begin -->
+			<div class="bekendmaking">
+				<div class="title">###TITLE###</div>
+				<div class="date">###DATE###</div>
+				<div class="subheader">###SUBHEADER###</div>
+				<div class="description">###DESCRIPTION###</div>
+			</div>
+			<!-- ###BEKENDMAKINGEN### end -->
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
+<!-- ###PDF_FULL### end -->
+
+<!-- ###PDF_HEADERS### begin -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="nl-NL" lang="nl-NL" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base href="http://www.vlissingen.nl/" />
+	<title>Gemeente Vlissingen: Bekendmakingen</title>
+	<meta name="generator" content="TYPO3 4.5 CMS" />
+	<link rel="stylesheet" type="text/css" href="typo3conf/ext/website_vlissingen/Resources/Public/Css/ext/wind_bekendmakingen.css" media="screen,projection,print" />
+</head>
+
+<body class="pdf">
+<div id="content">
+	<div class="tx-windbekendmakingen-pi1">
+		<div class="pdf_headers">
+			<!-- ###BEKENDMAKINGEN### begin -->
+			<div class="bekendmaking">
+				<div class="title">###TITLE###</div>
+			</div>
+			<!-- ###BEKENDMAKINGEN### end -->
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
+<!-- ###PDF_HEADERS### end -->
+
+<!-- ###PDF_SECTION_HEADER### begin -->
+<html>
+<head>
+	<base href="http://www.vlissingen.nl/" />
+	<link rel="stylesheet" type="text/css" href="typo3conf/ext/website_vlissingen/Resources/Public/Css/ext/wind_bekendmakingen.css" media="screen,projection,print" />
+</head>
+<body class="pdf_header">
+<div class="pdf_header">
+	<div class="dates">
+		Bekendmakingen van ###DATESTART### tot ###DATEEND###
+	</div>
+</div>
+</body>
+</html>
+<!-- ###PDF_SECTION_HEADER### end -->
+
+<!-- ###PDF_SECTION_FOOTER### begin -->
+<html>
+<head>
+<base href="http://www.vlissingen.nl/" />
+<script>
+function subst() {
+  var vars={};
+  var x=document.location.search.substring(1).split('&');
+  for(var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
+  var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
+  for(var i in x) {
+    var y = document.getElementsByClassName(x[i]);
+    for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+  }
+}
+</script>
+<link rel="stylesheet" type="text/css" href="typo3conf/ext/website_vlissingen/Resources/Public/Css/ext/wind_bekendmakingen.css" media="screen,projection,print" />
+</head>
+<body class="pdf_footer" onload="subst()">
+<div class="pdf_footer">
+	<div class="pages">
+		Pagina <span class="page"></span> van <span class="topage"></span>
+    </div>
+	<div class="dates">
+		Bekendmakingen van ###DATESTART### tot ###DATEEND###
+	</div>
+</div>
+</body>
+</html>
+<!-- ###PDF_SECTION_FOOTER### end -->

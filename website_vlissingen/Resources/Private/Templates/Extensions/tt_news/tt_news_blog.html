@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>News template</title>
+</head>
+
+<body>
+
+<!-- ###TEMPLATE_LIST### begin -->
+<div class="news-blog-container">
+	<!-- ###CONTENT### begin -->
+		<!-- ###NEWS### begin -->
+			<div class="news-blog-item">
+				<div class="news-blog-author">###NEWS_AUTHOR###</div>
+				<div class="news-blog-content">
+					<h2><!--###LINK_ITEM###-->###NEWS_TITLE###<!--###LINK_ITEM###--></h2>
+					<div class="news-blog-date">###NEWS_DATE###</div>
+					<div class="news-blog-text">###NEWS_SUBHEADER###</div>
+				</div>
+			</div>
+		<!-- ###NEWS### end-->
+	<!-- ###CONTENT###  end -->
+	###BROWSE_LINKS###
+</div>
+<!-- ###TEMPLATE_LIST### end -->
+
+<!-- ###TEMPLATE_SINGLE### begin -->
+<div class="blog-single-item">
+	<h1>###NEWS_TITLE###</h1>
+
+	<div class="blog-single-date">
+		Gepubliceerd op <span>###NEWS_DATE###</span>
+	</div>
+		###NEWS_IMAGE###
+	<div class="blog-single-subheader">
+		###NEWS_SUBHEADER###
+	</div>
+	<div class="blog-single-text">
+		###NEWS_CONTENT###
+	</div>
+	<div class="blog-single-backlink">
+	<!--###LINK_ITEM###-->###BACK_TO_LIST###<!--###LINK_ITEM###-->
+	</div>
+</div>
+<!-- ###TEMPLATE_SINGLE### end -->
+
+</body>
+</html>

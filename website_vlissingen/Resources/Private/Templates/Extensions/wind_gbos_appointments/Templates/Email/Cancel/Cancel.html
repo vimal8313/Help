@@ -1,0 +1,13 @@
+{namespace ga=Tx_WindGbosAppointments_ViewHelpers}
+<f:layout name="Empty" /><f:section name="main">
+Beste <f:if condition="<ga:compare value='{appointment.clientSex}' compare='V' operand='values' />"><f:then>mevrouw</f:then><f:else>meneer</f:else></f:if> {appointment.clientInitials} {appointment.clientLastName} ,<br /><br />
+
+Hierbij bevestigen wij de annulering van uw afspraak bij het gemeentehuis.<br />
+Afspraaknummer:	{arguments.appointmentNumber}<br />
+Datum:<ga:date format='%A %d %B %Y' timestamp='{appointment.appStartTime}' /><br />
+Tijdstip: <ga:date format='%H:%M' timestamp='{appointment.appStartTime}' /> uur<br /><br />
+
+Met vriendelijke groet,<br /><br />
+Team KCC (Klant Contact Centrum),<br />
+Gemeente Vlissingen<br />
+</f:section>

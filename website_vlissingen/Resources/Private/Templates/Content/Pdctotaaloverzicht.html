@@ -1,0 +1,20 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="total-overview">
+		<div class="searchcontainer">
+			<f:cObject typoscriptObjectPath="lib.pdc_search" />
+		</div>
+		<div class="container">
+			<div class="box themes">
+				<f:cObject typoscriptObjectPath="lib.pdc_themes" />
+			</div>
+			<div class="box life-events">
+				<f:cObject typoscriptObjectPath="lib.pdc_lifeevents" />
+			</div>
+			<div class="box announcements">
+				<f:cObject typoscriptObjectPath="lib.news_notices" />
+			</div>
+		</div>
+	</div>
+</f:section>

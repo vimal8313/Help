@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>WIND Events</title>
+</head>
+<body>
+
+<!-- ###LIST_LATEST### begin -->
+<div class="list">
+	<h2>Activiteiten en Evenementen</h2>
+	<!-- ###LIST_SINGLE### begin -->
+	<div class="event">
+		<div class="###DATECLASS###"><p class="month"><a href="/vrije-tijd/activiteiten-evenementen/">###MONTH###</a></p><p class="###DATECLASS###"><a href="/vrije-tijd/activiteiten-evenementen/">###DAY###</a></p></div>
+		<div class="right">
+			<a href="/vrije-tijd/activiteiten-evenementen/"><span class="title">###TITLE###</span></a>
+			<ul>
+				<li class="location"><span>Locatie: </span>###REGION###</li>
+				<!-- ###LIST_SINGLE_TIME### begin -->
+				<li class="time"><span>Tijdstip: </span>###TIME###</li>
+				<!-- ###LIST_SINGLE_TIME### end -->
+			</ul>
+		</div>
+	</div>
+	<!-- ###LIST_SINGLE### end -->
+</div>
+<!-- ###LIST_LATEST### end -->
+
+<!-- ###LIST### begin -->
+<div class="list">
+	<!-- ###LIST_SINGLE### begin -->
+	<div class="event###EVENODD###">
+		<h2 class="title">###TITLE###</h2>
+		<div class="event-subheader">
+			<span class="date">Activiteit van ###DATE###</span>
+			<!-- ###LIST_SINGLE_TIME### begin -->
+			<span class="time">Tijd: ###TIME###</span>
+			<!-- ###LIST_SINGLE_TIME### end -->
+			<span class="location">Locatie: ###LOCATION_SHORT###</span>
+		</div>
+		<!-- ###SINGLE_IMAGE### begin -->
+			<div class="image">###IMAGE###</div>
+		<!-- ###SINGLE_IMAGE### begin -->
+		<div class="description">
+			###DESCRIPTION###
+
+			<div class="pair location"><span>Adres locatie: </span><br />###LOCATION###</div>
+			<!-- ###SHOWORGANIZER### begin -->
+			<div class="pair organizer"><span>Organisator: </span><br />###ORGANIZER###</div>
+			<!-- ###SHOWORGANIZER### end -->
+
+			<div class="pair contact"><span>Contact: </span><br />###CONTACT###</div>
+
+			<!-- ###LIST_SINGLE_WEBSITE### begin -->
+			<div class="pair website"><span>Website: </span><br /><a href="###WEBSITE###">###WEBSITE_WITHOUT_HTTP###</a></div>
+			<!-- ###LIST_SINGLE_WEBSITE### end -->
+		</div>
+	</div>
+	<!-- ###LIST_SINGLE### end -->
+	<!-- ###LIST_PAGE### begin -->
+	<div class="pagebrowser">
+		<ul>
+	<!-- ###LIST_PAGE_FIRST### begin -->
+			<li class="first"><a href="###URL###">&lt;&lt;</a></li>
+	<!-- ###LIST_PAGE_FIRST### end -->
+	<!-- ###LIST_PAGE_PREVIOUS### begin -->
+			<li class="previous"><a href="###URL###">ouder</a></li>
+	<!-- ###LIST_PAGE_PREVIOUS### end -->
+	<!-- ###LIST_PAGE_NUM### begin -->
+			<li<!-- ###LIST_PAGE_NUM_CURRENT### begin --> class="current"<!-- ###LIST_PAGE_NUM_CURRENT### end -->><a href="###URL###">###ITEMNR###</a></li>
+	<!-- ###LIST_PAGE_NUM### end -->
+	<!-- ###LIST_PAGE_NEXT### begin -->
+			<li class="next"><a href="###URL###">nieuwer</a></li>
+	<!-- ###LIST_PAGE_NEXT### end -->
+	<!-- ###LIST_PAGE_LAST### begin -->
+			<li class="last"><a href="###URL###">&gt;&gt;</a></li>
+	<!-- ###LIST_PAGE_LAST### end -->
+		</ul>
+	</div>
+	<!-- ###LIST_PAGE### end -->
+</div>
+<!-- ###LIST### end -->
+
+<!-- ###LIST_NONE### begin -->
+<div class="list">
+	<p>Er zijn geen evenementen gevonden.</p>
+</div>
+<!-- ###LIST_NONE### end -->
+
+<!-- ###SINGLE### begin -->
+<div class="single">
+	<h2>###TITLE###</h2>
+	<div class="pair location">
+		<label for="tx_windevents_location">Locatie</label>
+		<span class="value" id="tx_windevents_location">###LOCATION###</span>
+	</div>
+	<div class="pair date">
+		<label for="tx_windevents_date">Datum</label>
+		<span class="value" id="tx_windevents_date">###DATE###</span>
+	</div>
+	<!-- ###SINGLE_TIME### begin -->
+	<div class="pair time">
+		<label for="tx_windevents_time">Tijd</label>
+		<span class="value" id="tx_windevents_time">###TIME###</span>
+	</div>
+	<!-- ###SINGLE_TIME### begin -->
+	<!-- ###SINGLE_ORGANIZER### begin -->
+	<div class="pair organizer">
+		<label for="tx_windevents_organizer">Organisator</label>
+		<span class="value" id="tx_windevents_organizer">###ORGANIZER###</span>
+	</div>
+	<!-- ###SINGLE_ORGANIZER### begin -->
+	<!-- ###SINGLE_CONTACT### begin -->
+	<div class="pair contact">
+		<label for="tx_windevents_contact">Contactpersoon</label>
+		<span class="value" id="tx_windevents_contact">###CONTACT###</span>
+	</div>
+	<!-- ###SINGLE_CONTACT### begin -->
+	<!-- ###SINGLE_WEBSITE### begin -->
+	<div class="pair website">
+		<label for="tx_windevents_website">Website</label>
+		<span class="value" id="tx_windevents_website">
+		<!-- ###SINGLE_WEBSITE_SINGLE### begin -->
+			<a href="###WEBSITE###" target="_blank">###WEBSITE###</a><br />
+		<!-- ###SINGLE_WEBSITE_SINGLE### end -->
+		</span>
+	</div>
+	<!-- ###SINGLE_WEBSITE### begin -->
+	<div class="description">
+		<h3>Omschrijving</h3>
+		###DESCRIPTION###
+	</div>
+	<div class="image">
+	<!-- ###SINGLE_IMAGE### begin -->
+		<div>
+			###IMAGE###
+		</div>
+	<!-- ###SINGLE_IMAGE### begin -->
+	</div>
+</div>
+<!-- ###SINGLE### end -->
+
+<!-- ###SINGLE_NONE### begin -->
+<div class="single">
+	<p>Er zijn geen evenementen gevonden.</p>
+</div>
+<!-- ###SINGLE_NONE### end -->
+
+<!-- ###SEARCH### begin -->
+<div class="search">
+	<form action="###URL###" method="post">
+		<div class="pair">
+			<label for="tx_windevents_pi1_keywords">Trefwoord</label>
+			<input type="text" name="tx_windevents_pi1[keywords]" id="tx_windevents_pi1_keywords" value="###VALUE###" />
+		</div>
+		<div class="pair">
+			<label for="tx_windevents_pi1_region">Provincie</label>
+			<select name="tx_windevents_pi1[region]" id="tx_windevents_pi1_region">
+				<option value="">Alle</option>
+	<!-- ###SEARCH_REGION### begin -->
+				<option value="###UID###"<!-- ###SEARCH_REGION_SELECTED### begin --> selected="selected"<!-- ###SEARCH_REGION_SELECTED### end -->>###TITLE###</option>
+	<!-- ###SEARCH_REGION### end -->
+			</select>
+		</div>
+		<div class="pair">
+			<label for="tx_windevents_pi1_category">Categorie</label>
+			<select name="tx_windevents_pi1[category]" id="tx_windevents_pi1_category">
+				<option value="">Alle</option>
+	<!-- ###SEARCH_CATEGORY### begin -->
+				<option value="###UID###"<!-- ###SEARCH_CATEGORY_SELECTED### begin --> selected="selected"<!-- ###SEARCH_CATEGORY_SELECTED### end -->>###TITLE###</option>
+	<!-- ###SEARCH_CATEGORY### end -->
+			</select>
+		</div>
+		<div class="buttons">
+			<input type="submit" name="tx_windevents_pi1[search]" value="Zoeken" />
+		</div>
+	</form>
+</div>
+<!-- ###SEARCH### end -->
+
+<!-- ###CAL### begin -->
+<div class="calendar">
+	<ul class="prevnext">
+		<li class="prev"><a href="###PREV_URL###">&lt; prev</a></li>
+		<li class="next"><a href="###NEXT_URL###">next &gt;</a></li>
+		<li class="title">###CURRENT###</li>
+	</ul>
+	<table cellspacing="0" cellpadding="0" summary="Evenementen kalender">
+		<thead>
+			<tr>
+				<th scope="col">Zo</th>
+				<th scope="col">Ma</th>
+				<th scope="col">Di</th>
+				<th scope="col">Wo</th>
+				<th scope="col">Do</th>
+				<th scope="col">Vr</th>
+				<th scope="col">Za</th>
+			</tr>
+		</thead>
+		<tbody>
+	<!-- ###CAL_WEEK### begin -->
+			<tr>
+		<!-- ###CAL_WEEK_DAY### begin -->
+				<td<!-- ###CAL_WEEK_DAY_CURRENT### begin --> class="current"<!-- ###CAL_WEEK_DAY_CURRENT### end --><!-- ###CAL_WEEK_DAY_ACTIVE### begin --> class="active"<!-- ###CAL_WEEK_DAY_ACTIVE### end --><!-- ###CAL_WEEK_DAY_INACTIVE### begin --> class="inactive"<!-- ###CAL_WEEK_DAY_INACTIVE### end -->>
+					<div>
+						<span class="day"><!-- ###CAL_WEEK_DAY_URL### begin -->###DATE###<!-- ###CAL_WEEK_DAY_URL### end --></span>
+					</div>
+				</td>
+		<!-- ###CAL_WEEK_DAY### end -->
+			</tr>
+	<!-- ###CAL_WEEK### begin -->
+		</tbody>
+	</table>
+</div>
+<!-- ###CAL### end -->
+
+<!-- ###LIST_MONTH### begin -->
+	<div class="month-menu">
+		<h2 class="title">Verfijnen op maand</h2>
+		<ul>
+		<!-- ###LIST_MONTH_SINGLE### begin -->
+			<li><a href="###URL###">###MONTH###</a></li>
+		<!-- ###LIST_MONTH_SINGLE### end -->
+		</ul>
+	</div>
+<!-- ###LIST_MONTH### end -->
+
+</body>
+</html>

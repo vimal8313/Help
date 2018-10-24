@@ -1,0 +1,28 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="section no-line">
+		<div class="box style">
+			<vh:dataProcessor uid="{data.uid}" table="tx_website_vlissingen_section_left_mm" foreignField="uid_local">
+				<f:for each="{items}" as="item" iteration="iterator">
+					<vh:dataRelation uid="{item.uid_foreign}" table="tt_content" as='items1' foreignField="uid">
+						<f:for each="{items1}" as="item1">
+							<vh:content uid="{item1.uid}"></vh:content>
+						</f:for>
+					</vh:dataRelation>
+				</f:for>
+			</vh:dataProcessor>
+		</div>
+		<div class="box">
+			<vh:dataProcessor uid="{data.uid}" table="tx_website_vlissingen_section_right_mm" foreignField="uid_local">
+				<f:for each="{items}" as="item" iteration="iterator">
+					<vh:dataRelation uid="{item.uid_foreign}" table="tt_content" as='items1' foreignField="uid">
+						<f:for each="{items1}" as="item1">
+							<vh:content uid="{item1.uid}"></vh:content>
+						</f:for>
+					</vh:dataRelation>
+				</f:for>
+			</vh:dataProcessor>
+		</div>
+	</div>
+</f:section>

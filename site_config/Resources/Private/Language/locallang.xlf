@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-30T10:23:15Z" product-name="website">
+		<header/>
+		<body>
+			<trans-unit id="contact_text">
+				<source>Kontakt</source>
+			</trans-unit>
+			<trans-unit id="tele_text">
+				<source>Thermen-Telefon</source>
+			</trans-unit>
+			<trans-unit id="email">
+				<source>E-mail</source>
+			</trans-unit>
+			<trans-unit id="newsletter">
+				<source>Newsletter</source>
+			</trans-unit>
+			<trans-unit id="newsletter_text">
+				<source>Jetzt Newsletter abonnieren und immer über alle Neuigkeiten und Veranstaltungen in der Fackelmann Therme Hersbruck informiert sein.</source>
+			</trans-unit>
+			<trans-unit id="newsletter_link">
+				<source>Zur Anmeldung</source>
+			</trans-unit>
+			<trans-unit id="vitalquelle_title">
+				<source>Vitalquelle</source>
+			</trans-unit>
+			<trans-unit id="event_title">
+				<source>Events Aktionen</source>
+			</trans-unit>
+			<trans-unit id="info_title">
+				<source>INFO &amp; KONTAKT</source>
+			</trans-unit>
+			<trans-unit id="rights_text">
+				<source>Alle Rechte vorbehalten.</source>
+			</trans-unit>
+			<trans-unit id="home_event_header">
+				<source>Events</source>
+			</trans-unit>
+			<trans-unit id="home_event_text">
+				<source>Egal ob lange gesellige Abende in Thermenwelt und Saunapark, genüssliche Gastronomie-Specials oder zauberhafte Wellnessaktionen. Hier finden Sie alle Veranstaltungen auf einem Blick.</source>
+			</trans-unit>
+			<trans-unit id="more-link">
+				<source>Mehr erfahren</source>
+			</trans-unit>
+			<trans-unit id="back-link">
+				<source>Alle Events anzeigen</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

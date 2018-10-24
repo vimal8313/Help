@@ -1,0 +1,436 @@
+/*f4n_goldneranker.css*/
+div.tx-f4ngoldneranker-pi1 {
+	margin: 0 0 15px 0;
+}
+div.tx-f4ngoldneranker-pi1 .txt_klein {
+	font-size: 95%;
+}
+div.tx-f4ngoldneranker-pi1 .F4NActiveItem {
+	visibility: visible;
+	display: block;
+}
+div.tx-f4ngoldneranker-pi1 .F4NNotActiveItem {
+	visibility: hidden;
+	display: none;
+}
+/*Pauschalangebote - Ausgabe*/
+div.OfferItem {
+	padding: 10px 0;
+	overflow: auto;
+}
+div.tx-f4ngoldneranker-pi1 div.Tab {
+	height: 30px;
+	border-bottom: 1px solid #9A9B9F;
+}
+div.tx-f4ngoldneranker-pi1 div.Tab ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Tab ul li {
+	float: left;
+	border-top: 1px solid #B2B2B2;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin: 0 2px 1px 0;
+	padding: 0;
+	background: none;
+}
+div.tx-f4ngoldneranker-pi1 div.Tab ul li a {
+	color: #9A9B9F;
+	padding: 6px 10px 6px 10px;
+	margin: 0;
+	display: block;
+	font-size: 100%;
+	font-weight: normal;
+	background: #F6F6F6;
+}
+div.tx-f4ngoldneranker-pi1 div.Tab ul li a:hover, div.tx-f4ngoldneranker-pi1 div.Tab ul li a.active {
+	color: #fff;
+	background: #EE9307;
+}
+div.OfferItem p {
+	margin: 5px 0;
+	padding: 0;
+}
+div.OfferItem div.KurzinfoBlock {
+	min-height: 172px;
+	overflow: hidden;
+	margin: 10px 0 5px 0;
+}
+div.OfferItem h3 {
+	margin-top: 2px;
+	padding: 0;
+}
+div.OfferItem div.Img {
+	width: 310px;
+	float: left;
+	height: 172px;
+	margin: 0;
+}
+div.OfferItem div.Text {
+	margin: 0 0 0 333px;
+}
+div.OfferItem div.Text .kursiv p {
+	font-size: 90%;
+}
+div.OfferItem div.Buchungsanfrage, div.OfferItem div.DetailBlock, div.OfferItem div.PreiseBuchen {
+	padding: 30px;
+	margin: 10px 0 0 0;
+	background: #F9F9F9;
+	border-bottom: solid 1px #925051;
+}
+form.F4NKontaktFormular div.Zweispaltig {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+form.F4NKontaktFormular div.Zweispaltig div.Left {
+	float: left;
+	width: 235px;
+	margin: 0;
+}
+form.F4NKontaktFormular div.Zweispaltig div.Right {
+	width: 235px;
+	margin: 0 0 0 240px;
+}
+form.F4NKontaktFormular h4 {
+	margin: 10px 0 10px 0;
+}
+form.F4NKontaktFormular div.Left div, form.F4NKontaktFormular div.Right div, div.BasketAdresseingabe div.Left div, div.BasketAdresseingabe div.Right div {
+	padding: 3px 0;
+}
+form.F4NKontaktFormular div.full {
+	width: 100%;
+	padding: 5px 0;
+}
+form.F4NKontaktFormular div label, div.BasketAdresseingabe div label {
+	width: 80px;
+    display: block;
+    float: left;
+}
+form.F4NKontaktFormular div label.ForgotPW {
+	width: 220px;
+}
+form.F4NKontaktFormular div label.UpdPW {
+	width: 180px;
+}
+form.F4NKontaktFormular input.text, div.BasketAdresseingabe input.text {
+	background: #F3F3F3;
+	border: solid 1px #747474;
+	padding: 2px 0;
+	width: 60%;
+	font-size: 100%;
+	color: #111;
+}
+div.BasketAdresseingabe select {
+	background: #F3F3F3;
+	border: solid 1px #747474;
+	font-size: 100%;
+	color: #111;
+}
+form.F4NKontaktFormular textarea, div.BasketAdresseingabe textarea {
+	background: #F3F3F3;
+	width: 100%;
+	height: 100px;
+	margin: 10px 0;
+	border: solid 1px #747474;
+	font-size: 100%;
+	color: #111;
+}
+form.F4NKontaktFormular a.Btn {
+	display: block;
+	background: url(../picture_layout/Angebote/Btn2.png) no-repeat left top;
+	color: #FFF;
+	padding: 2px 10px 2px 30px;
+	font-size: 95%;
+	/*width: 116px;	*/
+	font-weight: normal;
+}
+div.tx-f4ngoldneranker-pi1 form input.SubmitBtn {
+	background: url(../picture_layout/Angebote/Btn2.png) no-repeat left top #EE9307;
+	color: #FFF;
+	padding: 2px 15px 2px 30px;
+	font-size: 95%;
+	margin: 20px 0 0 0;
+	border: 0;
+}
+form.F4NKontaktFormular .red, div.BasketAdresseingabe .red {
+	color: #FF0000;
+}
+form.F4NKontaktFormular .AbstandPflichtfeld {
+	margin-top: 20px;
+}
+form.F4NKontaktFormular .klein {
+	font-size: 95%;
+}
+div.PreiseBuchen p.Preisinfo {
+	font-size: 95%;
+}
+p.preis {
+	padding-bottom: 30px;
+}
+p.preis span, p.preis strong, p.preis b, div.PreiseBuchen div.Preisoption .preisbox span.preis {
+	color: #fff;
+	background: #EE9307;
+	padding: 2px 5px;
+	font-weight: normal;
+	line-height: 1;
+}
+div.PreiseBuchen div.Preisoption {
+	border-bottom: solid 1px #999B9E;
+	margin: 8px 0;
+	padding: 10px 0 10px 0;
+	width: 70%;
+}
+div.PreiseBuchen div.last {
+	border-bottom: none;
+}
+div.PreiseBuchen div.Preisoption .heading {
+	color: #F09300;
+	background: url(../picture_layout/Angebote/bg_preis_option.png) no-repeat left center;
+	padding: 3px 0 3px 30px;
+	margin: 5px 0 5px 15px;
+	font-size: 120%;
+}
+div.PreiseBuchen div.Preisoption .preisbox {
+	width: 45%;
+	text-align: right;
+	padding: 0 0 10px 0;
+	float: right;
+	line-height: 1.5;
+	color: #F09300;
+}
+div.PreiseBuchen div.Preisoption p {
+	padding: 5px 0;
+	margin: 0 0 0 15px;
+}
+div.PreiseBuchen div.Preisoption a {
+	background: url(../picture_layout/Angebote/Btn.png) no-repeat left top;
+	padding: 2px 10px 2px 25px;
+	color: #fff;
+	font-weight: normal;
+}
+/*Ausgabe der Leistungen (Zweispaltig), z.B. Zimmer*/
+div.LeistungenInkl {
+	width: auto;
+	margin: 0 10px 0 5px;
+	padding: 10px 0 15px 0;
+}
+div.LeistungenInkl div.left {
+	width: 290px;
+	float: left;
+}
+div.LeistungenInkl div.right {
+	width: 290px;
+	margin: 0 0 0 310px;
+}
+div.LeistungenInkl div.clear {
+	width: auto;
+	height: 1px;
+	clear: left;
+}
+/*Ausgabe der Pauschalen im Warenkorb*/
+/*Text mit Bild (links), Pauschalen, Slideshow mit Text*/
+div.tx-f4ngoldneranker-pi1 div.Pauschalen {
+	width: auto;
+	padding-top: 15px;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen div.bild {
+	float: left;
+	width: 318px;
+}
+div.tx-f4ngoldneranker-pi1 div.bild a {
+	background: none;
+	padding-left: 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen div.text {
+	margin: 0 0 0 323px;
+}
+div.tx-f4ngoldneranker-pi1 div.text p.Belegung {
+	margin: 10px 0 5px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen div.mindHoehe {
+	min-height: 192px;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen div.clear {
+	width: auto;
+	height: 1px;
+	clear: left;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen h3 {
+	margin-top: 0;
+	margin-right: 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen p {
+	margin: 5px 0;
+	padding: 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen p.AbstandTrenner {
+	padding: 15px 0 0 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen p.preis {
+	margin: 15px 0 20px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.Pauschalen p.leistungen {
+	margin: 5px 0 15px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.PauschaleohneRand {
+	border-bottom: none;
+	margin-right: 15px;
+}
+div.tx-f4ngoldneranker-pi1 div.PauschaleohneRand a.Btn, div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe div.buchen a.Btn, div.tx-f4ngoldneranker-pi1 div.AvailabilityCheckResults a.Btn {
+	margin: 15px 15px 5px 0;
+	background: url(../picture_layout/Angebote/Btn.png) no-repeat left center #EE9307;
+	padding: 3px 15px 3px 30px;
+	color: #FFF;
+	display: inline;
+	font-size: 100%;
+	font-weight: normal;
+}
+div.tx-f4ngoldneranker-pi1 div.PauschaleohneRand .accomodation-text {
+	font-weight: bold;
+	width: 320px;
+	float: left;
+}
+div.tx-f4ngoldneranker-pi1 div.PauschaleohneRand p.UKAuswahl {
+	padding: 20px 0 30px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.PauschaleohneRand input.text {
+	background: #E4EFD0;
+	border: 0;
+	width: 120px;
+}
+div.tx-f4ngoldneranker-pi1 h3.InfoZimmerAuswahl {
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe {
+	margin: 20px 0 0 0;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe div.left {
+	float: left;
+	width: 200px;
+	font-weight: bold;
+	font-size: 120%;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe div.left span {
+	font-size: 90%;
+	font-weight: normal;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe div.right {
+	width: 440px;
+	margin: 0 0 0 200px;
+	font-weight: bold;
+	font-size: 120%;
+	text-align: right;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe div.right .normal {
+	font-size: 90%;
+	font-weight: normal;
+}
+div.tx-f4ngoldneranker-pi1 div#Summe div.right .small {
+	font-weight: normal;
+	font-size: 80%;
+}
+/*Formular mit Adresseingabe, CSS sind teilweise oben in F4N Kontaktformular mit enthalten*/
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe {
+	padding-top: 20px;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe h3 {
+	background: url(../picture_layout/Content/bg_h3.gif) no-repeat 15px center;
+	color: #925051;
+	font-size: 115%;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+	padding: 0 0 0 45px;
+}
+div.BasketAdresseingabe div.Zweispaltig div.Left {
+	float: left;
+	width: 310px;
+	margin: 0;
+}
+div.BasketAdresseingabe div.Zweispaltig div.Right {
+	width: 310px;
+	margin: 0 0 0 330px;
+}
+div.BasketAdresseingabe input.text {
+	width: 72%;
+}
+div.BasketAdresseingabe input.textkl {
+	width: 40%;
+}
+div.BasketAdresseingabe select.flatCategory {
+	width: 40%;
+}
+div.BasketAdresseingabe textarea {
+	width: 97%;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe div.einspaltig {
+	clear: both;
+	margin: 10px 0 0 0;
+	padding: 20px 0 0 0;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe p {
+	margin: 0;
+	padding: 0;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe p.agb {
+	margin: 10px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe div.buchen {
+	margin: 15px 0;
+}
+div.tx-f4ngoldneranker-pi1 div.BasketAdresseingabe p.hinweis {
+	font-size: 95%;
+	padding: 5px 0 0 0;
+}
+/*Zimmerverf�gbarkeitspr�fung*/
+div.AvailabilityCheckResults {
+	margin: 30px 0 0 0;
+}
+div.AvailabilityCheckResults h2 {
+	margin-bottom: -5px;
+	padding-bottom: 0;
+}
+div.AvailabilityCheckResults strong.quadrat {
+	background: url(../picture_layout/Zimmerbuchung/quadrat.gif) no-repeat left center;
+	padding-left: 12px;
+}
+div.AvailabilityCheckResults div.Preisoption {
+	border-bottom: solid 1px #EE9307;
+	border-top: solid 1px #EE9307;
+	margin: 8px 0;
+	padding: 10px 0 5px 0;
+}
+div.AvailabilityCheckResults div.Preisoption .heading {
+	color: #EE9307;
+	background: url(../picture_layout/Angebote/bg_preis_option.png) no-repeat left center;
+	padding: 3px 0 3px 25px;
+	margin-left: 15px;
+	font-size: 120%;
+}
+div.AvailabilityCheckResults div.Preisoption .preisbox {
+	width: 45%;
+	text-align: right;
+	padding: 0 0 10px 0;
+	float: right;
+	line-height: 1.5;
+}
+div.AvailabilityCheckResults div.Preisoption p {
+	padding: 5px 0;
+	margin: 0 0 0 15px;
+}
+div.AvailabilityCheckResults input.ContentInputBtn, div.BasketAdresseingabe input.ContentInputBtn  {
+	color: #FFF;
+	border: 0;
+	font-weight: bold;
+	background: url(../picture_layout/Angebote/Btn2.png) no-repeat left center #EE9307;
+	padding: 3px 10px 3px 25px;
+}
+/*Zimmerverwaltung (FE-Admin)*/
+div.tx-f4ngoldneranker-pi1 div.HeadlineLinks {
+	margin: 10px 0 0 0;
+}
+div.tx-f4ngoldneranker-pi1 form div.BelegungsOutputItem {
+	margin: 10px 0 5px 0;
+}

@@ -1,0 +1,112 @@
+############
+### News ###
+############
+
+plugin.tx_news._LOCAL_LANG.default.list_nonewsfound = Keine Neuigkeiten verfügbar
+plugin.tx_news._LOCAL_LANG.default.list_nocategoriesfound = Keine Kategorien verfügbar
+plugin.tx_news._LOCAL_LANG.default.newsNotFound = Keine Neuigkeiten verfügbar
+
+#################
+### Powermail ###
+#################
+
+plugin.tx_powermail {
+  view {
+    # cat=powermail_main/file; type=string; label= Path to template root (FE)
+    templateRootPath = EXT:site_goldner/Resources/Private/Templates/Extensions/powermail/Templates/
+
+    # cat=powermail_main/file; type=string; label= Path to template partials (FE)
+    partialRootPath = EXT:site_goldner/Resources/Private/Templates/Extensions/powermail/Partials/
+
+    # cat=powermail_main/file; type=string; label= Path to template layouts (FE)
+    layoutRootPath = EXT:site_goldner/Resources/Private/Templates/Extensions/powermail/Layouts/
+  }
+}
+
+
+###################### AR IDs #########################
+
+#page and content element IDs
+GoldnerAnkerIDs {
+  homePID = 2
+  HauptNavStartID = 4
+  BottomNavStartID = 5
+  SuchePID = 40
+  NewsletterAbosPID = 44
+  NewsletterSubscriptionPID = 12
+  UserDataPID = 48
+  AdressDataPID = 50
+  WarenkorbPID = 52
+  orderstoragePID = 54
+  orderThankYouPID = 67
+  orderErrorPID = 68
+  RoomsAvailabilityCheckPID = 34
+  OfferPID = 57
+  Offer2PID = 58
+  QuickKontaktPID = 62
+  AnfragePID = 59
+  BuchungsAnfragePauschalenPID = 36
+  BuchungAnfrageZimmerPID = 56
+  BuchungAnfrageZimmerThankYouPID = 72
+  BuchungZimmerPID = 69
+  BuchungZimmerThankYouPID = 70
+  BuchungZimmerErrorPID = 71
+  RoomorderstoragePID = 65
+  GoogleMapsPID = 38
+  GoogleMapsPOIPID = 59
+  UnterkuenfteDataStoragePIDList = 7, 64
+  AGBPID = 69
+  FERoomAdmin = 47
+}
+
+
+###################### AR text #########################
+
+#german or default
+GoldnerAnkerText {
+  site_name = Hotel Goldner Anker
+  email = info@anker-badelster.de
+  meta {
+    author = {$GoldnerAnkerText.site_name}
+    de {
+     abstract = Herzlich Willkommen beim Hotel Restaurant Goldner Anker in Bad Elster.
+     description = Herzlich Willkommen beim Hotel Restaurant Goldner Anker in Bad Elster. Wir informieren Sie über unser Hotel sowie unsere Angebote, um Ihren Aufenthalt so angenehm wie möglich zu gestalten.
+     keywords = Goldner Anker,hotel,bad elster,urlaub,vogtland,freizeit,fremdenzimmer,erholungs,pauschalen, Restaurant, Kutschfahrten
+    }
+  }
+  QuickBookingForm {
+    Naechte {
+    	de = Nächte
+    }
+    Personen {
+    	de = Erwachsene
+	}
+	AnfrageBtn {
+		de = Anfrage starten
+	}
+  }
+  search_btn {
+  	de = Suche starten
+  }
+  search_prefill {
+    de = Suchbegriff
+  }
+  Breadcrumb {
+    de = Sie befinden sich hier
+  }
+  News {
+    de = News Goldner Anker
+  }
+  Preis {
+    de = Preis
+  }
+  Aktuelles {
+    de = Aktuelles
+  }
+  Interessantes {
+    de = Interessantes
+  }
+  MehrInfos {
+    de = mehr Informationen
+  }
+}

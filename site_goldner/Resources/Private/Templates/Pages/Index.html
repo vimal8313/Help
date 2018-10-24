@@ -1,0 +1,75 @@
+<!-- Hauptcontainer -->
+<div id="container">
+    <!-- Navigation -->
+    <f:render partial="header" />
+    <!-- Quickbooker und Stimmungsbild -->
+    <div id="QuickbookerStimmung">
+        <div class="Stimmung">
+            <f:cObject typoscriptObjectPath="lib.content1" />
+        </div>
+        <div class="Quickbooker">
+
+        <form method="post" name="Quickbooker" action='<f:cObject typoscriptObjectPath="lib.roomsavailabilitycheck_url" />' onsubmit="return F4N_PrepareQuickBookerForm();">
+           <p class="calender"><input type="text" name="tx_f4ngoldneranker_pi1[start]" id="QuickbookerForm_Anreise" value='<f:cObject typoscriptObjectPath="lib.field_date_anreise" />' class="Text DatePicker" /></p>
+           <p><select name="tx_f4ngoldneranker_pi1[nights]" class="Sel" id="QuickbookerForm_Naechte">
+                <f:cObject typoscriptObjectPath="lib.F4N_MaxNaechteCount" />
+              </select> <span>Nächte</span></p>
+           <p><select name="tx_f4ngoldneranker_pi1[flatCapacity]" class="Sel">
+               <f:cObject typoscriptObjectPath="lib.F4N_MaxPersCount" />
+              </select> <span>Erwachsene</span></p>
+           <div class="Btn"><input name="button" type="submit" value="Anfrage starten" class="Btn" /></div>
+           <input name="tx_f4ngoldneranker_pi1[end]" type="hidden" value="" id="QuickbookerForm_Abreise" />
+           <input name="tx_f4ngoldneranker_pi1[flatCategoryUid]" type="hidden" value="0" />
+           <input name="tx_f4ngoldneranker_pi1[F4NStartQuery]" type="hidden" value="1" />
+        </form>
+        </div>
+    </div>
+    <!-- Zweispaltiger ContentContainer -->
+    <div id="ContentZweiSpalig">
+        <div id="Content" class="content">
+            <div id="News">
+                <p>
+                    <span class="title">
+                      <f:cObject typoscriptObjectPath="lib.news_title" />
+                    </span>
+                    <span class="trenner">
+                    </span>
+                    <span class="text" id="F4N-NewsText1">
+                      <f:cObject typoscriptObjectPath="lib.F4N_NewsText" />
+                    </span>
+                </p>
+            </div>
+            <div class="BreadcrumbNav">
+                Sie befinden sich hier:
+                <f:cObject typoscriptObjectPath="lib.breadcrumb" />
+            </div>
+            <f:cObject typoscriptObjectPath="lib.content0" />
+        </div>
+        <div id="RightContent">
+            <div class="Suche">
+                <f:cObject typoscriptObjectPath="lib.searchBox" />
+
+            </div>
+            <f:cObject typoscriptObjectPath="lib.content3" />
+            <f:cObject typoscriptObjectPath="lib.content4" />
+            <div class="CA">
+                <a href="https://reviews.customer-alliance.com/hotel/hotel-restaurant-goldner-anker-bad-elster-n0Gy32471Iv4.html?_locale=de" title="Hotel & Restaurant Goldner Anker" target="_blank"><img src="http://widget.customer-alliance.com/reviews/image/de/hotel-restaurant-goldner-anker-bad-elster/n0Gy32471Iv4-170-200-slimrank.png?smallheight=0&amp;showReviewText=0&amp;showAverageRating=1&amp;showTotalReviews=1&amp;showNumberOfPortals=1&amp;headerBgColor=AF6F56&amp;ratingValueColor=343434" alt="Hotel & Restaurant Goldner Anker" /></a>
+            </div>
+        </div>
+        <div class="Clear"></div>
+    </div>
+</div>
+<!-- Footer -->
+<f:render partial="footer" />
+<!--  Google Translate -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'de',
+            includedLanguages: 'cs,en,es,fr,pl,ru,nl,sv',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

@@ -1,0 +1,322 @@
+/*******************************************************************************
+ GBOS Appointments
+*******************************************************************************/
+div#content div.tx-wind-gbos-appointments div.appointments_form {
+	width: 700px;
+    background: url("../../Images/dotted-grey.png") repeat-x left bottom;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 10px 0 30px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form h2 {
+	font-size: 15px;
+	margin: 10px 0 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form ul#steps {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 700px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form ul#steps li {
+	float: left;
+	background: url('../../Images/icon_list.png') no-repeat center left;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 20px 0 0;
+	padding: 5px 0 4px;
+	color: #403c32;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form ul#steps li.current {
+	background-image: url('../../Images/icon_list_active.png');
+	color: #0097a1;
+	font-weight: bold;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form ul#steps li span.number {
+	display: block;
+	float: left;
+	width: 33px;
+	margin: 0 9px 0 0;
+	text-align: center;
+	font-weight: bold;
+	color: #a5a5a5;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form ul#steps li.current span.number {
+	color: #FFFFFF;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.labels div#add_product-label,
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.labels div#choose_persons-label {
+	font-weight: bold;
+	display: inline-block;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.labels div#add_product-label {
+	width: 247px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.pair {
+	overflow: hidden;
+	border: 1px solid #ffffff;
+	padding: 2px 2px 2px 0;
+	margin: 1px 1px 20px 0;
+	line-height: 20px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.pair.radio input {
+	margin: 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.pair label {
+	float: left;
+	width: 180px;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.form_data div.info span.required,
+div#content div.tx-wind-gbos-appointments div.appointments_form form label span.required {
+	padding: 0 0 0 3px;
+	color: #ff0000;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.pair span.field {
+	display: block;
+	margin: 0 0 0 175px;
+	padding-left: 5px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.form_data div.textarea label {
+	width: 175px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.form_data div.textarea span.field {
+	background: none;
+	padding-left: 0;
+	margin: 0 0 0 170px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.form_data div.textarea span.field textarea {
+	display: block;
+	border: 1px solid #D1C7BE;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.pair span.field input {
+	border: 1px solid #D1C7BE;
+	padding: 6px 9px 10px 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form label img {
+	vertical-align: text-bottom;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form.pair span.field {
+	padding-left: 5px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.options div.option {
+	height: 20px;
+	margin: 3px 0;
+	float: left;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.options div.option div.product_select,
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.options div.option div.persons_select {
+	float: left;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.subjects div.options div.option div.product_select {
+	width: 250px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form input.button {
+	font-family: arial;
+ 	background: url('../../Images/form_button_next.png') 0 0 no-repeat;
+	color: #ffffff;
+	margin: 0;
+	border: none;
+	height: 31px;
+	width: 153px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.return_link_confirm a,
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.return_link a {
+	font-weight: bold;
+	background: url('../../Images/form_button_previous.png') 0 0 no-repeat;
+	color: #3F3933;
+	width: 120px;
+	height: 15px;
+	padding: 6px 0 10px 21px;
+	margin: 0 5px 0 0;
+	float: left;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.filled_in_data {
+	float: left;
+	padding: 0 0 10px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.filled_in_data div.pair {
+	width: 480px;
+	float: left;
+	margin: 1px 1px 5px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.filled_in_data div.pair label {
+	float: left;
+	width: 180px;
+	padding: 5px 0;
+	height: 15px;
+	font-weight: bold;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.filled_in_data div.pair span {
+	padding: 5px 0 0;
+	float: left;
+	width: 290px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.date,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.products,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.duration,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.time,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.persons,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.moreinfo {
+	float: left;
+	width: 700px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.moreinfo {
+	padding: 10px 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.moreinfo div.singleinfo {
+	padding: 0 0 10px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.time {
+	padding: 0 0 5px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.date label,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.products label,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.duration label,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.time label,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.persons label {
+	padding: 5px 0;
+	float: left;
+	width: 180px;
+	font-weight: bold;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.products label {
+	width: 170px;
+	padding: 0 0 5px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form p {
+	padding: 5px 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.date span,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.duration span,
+div#content div.tx-wind-gbos-appointments div.appointments_form div.time span {
+	padding: 5px 0 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.pair span.example {
+	font-style: italic;
+	color: #007D85;
+	margin: 0 0 0 180px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form div.products ul {
+	float: left;
+	width: 250px;
+	margin: 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select {
+	padding-left: 3px;
+	margin: 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li {
+	background: none;
+	padding: 3px 0;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li span {
+	padding: 2px 0 0;
+	float: left;
+	text-align: left;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li span.day_name {
+	width: 24px;
+	text-align: right;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li span.day {
+	width: 20px;
+	text-align: center;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li span.month {
+	width: 65px;
+	padding: 2px 0 0 3px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form ul.date-select li select option {
+	padding: 0 10px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.select-info {
+	float: left;
+	width: 700px;
+	padding: 0 0 3px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form div.select-info span {
+	font-weight: bold;
+	float: left;
+	padding: 3px 0 0 3px;
+	width: 107px;
+}
+
+div#content div.tx-wind-gbos-appointments div.appointments_form form input.cancel-appointment,
+div#content div.tx-wind-gbos-appointments div.appointments_form form input.view-appointment {
+	background: url("../../Images/form_button_next.png") no-repeat 0 0;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: left;
+	font-family: arial;
+	font-weight: bold;
+	height: 31px;
+	margin: 0;
+	padding-bottom: 3px;
+	width: 153px;
+}
+
+div#content div.tx-wind-gbos-appointments div.typo3-messages {
+	padding: 5px;
+	width: 280px;
+	color: #DD1717;
+}
+
+div#content div.tx-wind-gbos-appointments div.typo3-messages div.message-header{
+	display: none;
+}

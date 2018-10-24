@@ -1,0 +1,81 @@
+
+#jMenu {
+	display:table;
+	margin: 0;
+	padding:0
+}
+
+/********************/
+/** premier niveau **/
+/********************/
+#jMenu li {
+	display:table-cell;
+	margin:0;
+	padding: 0;
+	/*float:left;*/
+}
+	#jMenu li a {
+		padding: 9px 18px 9px 45px;
+		display:block;
+		background: url(../../../picture_layout/Nav/bg_a_ebene1.png) no-repeat 15px center transparent;
+		color:#fff;
+		cursor:pointer;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	@-moz-document url-prefix() {
+	 #jMenu li a {
+	  padding: 8px 20px 9px 45px;
+	 }
+ 	}
+	#jMenu li a:hover, #jMenu li a.active {
+		background: url(../../../picture_layout/Nav/bg_a_hover_ebene1.png) no-repeat left center;
+	}
+#jMenu li.trenner {
+	width: 1px;
+	background: url(../../../picture_layout/Nav/trenner.png) no-repeat left center;
+}
+/*******************/
+/** second niveau **/
+/*******************/
+#jMenu li ul {
+	display:none;
+	position:absolute;
+	padding: 10px 10px 25px 29px;
+	margin: 4px 0 0 0;
+	background: url(../../../picture_layout/Nav/bg_ul_ul.png) repeat left top;
+}
+	#jMenu li ul li {
+		background: url(../../../picture_layout/Nav/bg_li_li.png) no-repeat left center transparent;
+		display:block;
+		padding:0;
+	}
+	#jMenu li ul li.arrow {
+		display: none;
+		visibility: hidden;
+	}
+		#jMenu li ul li a, #jMenu li ul li.last a {
+			font-size: 100%;
+			font-weight: normal;
+			text-transform: none;
+			padding: 0;
+			margin: 0 0 0 16px;
+			display: block;
+			background: transparent;
+		}
+		#jMenu li ul li a span {
+			border-bottom: 1px solid #AC969F;
+			display: block;
+			padding: 4px 40px 4px 15px;
+			margin: 0;
+		}
+		#jMenu li ul li.last a span {
+			border-bottom: none;
+		}
+		#jMenu li ul li a.isParent {
+			/*background:#3A3A3A url('../arrow_right.png') no-repeat right center;*/
+		}
+			#jMenu li ul li a:hover, #jMenu li ul li .active a {
+				background: url(../../../picture_layout/Nav/bg_li_li_a_hover.png) repeat-x;
+				text-decoration: none;
+			}

@@ -1,0 +1,20 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="photo-holder">
+		<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_foto_block">
+			<f:for each="{items}" as="item" iteration="iterator">
+				<div class="box">
+					<vh:fal uid="{item.uid}" tableName="tx_website_vlissingen_foto_block" fieldName="images">
+						<f:for each="{objects}" as="image">
+							<f:image src="{image.publicUrl}" alt="{image.alternative}" width="170" height="110"/>
+						</f:for>
+					</vh:fal>
+					<f:link.page pageUid="{item.link}">
+						<p>{item.link_text}</p>
+					</f:link.page>
+				</div>
+			</f:for>
+		</vh:dataRelation>
+	</div>
+</f:section>

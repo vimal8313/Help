@@ -1,0 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_goldner/Configuration/PageTS/Page/" extensions="ts">
+
+RTE.default.preset>
+RTE.default.preset = my_preset
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list := addToList(list)

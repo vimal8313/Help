@@ -1,0 +1,88 @@
+/*******************************************************************************
+ YAG styling
+ ******************************************************************************/
+.theme-fotoalbum .tx-yag-album-items{
+	display: inline-table;
+	margin-top: 20px;
+}
+.theme-fotoalbum .tx-yag-album-items .singleImage{
+	float: left;
+	margin-bottom: 20px;
+}
+.theme-fotoalbum .tx-yag-album-items .singleImage.middlePicture{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.tx-yag-pi1 {
+	overflow: hidden;
+}
+
+div.tx-yag-pi1 div.tx-yag-breadcrumbcomtainer {
+    border-bottom: 1px solid #D1C7BE;
+    border-top: 1px solid #D1C7BE;
+    margin: 3px 0 7px;
+    padding: 5px 0;
+}
+
+div.tx-yag-pi1 div.tx-yag-items div.tx-yag-thumb-outerframe div.tx-yag-thumb-innerframe {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+div.tx-yag-pi1 div.tx-yag-items div.tx-yag-thumb-outerframe div.tx-yag-thumb-innerframe img {
+	border: 1px solid #D1C7BE;
+	padding: 2px;
+}
+
+div.tx-yag-pi1 div.tx-yag-items div.tx-yag-thumb-outerframe div.tx-yag-gallery-galleryinfo {
+    padding-left: 10px;
+    width: 50%;
+}
+
+div.tx-yag-pi1 div.tx-yag-items div.tx-yag-thumb-outerframe div.tx-yag-gallery-galleryinfo a {
+	text-decoration: underline;
+}
+
+/* Album list */
+div.tx-yag-pi1 div.Albums div.AlbumContainer {
+	float: left;
+	width: 154px;
+	margin: 0 15px 20px 0;
+}
+
+div.tx-yag-pi1 div.Albums div.AlbumContainer.isFourth {
+	margin-right: 0;
+}
+
+div.tx-yag-pi1 div.Albums div.AlbumContainer div.Album a img {
+	border: 1px solid #D1C7BE;
+	padding: 2px;
+}
+
+div.tx-yag-pi1 div.Albums div.AlbumContainer div.Albuminfo {
+	padding: 0 0 0 2px;
+}
+
+div.tx-yag-pi1 div.Albums div.AlbumContainer div.Albuminfo div.AlbumLink a {
+	text-decoration: underline;
+}
+
+/* Gallery list */
+div.tx-yag-pi1 div.tx-yag-album-items {
+	overflow: hidden;
+}
+
+div.tx-yag-pi1 div.tx-yag-album-items div.singleImage {
+	float: left;
+	width: 154px;
+	height: 116px;
+	text-align: center;
+	border: 1px solid #D1C7BE;
+	padding: 2px;
+	margin: 0 13px 20px 11px;
+}
+
+div.tx-yag-pi1 div.tx-yag-album-items div.singleImage.isFourth {
+	margin-right: 0;
+}

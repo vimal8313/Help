@@ -1,0 +1,9 @@
+<f:layout name="Default" />
+<f:section name="main">
+<f:translate key="error_found" />
+<ul>
+<f:for each="{errors}" as="error">
+	<li><f:translate key="error_{error}" /></li>
+</f:for>
+</ul>
+</f:section>

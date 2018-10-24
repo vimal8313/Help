@@ -1,0 +1,17 @@
+config.tx_extbase{
+	persistence{
+		classes{
+			GeorgRinger\News\Domain\Model\News {
+				subclasses {
+					0 = TYPO3\SiteConfig\Domain\Model\News
+				}
+			}
+			TYPO3\SiteConfig\Domain\Model\News {
+				mapping {
+					tableName = tx_news_domain_model_news
+					recordType = 0
+				}
+			}
+		}
+	}
+}

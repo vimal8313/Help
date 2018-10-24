@@ -1,0 +1,152 @@
+/*******************************************************************************
+	wind_productcatalog
+*******************************************************************************/
+#content .product {
+	border: 1px solid #d7d9d9;
+	margin: 4px 30px 0 1px;
+	padding: 18px 17px 12px 14px;
+	line-height: 21px;
+	width: 697px;
+}
+
+#content .product p {
+	margin: 0 0 20px;
+}
+
+.product .holder {
+	background: #fef4d9;
+	border: 1px solid #fbda7d;
+	padding: 6px 13px 9px 10px;
+	line-height: 21px;
+	color: #5e4d19;
+	margin: 0 0 18px 2px;
+}
+
+#content .product .holder p {
+	margin: 0 0 10px;
+}
+
+#content .product .holder ul {
+	margin: -20px 0 0;
+	line-height: 21px;
+}
+
+#content .product .holder ul li {
+	padding: 0 0 0 11px;
+}
+
+.product ol a {
+	text-decoration: underline;
+}
+
+.product ol a:hover {
+	text-decoration: none;
+}
+
+.product dl {
+	margin: 0 0 16px;
+}
+
+.product dt {
+	float: left;
+	font-weight: bold;
+	width: 114px;
+}
+
+.product dd {
+	overflow: hidden;
+}
+
+.product .box {
+	background: url('../../Images/divider02.png') repeat-x;
+	padding: 16px 0 0;
+}
+
+#content .product h3 {
+	margin: 0 0 2px;
+}
+
+div#content div.tx_windproductcatalog_overview ul.section-holder li.section div.column ul span.link {
+	margin: 15px 0;
+}
+
+div#content div.tx-windproductcatalog-pi1 div.tx_windproductcatalog_search div.container div.products h2.letter span {
+	margin: 0 0 0 6px;
+	color: #007d85;
+	font: bold 42px/50px Arial, Helvetica, sans-serif;
+}
+
+div#content div.tx-windproductcatalog-pi1 div.tx_windproductcatalog_product div.product div.related {
+	background: url("../../Images/divider04.png") repeat-x 0 top;
+	margin: 10px 0 0;
+	padding: 20px 0 0;
+}
+
+div#content div.tx_windproductcatalog_overview ul.section-holder li.section div.column h2 {
+	margin: 0 0 1px 0;
+	height: 19px;
+	overflow: hidden;
+	font: 100%/22px Trebuchet MS,Arial,Helvetica,sans-serif;
+}
+
+#content .tx_windproductcatalog_overview .section-holder .column li.link {
+	position: absolute;
+	bottom: 10px;
+}
+
+#content div.themes ul.section-holder li.section,
+#content div.life-events ul.section-holder li.section {
+	padding: 5px 0 4px 2px;
+}
+
+#content div.themes ul.section-holder div.column,
+#content div.life-events ul.section-holder div.column {
+	height: auto;
+	background: url("../../Images/arrow-lightbrown.png") no-repeat scroll left 8px transparent;
+	padding: 2px 0 4px 13px;
+	margin: 0;
+}
+
+#content div.themes ul.section-holder div.column h3 a,
+#content div.life-events ul.section-holder div.column h3 a {
+	font-family: arial;
+	font-weight: normal;
+}
+
+#content div.tx_windproductcatalog_category ul li.category {
+	background: none;
+}
+
+#content div.tx_windproductcatalog_category ul li.category h2 {
+	font: 100%/16px Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 3px;
+}
+
+div#content div.tx-windproductcatalog-pi1 .tx_windproductcatalog_product_faq .faq_single {
+	margin-bottom: 15px;
+}
+
+div#content div.tx-windproductcatalog-pi1 .tx_windproductcatalog_product_faq .faq_single .question {
+	font-weight: bold;
+}
+
+/*******************************************************************************
+ Content - productcatalog mobile
+*******************************************************************************/
+@media all and (max-width: 640px) {
+#content .section-holder li.section {
+	background: none;
+}
+
+#content div.themes ul.section-holder div.column,
+#content div.life-events ul.section-holder div.column {
+	background: url("../../Images/arrow-lightbrown.png") no-repeat left 8px;
+	height: auto;
+	margin: 0;
+	padding: 2px 0 4px 13px;
+}
+#content div.tx-windproductcatalog-pi1 div.tx_windproductcatalog_product div.product {
+	margin: 4px 1px 0;
+	width: 230px;
+}
+}

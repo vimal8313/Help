@@ -1,0 +1,34 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="slideshow">
+		<div class="mask">
+			<div class="slideset">
+				<vh:dataRelation uid="{data.uid}" table="tx_website_vlissingen_slider_item">
+					<f:for each="{items}" as="item" iteration="iterator">
+						<vh:fal uid="{item.uid}" tableName="tx_website_vlissingen_slider_item" fieldName="images">
+							<f:for each="{objects}" as="image">
+								<f:link.page pageUid="{item.link}">
+									<div class="slide">
+										<f:image src="{image.publicUrl}" alt="{image.alternative}" width="770" height="300" />
+									</div>
+								</f:link.page>
+							</f:for>
+						</vh:fal>
+					</f:for>
+				</vh:dataRelation>
+			</div>
+		</div>
+		<div class="pause">
+			<ul>
+				<li><a href="#">stop</a></li>
+			</ul>
+		</div>
+		<div class="pagination">
+			<ul>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+			</ul>
+		</div>
+	</div>
+</f:section>

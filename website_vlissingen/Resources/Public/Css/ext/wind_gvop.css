@@ -1,0 +1,194 @@
+/*******************************************************
+ * GVOP
+ *******************************************************/
+body.full-width div#sidebar {
+	display: none;
+	visibility: hidden;
+}
+body.full-width div#content {
+	padding-left: 5px;
+	width: 99%;
+}
+
+#content div.tx_windgvop_pi1 iframe {
+	border: none;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame {
+	float: right;
+	width: 230px;
+}
+
+#content .three_frame .bekendmakingen-filter p.bodytext {
+	margin: 0;
+}
+
+#content div.tx_windgvop_pi1 div.publication_text p.bodytext{
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame div.bekendmakingen-filter {
+	border: 1px solid #d1c7be;
+	overflow: hidden;
+	padding: 10px;
+	margin: 0;
+	font-size: 13px;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame div.bekendmakingen-filter div.sections {
+	margin-top: 5px;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame div.bekendmakingen-filter ul {
+	padding-left:0;
+	margin-top: 0;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame div.bekendmakingen-filter h2 {
+	padding: 0 0 5px 0;
+	margin: 0;
+	line-height: inherit;
+	border: none;
+	color: #007D86;
+	font-size: 15px;
+}
+
+#content div.tx_windgvop_pi1 div.three_frame div.bekendmakingen-filter .list-category ul li{
+	margin-bottom: 5px;
+}
+
+#content div.tx_windgvop_pi1 .three_frame .top,
+#content div.tx_windgvop_pi1 .three_frame .middle,
+#content div.tx_windgvop_pi1 .three_frame .bottom {
+	margin-bottom: 20px;
+}
+
+#content div.tx_windgvop_pi1 .content {
+	float: left;
+	width: 730px;
+	margin-right: 20px;
+}
+
+#content div.tx_windgvop_pi1 .content .list_area ul li {
+	background-position: left 9px;
+	padding-left: 12px;
+}
+
+#content div.tx_windgvop_pi1 div.content div.map_area {
+	padding: 0;
+	margin-top: -8px;
+	margin-left: -8px;
+}
+
+#content div.tx_windgvop_pi1 div.content div.list_area {
+	margin-top: 22px;
+}
+
+#content div.tx_windgvop_pi1 div.content div.list_area .list {
+	padding: 3px 0;
+	margin: 2px;
+	width: 98%;
+}
+
+div#content div.tx_windgvop_pi1 ul.f3-widget-paginator {
+	overflow: hidden;
+	padding: 0;
+}
+
+div#content div.tx_windgvop_pi1 ul.f3-widget-paginator li {
+	list-style: none;
+	float: left;
+	background: url('../../Images/seperator-grey.png') no-repeat 3px 2px;
+	margin-right: 12px;
+}
+
+div#content div.tx_windgvop_pi1 ul.f3-widget-paginator li.previous {
+	background: none;
+}
+
+div#content div.tx_windgvop_pi1 ul.f3-widget-paginator li.current {
+	color: #0097A0;
+}
+div#content div.tx_windgvop_pi1 ul.f3-widget-paginator li a{
+	color: #888483;
+}
+
+div#content div.tx_windgvop_pi1 h2.category-name {
+	font-size: 123%;
+}
+
+div#content div.tx_windgvop_pi1 h2.category-name a {
+	color: #007D86;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-decoration: none;
+}
+
+/*******************************************************
+ * GVOP - Single
+ *******************************************************/
+div.tx_windgvop_pi1 .summary {
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+
+div.tx_windgvop_pi1 .summary .row {
+	border-bottom: 1px solid #d1c7be;
+	line-height: 18px;
+	padding: 5px 0;
+}
+
+div.tx_windgvop_pi1 .summary .row div {
+	display: inline-block;
+	width: 49%;
+}
+
+div.tx_windgvop_pi1 .summary .row .bold {
+	font-weight: bold;
+}
+
+div.tx_windgvop_pi1 .summary .row a {
+	border: none;
+}
+
+div.tx_windgvop_pi1 .summary .row a:hover {
+	text-decoration: underline;
+}
+
+#content div.tx_windgvop_pi1 div.publication_text {
+	width: 98%;
+}
+
+#content div.tx_windgvop_pi1 #mapDiv {
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: -8px;
+}
+
+#content div.tx_windgvop_pi1 img {
+	border: none;
+	display: block;
+}
+
+#content div.tx_windgvop_pi1 select,
+#content div.tx_windgvop_pi1 input[type=text] {
+	width: 200px;
+	border: 1px solid #d1c7be;
+	padding: 3px;
+}
+
+#content div.tx_windgvop_pi1 option {
+	border: none;
+}
+
+#content div.tx_windgvop_pi1 .searchDiv {
+	margin-bottom: 5px;
+}
+
+#content div.tx_windgvop_pi1 .list_area .return a{
+	background: url('../../Images/arrow-lightbrown-left.png') left 5px no-repeat;
+	padding-left:16px
+}

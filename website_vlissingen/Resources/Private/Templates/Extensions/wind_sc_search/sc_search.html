@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Website title: page title</title>
+</head>
+<body>
+
+<!-- ###SEARCH### begin -->
+<div class="tx-windproductcatalog-pi1">
+	<div class="search">
+		<form action="###FORM_URL###" method="post" class="form-holder">
+			<div class="pair search-form">
+				<input type="text" name="tx_windscsearch_pi1[keywords]" value="###KEYWORDS###" id="tx_windscsearch_keywords" />
+				<input type="submit" />
+			</div>
+			<div class="pair">
+				<label for="tx_windscsearch_keywords">Zoeken binnen organisatie</label>
+				<div class="field">
+					<div class="pair">
+						<div class="field">
+							<input type="checkbox" name="tx_windscsearch_pi1[gemeente]" value="1" id="tx_windscsearch_gemeente" />
+							<label for="tx_windscsearch_gemeente">Gemeente</label>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="field">
+							<input type="checkbox" name="tx_windscsearch_pi1[waterschap]" value="1" id="tx_windscsearch_waterschap" />
+							<label for="tx_windscsearch_waterschap"> Waterschap</label>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="field">
+							<input type="checkbox" name="tx_windscsearch_pi1[provincie]" value="1" id="tx_windscsearch_provincie" />
+							<label for="tx_windscsearch_provincie">Provincie</label>
+						</div>
+					</div>
+					<div class="pair">
+						<div class="field">
+							<input type="checkbox" name="tx_windscsearch_pi1[ministeries]" value="1" id="tx_windscsearch_ministeries" />
+							<label for="tx_windscsearch_ministeries">Ministeries</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+	<!--
+	if ('###GEMEENTE###' == '1') {
+		document.getElementById('tx_windscsearch_gemeente').checked = true;
+	}
+	if ('###WATERSCHAP###' == '1') {
+		document.getElementById('tx_windscsearch_waterschap').checked = true;
+	}
+	if ('###PROVINCIE###' == '1') {
+		document.getElementById('tx_windscsearch_provincie').checked = true;
+	}
+	if ('###MINISTERIES###' == '1') {
+		document.getElementById('tx_windscsearch_ministeries').checked = true;
+	}
+	//-->
+	</script>
+</div>
+<!-- ###SEARCH### end -->
+
+<!-- ###LIST### begin -->
+
+<p>U heeft gezocht op <strong>###KEYWORDS###</strong></p>
+
+<!-- ###NO_RESULTS### begin -->
+<p><strong>Helaas zijn hier geen resultaten voor gevonden.</strong></p>
+<!-- ###NO_RESULTS### end -->
+
+<!-- ###NUMBER_RESULTS### begin -->
+<p><strong>Resultaten ###NUM_START### tot en met ###NUM_END### van ###NUM_RESULTS###</strong></p>
+<!-- ###NUMBER_RESULTS### end -->
+
+	<!-- ###LIST_RESULTS### begin -->
+<ul>
+		<!-- ###LIST_RESULTS_SINGLE### begin -->
+ <li>
+	<div class="link"><a href="###URL###">###TITLE###</a></div>
+	<div class="source">###SOURCE_TYPE###: ###SOURCE_NAME###</div>
+ </li>
+		<!-- ###LIST_RESULTS_SINGLE### end -->
+</ul>
+<div class="browser">
+	<ul>
+		<!-- ###LIST_RESULTS_PREVIOUS_NONE### begin -->
+		<!-- ###LIST_RESULTS_PREVIOUS_NONE### end -->
+		<!-- ###LIST_RESULTS_PREVIOUS### begin -->
+	 <li class="previous"><a href="###PREVIOUS_URL###">&lt; Vorige</a></li>
+		<!-- ###LIST_RESULTS_PREVIOUS### end -->
+		<!-- ###LIST_RESULTS_PAGE_CURRENT### begin -->
+	 <li class="current"><strong>###NUM###</strong></li>
+		<!-- ###LIST_RESULTS_PAGE_CURRENT### begin -->
+		<!-- ###LIST_RESULTS_PAGE### begin -->
+	 <li><a href="###PAGE_URL###">###NUM###</a></li>
+		<!-- ###LIST_RESULTS_PAGE### begin -->
+		<!-- ###LIST_RESULTS_NEXT_NONE### begin -->
+		<!-- ###LIST_RESULTS_NEXT_NONE### end -->
+		<!-- ###LIST_RESULTS_NEXT### begin -->
+	 <li class="next"><a href="###NEXT_URL###">Volgende &gt;</a></li>
+		<!-- ###LIST_RESULTS_NEXT### end -->
+	</ul>
+</div>
+	<!-- ###LIST_RESULTS### end -->
+<!-- ###LIST### end -->
+
+<!-- ###XML### begin --><?xml version="1.0" encoding="UTF-8"?>
+<zoekvraag xmlns="http://www.adviesoverheid.nl/metadata-project/samenwerkende-catalogi/2007-1/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.adviesoverheid.nl/metadata-project/samenwerkende-catalogi/2007-1/SamenwerkendeCatalogi.xsd"
+	start="###XML_START###" results="###XML_RESULTS###">
+	<zoekgebied>
+		<organisatie>
+			<gemeenten>###GEMEENTE_NAAM###</gemeenten>
+		</organisatie>
+	<!-- ###XML_GEMEENTEN### begin -->
+		<bereik>gemeenten</bereik>
+	<!-- ###XML_GEMEENTEN### end -->
+	<!-- ###XML_WATERSCHAPPEN### begin -->
+		<bereik>waterschappen</bereik>
+	<!-- ###XML_WATERSCHAPPEN### end -->
+	<!-- ###XML_PROVINCIES### begin -->
+		<bereik>provincies</bereik>
+	<!-- ###XML_PROVINCIES### end -->
+	<!-- ###XML_MINISTERIES### begin -->
+		<bereik>ministeries</bereik>
+	<!-- ###XML_MINISTERIES### end -->
+	</zoekgebied>
+	<zoekargument>
+		<zoekveld>
+			<zoekcriterium>MATCH</zoekcriterium>
+			<metadataveld>
+				<keyword>###KEYWORDS###</keyword>
+			</metadataveld>
+		</zoekveld>
+	</zoekargument>
+</zoekvraag>
+<!-- ###XML### end -->
+
+</body>
+</html>

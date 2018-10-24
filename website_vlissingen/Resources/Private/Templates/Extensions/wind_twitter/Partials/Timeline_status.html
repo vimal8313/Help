@@ -1,0 +1,11 @@
+<div class="windtwitter-status">
+    <div class="windtwitter-status-text">
+        <f:format.html>{status.text}</f:format.html>
+    </div>
+    <div class="windtwitter-status-actions">
+        <span class="windtwitter-weetaction">{status.createdAt -> f:format.date(format: 'd-M-Y')}</span>
+        <f:link.external uri="https://twitter.com/intent/tweet?in_reply_to={status.id}" target="_blank" class="windtwitter-tweetaction"><f:translate key="twitter.action.reply" /></f:link.external>
+        <f:link.external uri="https://twitter.com/intent/retweet?tweet_id={status.id}" target="_blank" class="windtwitter-tweetaction"><f:translate key="twitter.action.retweet" /></f:link.external>
+        <f:link.external uri="https://twitter.com/intent/favorite?tweet_id={status.id}" target="_blank" class="windtwitter-tweetaction"><f:translate key="twitter.action.favorite" /></f:link.external>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+{namespace ptextbase=Tx_PtExtbase_ViewHelpers}
+
+<extlist:comment>
+<!-- Template for rendering list of albums of a gallery -->
+</extlist:comment>
+
+<f:layout name="Default" />
+<f:section name="head" />
+<f:section name="main">
+	<div class="Albums">
+		<f:for each="{listData}" key="rowIndex" as="listRow" iteration="albumIteration">
+			<f:cycle values="{0:'', 1:'', 2:'', 3: 3}" as="isFourth">
+				<div class="AlbumContainer{f:if(condition: '{isFourth}==3', then: ' isFourth')}">
+			</f:cycle>
+				<div class="Album">
+					<div class="AlbumTitle">
+						<h3>{listRow.album.value.name}</h3>
+					</div>
+					<yag:link.album album="{listRow.album.value}">
+						<f:if condition="{listRow.album.value.itemCount} > 0">
+							<f:then>
+								<yag:image item="{listRow.album.value.thumb}" resolutionName="thumb" />
+							</f:then>
+							<f:else>
+								<div>Geen afbeeldingen gevonden.</div>
+							</f:else>
+						</f:if>
+					</yag:link.album>
+				</div>
+				<div class="Albuminfo">
+					<div class="NumberOfPhotos">
+						Aantal foto's: {listRow.album.value.itemCount}
+					</div>
+					<div class="AlbumLink">
+						<yag:link.album album="{listRow.album.value}">Bekijk album</yag:link.album>
+					</div>
+				</div>
+			</div>
+		</f:for>
+	</div>
+</f:section>
+
+<f:section name="feEdit"></f:section>

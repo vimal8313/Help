@@ -1,0 +1,13 @@
+<div class="windtwitter">
+    <f:flashMessages class="windtwitter-error" title="Error"></f:flashMessages>
+
+    <div class="windtwitter-timeline-header">
+        <f:render partial="Timeline_header" arguments="{user: user}" />
+    </div>
+    <div class="windtwitter-timeline-content">
+        <f:render section="Content" />
+    </div>
+    <div class="windtwitter-timeline-footer">
+        <f:render partial="Timeline_footer" arguments="{user: user}" />
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/List.html
+-->
+
+<f:section name="content">
+	<!--TYPO3SEARCH_end-->
+	<f:if condition="{news}">
+		<f:then>
+			<f:if condition="{settings.templateLayout} == 1">
+			    <f:then>
+			    	<div class="shell">
+			    	<h2 class="text-spacing-inverse-25">
+			    		<f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:home_event_header" />
+			    	</h2>
+		            <div class="range range-xs-center offset-top-44">
+		              <div class="cell-sm-10 cell-lg-8">
+		                <p class="text-spacing-0"><f:translate key="LLL:EXT:site_config/Resources/Private/Language/locallang.xlf:home_event_text" /></p>
+		              </div>
+		            </div>
+		            <div class="range range-xs-center offset-top-60">
+		              <div class="cell-sm-10">
+		                <div data-items="1" data-sm-items="2" data-md-items="3" data-xs-stage-padding="5" data-loop="false" data-margin="30" data-lg-margin="70" data-mouse-drag="false" data-nav="true" data-dots="true" class="owl-carousel owl-nav-absolute owl-nav-primary">
+
+								<f:if condition="{settings.hidePagination}">
+									<f:then>
+										<f:for each="{news}" as="newsItem" iteration="iterator">
+											<f:render partial="List/Homeitem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+										</f:for>
+									</f:then>
+									<f:else>
+										<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit,recordId:contentObjectData.uid}">
+											<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+												<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+											</f:for>
+										</n:widget.paginate>
+									</f:else>
+								</f:if>
+
+		                </div>
+		              </div>
+		            </div>
+
+					</div>
+			    </f:then>
+			    <f:else>
+			    	<div class="news-list-view range range-xs-center offset-top-44 offset-md-top-53 text-sm-left" id="news-container-{contentObjectData.uid}">
+						<f:if condition="{settings.hidePagination}">
+							<f:then>
+								<f:for each="{news}" as="newsItem" iteration="iterator">
+									<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+								</f:for>
+							</f:then>
+							<f:else>
+								<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit,recordId:contentObjectData.uid}">
+									<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+										<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+									</f:for>
+								</n:widget.paginate>
+							</f:else>
+						</f:if>
+					</div>
+			  	</f:else>
+			</f:if>
+
+		</f:then>
+		<f:else>
+			<div class="no-news-found">
+				<f:translate key="list_nonewsfound" />
+			</div>
+		</f:else>
+	</f:if>
+	<!--TYPO3SEARCH_begin-->
+</f:section>
+</html>

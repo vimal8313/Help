@@ -1,0 +1,260 @@
+/*******************************************************************************
+ Newsletter subscription
+*******************************************************************************/
+div#content .tx-windnewslettersubscription-pi1 ul.tabs {
+	padding: 0;
+	margin: 0 0 12px;
+	list-style: none;
+	overflow: hidden;
+	height: auto;
+}
+
+div#content .tx-windnewslettersubscription-pi1 ul.tabs li {
+	background: none;
+	float: left;
+	height: 33px;
+	line-height: 33px;
+	margin: 0 50px 0 0;
+	padding: 5px 0 4px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 ul.tabs li:first-child {
+	margin-left: 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 ul.tabs li span {
+	display: block;
+	background: url('../../Images/icon_list.png') no-repeat;
+	height: 33px;
+	width: 33px;
+	text-align: center;
+ 	color: #A5A5A5;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 ul.tabs li.active span {
+	background-image: url('../../Images/icon_list_active.png');
+	color: #FFFFFF;
+}
+
+div#content .tx-windnewslettersubscription-pi1 ul.tabs li.active {
+	color: #0097A1;
+	font-weight: bold;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content {
+	padding: 15px 0 0;
+	margin: 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair {
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .checkboxes {
+	overflow: hidden;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .label,
+div#content .tx-windnewslettersubscription-pi1 .pair label {
+	width: 110px;
+	float: none;
+	line-height: 26px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .checkboxes .label {
+	height: auto;
+	line-height: normal;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .checkboxes .checkbox-pair {
+	margin: 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair .field,
+div#content .tx-windnewslettersubscription-pi1 .pair input[type=text] {
+	display: block;
+	margin: 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair input[type=text] {
+	width: 290px;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	border: 1px solid #D1C7BE;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair .radio-pair {
+	float: left;
+	margin: 0 5px 0 0;
+	height: 33px;
+	line-height: 33px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair .radio-pair input[type=radio] {
+	margin: 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair .radio-pair label {
+	float: none;
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	color: #000000;
+	font-size: 12px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 span.required {
+	color: #E40180;
+	margin: 0 5px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .change {
+	position: absolute;
+	margin: 25px 0 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .change p {
+	margin:  17px 0 0 0;
+	color: #333333;
+	width: 350px
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .change a {
+	text-decoration: underline;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .change a:hover {
+	text-decoration: none;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .content .buttons,
+div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons {
+	padding: 15px 20px;
+	height: 45px;
+	margin: 20px 0 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .content .buttons .button.submit,
+div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons .button {
+	float: right;
+	margin: 8px 0 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons .button.prev {
+	float: left;
+}
+
+
+div#content .tx-windnewslettersubscription-pi1 .content .buttons .button.submit input,
+div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons .button input {
+	background: url("../../Images/form_button_next.png") no-repeat 0 0;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 28px;
+    padding: 0 20px 0 10px;
+    right: 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 153px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .content .buttons .button.submit.prev input,
+div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons .button.prev input {
+	background-image: url("../../Images/form_button_previous.png");
+    color: #000000;
+    float: left;
+    left: 0;
+    padding: 0 10px 1px 25px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .content .infocheck .label,
+div#content .tx-windnewslettersubscription-pi1 .tab-content .infocheck .label {
+	height: auto;
+	line-height: normal;
+	font-weight: bold;
+}
+
+/*******************************************************************************
+ Content - wind_newsletter_subscription mobile
+*******************************************************************************/
+@media all and (max-width: 640px) {
+div.tx-windnewslettersubscription-pi1 div.newform div.content ul.tabs li {
+	margin: 0 !important;
+	width: 200px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair .field, div#content .tx-windnewslettersubscription-pi1 .pair input[type="text"] {
+	margin: 0 !important;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .pair input[type="text"] {
+	width: 230px !important;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .tab-content .change {
+	margin: 0 !important;
+	position: relative !important;
+}
+
+
+div#content .tx-windnewslettersubscription-pi1 .content .buttons, div#content .tx-windnewslettersubscription-pi1 .tab-content .buttons {
+	margin: 0 !important;
+}
+}
+
+/*******************************************************************************
+ wind_newsletter_subscription Orionis
+*******************************************************************************/
+div#content .tx-windnewslettersubscription-pi1 .orionis ul.tabs li,
+div#content .tx-windnewslettersubscription-pi1 .orionis ul.tabs li span {
+	color: #A5BCC7;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis ul.tabs li.active {
+	color: #E1642A;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis ul.tabs li.active span {
+	background-image: url('../../Images/icon_list_active_orionis.png');
+	color: #FFFFFF;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .tab-content {
+	background: url('../../Images/dotted-grey.png') repeat-x 0 0;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .label,
+div#content .tx-windnewslettersubscription-pi1 .orionis .pair label {
+	float: left;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .pair .checkbox-pair label,
+div#content .tx-windnewslettersubscription-pi1 .orionis .pair .radio-pair label {
+	float: none;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .label,
+div#content .tx-windnewslettersubscription-pi1 .orionis .pair label {
+	width: 130px;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .pair input[type="text"] {
+	width: 520px;
+	border: 1px solid #999999;
+}
+
+div#content .tx-windnewslettersubscription-pi1 .orionis .content .buttons .button.submit input,
+div#content .tx-windnewslettersubscription-pi1 .orionis .tab-content .buttons .button input {
+	background: #E1642A;
+	color: #FFFFFF;
+}

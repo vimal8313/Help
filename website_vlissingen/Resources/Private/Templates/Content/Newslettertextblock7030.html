@@ -1,0 +1,36 @@
+{namespace vh=WIND\WebsiteVlissingen\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+		<tr>
+			<td valign="top" colspan="2" style="padding:8px 19px 0;">
+				<table cellpadding="0" cellspacing="0" width="100%" border="0">
+					<tr>
+						<td valign="top" height="1" colspan="3">
+							<f:image src="EXT:website_vlissingen/Resources/Public/Images/seperator-wide.png" width="476" height="1" />
+						</td>
+					</tr>
+					<tr><td valign="top" height="10" colspan="3"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" height="10" /></td></tr>
+					<tr>
+						<td valign="top" rowspan="3" style="padding:0 0 18px;line-height:18px;">
+							<vh:fal uid="{data.uid}" tableName="tt_content" fieldName="image">
+								<f:for each="{objects}" as="image">
+									<f:image src="{image.publicUrl}" alt="{image.alternative}"/>
+								</f:for>
+							</vh:fal>
+						</td>
+						<td valign="top" width="10" rowspan="3"><f:image src="EXT:website_vlissingen/Resources/Public/Images/spacer.gif" width="10" /></td>
+						<td valign="top" style="padding:0 0 3px; font: 17px Helvetica, Arial, sans-serif; line-height:20px; color:#0090A8;">
+							<b><b>{data.header}</b></b>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" style="padding:0 0 18px;font:13px Helvetica, Arial, sans-serif; line-height:18px; color:#333333;">
+							<f:format.html>{data.bodytext}</f:format.html>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</f:section>
